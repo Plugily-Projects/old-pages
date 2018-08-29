@@ -10,7 +10,7 @@ function localize($phrase) {
         if (!file_exists(__DIR__ . $lang_file)) {
             $lang_file = '/locale/en-GB.json';
         }
-        $lang_file_content = file_get_contents("https://plajer.xyz/wiki2" . $lang_file);
+        $lang_file_content = file_get_contents("https://plajer.xyz/wiki" . $lang_file);
         /* Load the language file as a JSON object
            and transform it into an associative array */
         $translations = json_decode($lang_file_content, true);
