@@ -47,6 +47,5 @@
     "VD-PAPI-VDHighestWave-Desc": "Shows the highest wave you survived",
     "VD-PAPI-VDLevel-Desc": "Shows your current level",
     "VD-PAPI-VDExp-Desc": "Shows your exp amount (decimal number)",
-    "VD-PAPI-VDNextLevelExp-Desc": "Shows amount of exp need to level up",
-    "Global-Language-Name": "Deutsch"
+    "VD-PAPI-VDNextLevelExp-Desc": "Shows amount of exp need to level up"
 }
