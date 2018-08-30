@@ -28,7 +28,7 @@
     "VD-Index-Simple-Arena-Setup-Desc2": "Samouczek jak stworzyć arenę",
     "VD-Index-Maps-Desc2": "Pobierz darmowe mapy do gry",
     "VD-Index-Dev-API-Desc2": "Trochę rzeczy dla deweloperów",
-    "VD-Index-Basic-Alerts-Info": "Podstawowe alerty ktore MUSISZ ZNAC:",
+    "VD-Index-Basic-Alerts-Info": "Podstawowe alerty które MUSISZ ZNAĆ:",
     "VD-Alert-Tip": "Rada!",
     "VD-Alert-Info": "Informacja!",
     "VD-Alert-Warn": "Przestroga!",
@@ -47,5 +47,6 @@
     "VD-PAPI-VDHighestWave-Desc": "Pokazuje najwyższą falę do jakiej dotrwałeś",
     "VD-PAPI-VDLevel-Desc": "Pokazuje twój aktualny poziom",
     "VD-PAPI-VDExp-Desc": "Pokazuje twoją aktualną ilość XP (liczba po przecinku)",
-    "VD-PAPI-VDNextLevelExp-Desc": "Pokazuje wymaganą ilość XP do następnego poziomu"
+    "VD-PAPI-VDNextLevelExp-Desc": "Pokazuje wymaganą ilość XP do następnego poziomu",
+    "Global-Language-Name": "Polski"
 }
