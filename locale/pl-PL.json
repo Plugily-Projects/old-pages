@@ -32,5 +32,20 @@
     "VD-Alert-Tip": "Rada!",
     "VD-Alert-Info": "Informacja!",
     "VD-Alert-Warn": "Przestroga!",
-    "VD-Alert-Danger": "Uwaga!"
+    "VD-Alert-Danger": "Uwaga!",
+    "VD-Alert-Tip-Desc": "Przydatna rada!",
+    "VD-Alert-Info-Desc": "Ciekawe informacje które możesz przeczytać!",
+    "VD-Alert-Warn-Desc": "Możesz zrobić coś źle!",
+    "VD-Alert-Danger-Desc": "Przeczytaj to jeśli nie chcesz mieć problemów!",
+    "VD-Index-Enhancements-Content": "Zawartość pluginu z dodatkami",
+    "VD-PAPI-List-Of-Placeholders": "List of PlaceholderAPI's placeholders",
+    "VD-PAPI-Placeholder": "Placeholder",
+    "Global-Description": "Opis",
+    "VD-PAPI-VDKills-Desc": "Pokazuje twoją ilość zabitych zombie",
+    "VD-PAPI-VDDeaths-Desc": "Pokazuje twoją ilość śmierci",
+    "VD-PAPI-VDGamesPlayed-Desc": "Pokazuje twoją ilość rozegranych gier",
+    "VD-PAPI-VDHighestWave-Desc": "Pokazuje najwyższą falę do jakiej dotrwałeś",
+    "VD-PAPI-VDLevel-Desc": "Pokazuje twój aktualny poziom",
+    "VD-PAPI-VDExp-Desc": "Pokazuje twoją aktualną ilość XP (liczba po przecinku)",
+    "VD-PAPI-VDNextLevelExp-Desc": "Pokazuje wymaganą ilość XP do następnego poziomu"
 }
