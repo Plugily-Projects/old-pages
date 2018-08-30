@@ -84,7 +84,7 @@ include '../../json_localization.php';
             </div>
             <hr>
             <h3 id="how-to-set-up-the-shop-">How to set up the shop?</h3>
-            <p>If you follow <a href="https://github.com/Plajer-Lair/Village_Defense/wiki/setup">this tutorial</a> you
+            <p>If you follow <a href="https://www.youtube.com/watch?v=16GS6zAte5I&feature=youtu.bep">this tutorial</a> you
                 will
                 setup it properly.</p>
             <div class="alert alert-success alert-white rounded">

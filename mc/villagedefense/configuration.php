@@ -83,7 +83,7 @@ include '../../json_localization.php';
             <h3 id="config-yml">config.yml</h3>
             <p>config.yml is very well commented. No need to explain more any part of it.</p>
             <p>For customizing custom permissions check out <a
-                        href="https://github.com/Plajer/Village_Defense/wiki/Commands-and-Permissions#custom-permissions">this
+                        href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php#custom-permissions">this
                     section</a>.</p>
             <p><strong>Part of config.yml</strong></p>
             <p><img src="https://i.imgur.com/3fH8j8k.png" alt=""></p>
@@ -144,7 +144,7 @@ include '../../json_localization.php';
             <ul>
                 <li>Flat file (.yml) - enabled by default</li>
                 <li>MySQL (database) - can be enabled in config.yml (see <a
-                            href="https://github.com/Plajer-Lair/Village_Defense/wiki/Plugin-files-explained#mysqlyml">mysql.yml</a>)
+                            href="#mysql-yml">mysql.yml</a>)
                 </li>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">

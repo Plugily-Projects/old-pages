@@ -38,10 +38,10 @@ include '../../json_localization.php';
             <table>
                 <thead>
                 <tr>
-                    <th>FAQ - Questions and problems</th>
-                    <th>Simple arena setup</th>
-                    <th>Maps</th>
-                    <th>Developers API</th>
+                    <th><?php echo localize("VD-Sidebar-FAQ"); ?> - <?php echo localize("VD-Sidebar-FAQ-Problems-And-Tips"); ?></th>
+                    <th><?php echo localize("VD-Index-Simple-Arena-Setup"); ?></th>
+                    <th><?php echo localize("VD-Index-Maps"); ?></th>
+                    <th><?php echo localize("VD-Index-Dev-API"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -53,30 +53,28 @@ include '../../json_localization.php';
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://github.com/Plajer-Lair/Village_Defense/wiki/Frequently-Asked-Questions">Frequently
-                            Asked Questions</a></td>
-                    <td><a href="https://youtu.be/16GS6zAte5I">Simple arena setup</a></td>
-                    <td><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/Village-Defense-maps">Free
-                            maps</a>
+                        <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("VD-Index-FAQ-Desc"); ?></a></td>
+                    <td><a href="https://youtu.be/16GS6zAte5I"><?php echo localize("VD-Index-Simple-Arena-Setup-Desc"); ?></a></td>
+                    <td><a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("VD-Index-Maps-Desc"); ?></a>
                     </td>
-                    <td><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API">Developers API</a>
+                    <td><a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("VD-Index-Dev-API-Desc"); ?></a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Frequent problems and tips</td>
-                    <td>How to create arena tutorial</td>
-                    <td>Download free game maps</td>
-                    <td>Some stuff for developers</td>
+                    <td><?php echo localize("VD-Index-FAQ-Desc2"); ?></td>
+                    <td><?php echo localize("VD-Index-Simple-Arena-Setup-Desc2"); ?></td>
+                    <td><?php echo localize("VD-Index-Maps-Desc2"); ?></td>
+                    <td><?php echo localize("VD-Index-Dev-API-Desc2"); ?></td>
                 </tr>
                 </tbody>
             </table>
-            <h3 id="basic-icons-you-need-to-know-">Basic alerts <strong>YOU NEED</strong> to know:</h3>
+            <h3 id="basic-icons-you-need-to-know-"><?php echo localize("VD-Index-Basic-Alerts-Info"); ?></h3>
             <ul>
                 <div class="alert alert-success alert-white rounded">
                     <div class="icon">
                         <i class="fa fa-check"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong>Tip!</strong>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
                         Nice tip you may use!
                     </div>
                 </div>
@@ -84,7 +82,7 @@ include '../../json_localization.php';
                     <div class="icon">
                         <i class="fa fa-info-circle"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong>Info!</strong>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Info"); ?></strong>
                         Some cool content you may want to read!
                     </div>
                 </div>
@@ -92,7 +90,7 @@ include '../../json_localization.php';
                     <div class="icon">
                         <i class="fa fa-warning"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong>Warn!</strong>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                         You can do something wrong!
                     </div>
                 </div>
@@ -100,7 +98,7 @@ include '../../json_localization.php';
                     <div class="icon">
                         <i class="fa fa-times-circle"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong>Danger!</strong>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                         Read this if you don't want problems!
                     </div>
                 </div>

@@ -82,7 +82,7 @@
             <h3 id="global-server-boosters">Global server boosters</h3>
             <p><strong>Requirements:</strong> Web store (ex. Buycraft), Permissions plugin</p>
             <p>Using <a
-                        href="https://github.com/Plajer/Village_Defense/wiki/Commands-and-Permissions#custom-permissions">Custom
+                        href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php#custom-permissions">Custom
                     permissions</a> you can create global server boosters for your server!</p>
             <p><strong>1</strong>. Create new custom permission in config.yml</p>
             <pre><code class="lang-yaml"><span class="hljs-string">CustomPermissions:</span>

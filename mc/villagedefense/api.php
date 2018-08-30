@@ -38,10 +38,10 @@ include '../../json_localization.php';
             </h4>
             <h2>Table of contents</h2>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API#events">API Events</a></li>
-                <li><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API#stats-storage">Stats storage</a>
+                <li><a href="#events">API Events</a></li>
+                <li><a href="#stats-storage">Stats storage</a>
                 </li>
-                <li><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API#kit-registry">Kit registry</a></li>
+                <li><a href="#kit-registry">Kit registry</a></li>
                 <li>Manipulating player join/leave attempts (soon)</li>
             </ul>
             <div class="alert alert-danger alert-white rounded">
