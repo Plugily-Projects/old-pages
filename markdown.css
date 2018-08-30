@@ -20,6 +20,12 @@
     padding-left: 6%;
 }
 
+@media only screen and (max-width: 768px) {
+    #side-menu {
+        margin: 0 !important;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
