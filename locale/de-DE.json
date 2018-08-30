@@ -32,5 +32,20 @@
     "VD-Alert-Tip": "Tip!",
     "VD-Alert-Info": "Info!",
     "VD-Alert-Warn": "Warn!",
-    "VD-Alert-Danger": "Danger!"
+    "VD-Alert-Danger": "Danger!",
+    "VD-Alert-Tip-Desc": "Nice tip you may use!",
+    "VD-Alert-Info-Desc": "Some cool content you may want to read!",
+    "VD-Alert-Warn-Desc": "You can do something wrong!",
+    "VD-Alert-Danger-Desc": "Read this if you don't want problems!",
+    "VD-Index-Enhancements-Content": "Enhancements addon content",
+    "VD-PAPI-List-Of-Placeholders": "List of PlaceholderAPI's placeholders",
+    "VD-PAPI-Placeholder": "Placeholder",
+    "Global-Description": "Description",
+    "VD-PAPI-VDKills-Desc": "Shows your zombie kills",
+    "VD-PAPI-VDDeaths-Desc": "Shows your deaths",
+    "VD-PAPI-VDGamesPlayed-Desc": "Shows your played games count",
+    "VD-PAPI-VDHighestWave-Desc": "Shows the highest wave you survived",
+    "VD-PAPI-VDLevel-Desc": "Shows your current level",
+    "VD-PAPI-VDExp-Desc": "Shows your exp amount (decimal number)",
+    "VD-PAPI-VDNextLevelExp-Desc": "Shows amount of exp need to level up"
 }
