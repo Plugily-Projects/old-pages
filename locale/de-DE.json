@@ -16,5 +16,21 @@
     "VD-Sidebar-Developer-API": "Entwickler API",
     "VD-Sidebar-Java-Docs": "Java Dokumentation",
     "VD-Sidebar-Enhancements-Addon": "Erweiterungs Addon",
-    "VD-Sidebar-Enhancements-FAQ": "FAQ und Einrichtung"
+    "VD-Sidebar-Enhancements-FAQ": "FAQ und Einrichtung",
+    "VD-Index-Simple-Arena-Setup": "Simple arena setup",
+    "VD-Index-Maps": "Maps",
+    "VD-Index-Dev-API": "Developers API",
+    "VD-Index-FAQ-Desc": "Frequently Asked Questions",
+    "VD-Index-Simple-Arena-Setup-Desc": "Simple arena setup",
+    "VD-Index-Maps-Desc": "Free maps",
+    "VD-Index-Dev-API-Desc": "Developers API",
+    "VD-Index-FAQ-Desc2": "Frequent problems and tips",
+    "VD-Index-Simple-Arena-Setup-Desc2": "How to create arena tutorial",
+    "VD-Index-Maps-Desc2": "Download free game maps",
+    "VD-Index-Dev-API-Desc2": "Some stuff for developers",
+    "VD-Index-Basic-Alerts-Info": "Basic alerts YOU NEED to know:",
+    "VD-Alert-Tip": "Tip!",
+    "VD-Alert-Info": "Info!",
+    "VD-Alert-Warn": "Warn!",
+    "VD-Alert-Danger": "Danger!"
 }
