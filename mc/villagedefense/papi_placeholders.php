@@ -31,42 +31,42 @@ include '../../json_localization.php';
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-12">
-            <h1 id="list-of-placeholderapi-s-placeholders">List of PlaceholderAPI&#39;s placeholders</h1>
+            <h1 id="list-of-placeholderapi-s-placeholders"><?php echo localize("VD-PAPI-List-Of-Placeholders"); ?></h1>
             <table>
                 <thead>
                 <tr>
-                    <th>Placeholder</th>
-                    <th>Description</th>
+                    <th><?php echo localize("VD-PAPI-Placeholder"); ?></th>
+                    <th><?php echo localize("Global-Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>%villagedefense_kills%</td>
-                    <td>Shows your zombie kills</td>
+                    <td><?php echo localize("VD-PAPI-VDKills-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_deaths%</td>
-                    <td>Shows your deaths</td>
+                    <td><?php echo localize("VD-PAPI-VDDeaths-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_games_played%</td>
-                    <td>Shows your played games count</td>
+                    <td><?php echo localize("VD-PAPI-VDGamesPlayed-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_highest_wave%</td>
-                    <td>Shows the highest wave you survived</td>
+                    <td><?php echo localize("VD-PAPI-VDHighestWave-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_level%</td>
-                    <td>Shows your current level</td>
+                    <td><?php echo localize("VD-PAPI-VDLevel-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_exp%</td>
-                    <td>Shows your exp amount (decimal number)</td>
+                    <td><?php echo localize("VD-PAPI-VDExp-Desc"); ?></td>
                 </tr>
                 <tr>
                     <td>%villagedefense_exp_to_next_level%</td>
-                    <td>Shows amount of exp need to level up</td>
+                    <td><?php echo localize("VD-PAPI-VDNextLevelExp-Desc"); ?></td>
                 </tr>
                 </tbody>
             </table>

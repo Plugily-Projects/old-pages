@@ -75,7 +75,7 @@ include '../../json_localization.php';
                         <i class="fa fa-check"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
-                        Nice tip you may use!
+                        <?php echo localize("VD-Alert-Tip-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-info alert-white rounded">
@@ -83,7 +83,7 @@ include '../../json_localization.php';
                         <i class="fa fa-info-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Info"); ?></strong>
-                        Some cool content you may want to read!
+                        <?php echo localize("VD-Alert-Info-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-warning alert-white rounded">
@@ -91,7 +91,7 @@ include '../../json_localization.php';
                         <i class="fa fa-warning"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
-                        You can do something wrong!
+                        <?php echo localize("VD-Alert-Warn-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-danger alert-white rounded">
@@ -99,21 +99,17 @@ include '../../json_localization.php';
                         <i class="fa fa-times-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
-                        Read this if you don't want problems!
+                        <?php echo localize("VD-Alert-Danger-Desc"); ?>
                     </div>
                 </div>
             </ul>
-            <h3 id="enhancements-addon-content-https-img-shields-io-badge-more-info-blue-svg-https-github-com-plajer-lair-village_defense-enhancements-https-img-shields-io-badge-buy-20it-here-yellow-svg-https-www-spigotmc-org-resources-55010-">
-                Enhancements addon content <a
-                        href="https://github.com/Plajer-Lair/Village_Defense-Enhancements/"><img
-                            src="https://img.shields.io/badge/more-info-blue.svg" alt=""></a> <a
-                        href="https://www.spigotmc.org/resources/55010/"><img
-                            src="https://img.shields.io/badge/buy%20it-here-yellow.svg" alt=""></a></h3>
+            <h3>
+                <?php echo localize("VD-Index-Enhancements-Content"); ?>
+                <a href="https://github.com/Plajer-Lair/Village_Defense-Enhancements/"><img src="https://img.shields.io/badge/more-info-blue.svg" alt=""></a>
+                <a href="https://www.spigotmc.org/resources/55010/"><img src="https://img.shields.io/badge/buy%20it-here-yellow.svg" alt=""></a></h3>
             <ul>
-                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.html">Commands
-                        and Permissions</a></li>
-                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html">FAQ &amp;
-                        Setup</a>
+                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.html"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a></li>
+                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html"><?php echo localize("VD-Sidebar-Enhancements-FAQ"); ?></a>
                 </li>
             </ul>
         </div>
