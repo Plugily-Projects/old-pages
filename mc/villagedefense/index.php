@@ -33,6 +33,12 @@ include '../../json_localization.php';
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-12">
+            <?php
+            if(localize("Global-Language-Name") != "English"){
+                echo "<div class='alert alert-warning' role='alert'>" . localize("Global-Language-Name") . " is not your language?
+                <a href='https://plajer.xyz/wiki/reset.php?redirect=https://plajer.xyz/wiki/mc/villagedefense/index.php'>Click here to use English one!</a></div>";
+            }
+            ?>
             <p><img src="https://i.imgur.com/BGzirpT.png" alt=""></p>
             <h2><?php echo localize("VD-Index-Wiki-Hello"); ?></h2>
             <table>
