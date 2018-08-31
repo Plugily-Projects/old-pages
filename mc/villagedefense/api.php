@@ -42,7 +42,7 @@ include '../../json_localization.php';
                 <li><a href="#stats-storage">Stats storage</a>
                 </li>
                 <li><a href="#kit-registry">Kit registry</a></li>
-                <li>Manipulating player join/leave attempts (soon)</li>
+                <li><a href="#manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</a></li>
             </ul>
             <div class="alert alert-danger alert-white rounded">
                 <div class="icon">
