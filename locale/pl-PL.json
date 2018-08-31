@@ -1,12 +1,16 @@
 {
     "VD-Index-Wiki-Hello": "Oficjalne wiki Village Defense 3",
-    "VD-Sidebar-General": "Ogólne",
-    "VD-Sidebar-Home": "Strona główna",
+    "General section": {
+        "VD-Sidebar-General": "Ogólne"
+    },
+    "Main page": {
+        "VD-Sidebar-Home": "Strona główna"
+    },
     "VD-Sidebar-Cmds-And-Perms": "Komendy i uprawnienia",
     "VD-Sidebar-Free-Maps": "Darmowe mapy",
     "VD-Sidebar-Plugin-Addons": "Dodatkowe pluginy",
     "VD-Sidebar-Server-Tips": "Wskazówki",
-    "VD-Sidebar-PAPI-Placeholders": "PAPI Placeholders",
+    "VD-Sidebar-PAPI-Placeholders": "Symbole PlaceholderAPI",
     "VD-Sidebar-Support": "Pomoc",
     "VD-Sidebar-Setup-Tutorial": "Tworzenie areny",
     "VD-Sidebar-FAQ": "FAQ",
@@ -38,8 +42,8 @@
     "VD-Alert-Warn-Desc": "Możesz zrobić coś źle!",
     "VD-Alert-Danger-Desc": "Przeczytaj to jeśli nie chcesz mieć problemów!",
     "VD-Index-Enhancements-Content": "Zawartość pluginu z dodatkami",
-    "VD-PAPI-List-Of-Placeholders": "List of PlaceholderAPI's placeholders",
-    "VD-PAPI-Placeholder": "Placeholder",
+    "VD-PAPI-List-Of-Placeholders": "Lista symbolów PlaceholderAPI",
+    "VD-PAPI-Placeholder": "Symbol",
     "Global-Description": "Opis",
     "VD-PAPI-VDKills-Desc": "Pokazuje twoją ilość zabitych zombie",
     "VD-PAPI-VDDeaths-Desc": "Pokazuje twoją ilość śmierci",
@@ -48,5 +52,9 @@
     "VD-PAPI-VDLevel-Desc": "Pokazuje twój aktualny poziom",
     "VD-PAPI-VDExp-Desc": "Pokazuje twoją aktualną ilość XP (liczba po przecinku)",
     "VD-PAPI-VDNextLevelExp-Desc": "Pokazuje wymaganą ilość XP do następnego poziomu",
-    "Global-Language-Name": "Polski"
+    "Your native language name in your language": {
+        "Global-Language-Name": "Polski"
+    },
+    "Global-Command": "Komenda",
+    "Global-Permission": "Uprawnienie"
 }
