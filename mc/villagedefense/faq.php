@@ -120,7 +120,7 @@ include '../../json_localization.php';
             </div>
             <hr>
             <h3 id="supported-versions-of-village-defense-3">Supported versions of Village Defense 3</h3>
-            <p>Supported versions are currently 1.9-1.13
+            <p>Supported versions are currently 1.9-1.13.1
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this
                 message:</p>
             <pre><code>  _   _           _                                                    _                _

@@ -102,7 +102,7 @@ include '../../json_localization.php';
             <p>However, you can use localization support which was implemented in VD 3.</p>
             <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.
             </p>
-            <p><img src="https://i.imgur.com/gmVmWwj.png" alt=""></p>
+            <p><img src="https://i.imgur.com/bHYXt2q.png" alt=""></p>
             <p><strong>Valid localizations:</strong></p>
             <ul>
                 <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-gb.png" alt=""> default
@@ -136,6 +136,10 @@ include '../../json_localization.php';
                 <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-vn.png" alt=""> vn
                     (Vietnamese/Việt)
                     (by POEditor contributors)
+                </li>
+                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-ro.png" alt=""> ro
+                    (Romanian/Românesc)
+                    (by POEditor contributors (Andrei))
                 </li>
             </ul>
             <hr>

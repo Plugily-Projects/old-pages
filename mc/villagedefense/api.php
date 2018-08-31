@@ -486,6 +486,47 @@ include '../../json_localization.php';
                             class="hljs-string">"My super description"</span>});
         KitRegistry.registerKit(supporter);
 </code></pre>
+
+            <h1 id="manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</h1>
+            <h2 id="join-attempt">Join attempt</h2>
+            <p>To force player to join specified arena you can use our <code>ArenaManager</code> class.</p>
+            <pre><code class="lang-java">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span class="hljs-params">(String arena, Player player)</span></span>{
+    ArenaManager.joinAttempt(player, ArenaRegistry.getArena(arena));
+  }
+
+  <span class="hljs-comment">// or</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span class="hljs-params">(Arena arena, Player player)</span></span>{
+    ArenaManager.joinAttempt(player, arena);
+  }
+</code></pre>
+
+            <div class="alert alert-warning alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-warning"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
+                    You should check is arena name exist otherwise it will throw NullPointerException
+                </div>
+            </div>
+
+            <p>After that you can check for <code>#isCancelled()</code> if join attempt was cancelled or not.</p>
+            <h2 id="leave-attempt">Leave attempt</h2>
+            <p>You can also use <code>ArenaManager</code> class to force player to quit arena.</p>
+            <pre><code class="lang-java">  public void forcePlayerQuit(<span class="hljs-built_in">Player</span> <span class="hljs-built_in">player</span>){
+    Arena arena = ArenaRegistry.getArena(<span class="hljs-built_in">player</span>);
+
+    ArenaManager.leaveAttempt(<span class="hljs-built_in">player</span>, arena);
+  }
+</code></pre>
+            <div class="alert alert-warning alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-warning"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
+                    You should check is arena isn't null otherwise it will throw NullPointerException
+                </div>
+            </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
             <div id="side-menu">
