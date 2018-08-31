@@ -1,3 +1,7 @@
+<?php
+include '../../json_localization.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
