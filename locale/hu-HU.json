@@ -1,11 +1,7 @@
 {
     "VD-Index-Wiki-Hello": "Village Defense 3 hivatalos wiki",
-    "General section": {
-        "VD-Sidebar-General": "Általános"
-    },
-    "Main page": {
-        "VD-Sidebar-Home": "Kezdőlap"
-    },
+    "VD-Sidebar-General": "Általános",
+    "VD-Sidebar-Home": "Kezdőlap",
     "VD-Sidebar-Cmds-And-Perms": "Parancsok és jogok",
     "VD-Sidebar-Free-Maps": "Ingyenes mapok",
     "VD-Sidebar-Plugin-Addons": "Plugin hozzáadások",
@@ -52,9 +48,7 @@
     "VD-PAPI-VDLevel-Desc": "Megmutassa a jelenlegi szinted",
     "VD-PAPI-VDExp-Desc": "Megmutassa az exp mennyiséget (decimális szám)",
     "VD-PAPI-VDNextLevelExp-Desc": "Megmutassa az exp mennyiséget, hogy mennyi kell még a szint lépéshez",
-    "Your native language name in your language": {
-        "Global-Language-Name": "Magyar"
-    },
+    "Global-Language-Name": "Magyar",
     "Global-Command": "Command",
     "Global-Permission": "Permission"
 }
