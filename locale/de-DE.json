@@ -1,11 +1,7 @@
 {
     "VD-Index-Wiki-Hello": "Village Defense 3 Offizielle Wiki",
-    "General section": {
-        "VD-Sidebar-General": "Allgemeines"
-    },
-    "Main page": {
-        "VD-Sidebar-Home": "Home"
-    },
+    "VD-Sidebar-General": "Allgemeines",
+    "VD-Sidebar-Home": "Home",
     "VD-Sidebar-Cmds-And-Perms": "Commands und Permissions",
     "VD-Sidebar-Free-Maps": "Kostenlose Maps",
     "VD-Sidebar-Plugin-Addons": "Plugin Erweiterungen",
@@ -52,9 +48,7 @@
     "VD-PAPI-VDLevel-Desc": "Zeigt dein aktuelles Level",
     "VD-PAPI-VDExp-Desc": "Zeigt dein EXP Betrag (Dezimalzahl)",
     "VD-PAPI-VDNextLevelExp-Desc": "Zeigt den Betrag der EXP an um zum nächsten Level zu kommen",
-    "Your native language name in your language": {
-        "Global-Language-Name": "Deutsch"
-    },
+    "Global-Language-Name": "Deutsch",
     "Global-Command": "Command",
     "Global-Permission": "Permission"
 }
