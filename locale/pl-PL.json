@@ -1,11 +1,7 @@
 {
     "VD-Index-Wiki-Hello": "Oficjalne wiki Village Defense 3",
-    "General section": {
-        "VD-Sidebar-General": "Ogólne"
-    },
-    "Main page": {
-        "VD-Sidebar-Home": "Strona główna"
-    },
+    "VD-Sidebar-General": "Ogólne",
+    "VD-Sidebar-Home": "Strona główna",
     "VD-Sidebar-Cmds-And-Perms": "Komendy i uprawnienia",
     "VD-Sidebar-Free-Maps": "Darmowe mapy",
     "VD-Sidebar-Plugin-Addons": "Dodatkowe pluginy",
@@ -52,9 +48,7 @@
     "VD-PAPI-VDLevel-Desc": "Pokazuje twój aktualny poziom",
     "VD-PAPI-VDExp-Desc": "Pokazuje twoją aktualną ilość XP (liczba po przecinku)",
     "VD-PAPI-VDNextLevelExp-Desc": "Pokazuje wymaganą ilość XP do następnego poziomu",
-    "Your native language name in your language": {
-        "Global-Language-Name": "Polski"
-    },
+    "Global-Language-Name": "Polski",
     "Global-Command": "Komenda",
     "Global-Permission": "Uprawnienie"
 }
