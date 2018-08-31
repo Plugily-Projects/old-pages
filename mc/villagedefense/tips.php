@@ -38,7 +38,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     These tips <strong>should be EULA friendly, but may not</strong>!
                 </div>
             </div>

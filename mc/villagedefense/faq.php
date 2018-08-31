@@ -91,7 +91,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Tip!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
                     You <strong>may</strong> want use Secret well too in your map, see how to use it below.
                 </div>
             </div>
@@ -112,7 +112,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Danger!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                     Always delete VD 3 files when the server is stopped. It&#39;s recommended too to edit them manually
                     when the
                     server is stopped.

@@ -51,7 +51,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     Addon is not made by VD3 staff and bugs/features should be reported to plugin&#39;s
                     author!
                 </div>
@@ -64,7 +64,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     This addon is premium!
                 </div>
             </div>

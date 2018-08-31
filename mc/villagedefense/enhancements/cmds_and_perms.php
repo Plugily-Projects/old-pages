@@ -43,8 +43,14 @@ include '../../../json_localization.php';
             </ul>
             <h2 id="commands-and-permissions-custom-kits-module">Commands and Permissions - custom kits module</h2>
             <p><code>[required argument] (optional argument)</code></p>
-            <p>💡 <strong>You can use <code>villagedefense.customkits.*</code> permission to give all commands
-                    permission</strong></p>
+            <div class="alert alert-success alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
+                    You can use <code>villagedefense.customkits.*</code> permission to give all commands permission
+                </div>
+            </div>
             <table>
                 <thead>
                 <tr>
@@ -171,7 +177,7 @@ include '../../../json_localization.php';
                     </ul>
                     <h3 id="enhancements-addon"><?php echo localize("VD-Sidebar-Enhancements-Addon"); ?></h3>
                     <ul style="list-style-type: disc;">
-                        <li style="list-style-image: url('../../../img/you-are-here.png');"
+                        <li style="list-style-image: url('../../../img/you-are-here.png');">
                             <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>

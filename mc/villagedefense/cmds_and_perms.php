@@ -51,9 +51,9 @@ include '../../json_localization.php';
             <table>
                 <thead>
                 <tr>
-                    <th>Command</th>
-                    <th>Permission</th>
-                    <th>Description</th>
+                    <th><?php echo localize("Global-Command"); ?></th>
+                    <th><?php echo localize("Global-Permission"); ?></th>
+                    <th><?php echo localize("Global-Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -95,7 +95,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Tip!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
                     You can use <code>villagedefense.admin.*</code> permission to give all admin commands
                     permission
                 </div>
@@ -103,10 +103,10 @@ include '../../json_localization.php';
             <table>
                 <thead>
                 <tr>
-                    <th>Command</th>
-                    <th>Permission</th>
-                    <th>Description</th>
-                    <th>Vaild executors</th>
+                    <th><?php echo localize("Global-Command"); ?></th>
+                    <th><?php echo localize("Global-Permission"); ?></th>
+                    <th><?php echo localize("Global-Description"); ?></th>
+                    <th>Valid executors</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -245,7 +245,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     Using dots <code>.</code> in custom permissions will not work and will break permission, don't use
                     them!
                 </div>
@@ -296,7 +296,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-info-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Info!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Info"); ?></strong>
                     <strong>Premium kits</strong> also unlocks with Vip/Mvp or Elite permissions and <strong>leveled
                         kits</strong>
                     are

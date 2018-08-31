@@ -121,7 +121,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     A message from language file is sent to the player when the attempt is cancelled (see
                     <code>In-Game.Join-Cancelled-Via-API</code> in language.yml)
                 </div>
@@ -204,7 +204,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Danger!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                     Cancelling the event doesn&#39;t really influence the in-game kit chooser,
                     <code>#isCancelled()</code> should be
                     used for external add-ons!
@@ -375,7 +375,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Danger!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                     Be aware of IndexOutOfBoundsException as the list might be not enough big!
                 </div>
             </div>
@@ -385,7 +385,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Danger!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                     Orbs statistic is temporary and shouldn&#39;t be used for out game usages!
                 </div>
             </div>

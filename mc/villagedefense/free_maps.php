@@ -39,7 +39,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Warn!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
                     The shop is not included with the maps!
                 </div>
             </div>
@@ -62,7 +62,7 @@ include '../../json_localization.php';
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong>Danger!</strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
                     Door setup in this map may be broken! Please re-setup it when it breaks.
                 </div>
             </div>
