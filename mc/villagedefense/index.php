@@ -110,9 +110,7 @@ include '../../json_localization.php';
                 </div>
             </ul>
             <h3>
-                <?php echo localize("VD-Index-Enhancements-Content"); ?>
-                <a href="https://github.com/Plajer-Lair/Village_Defense-Enhancements/"><img src="https://img.shields.io/badge/more-info-blue.svg" alt=""></a>
-                <a href="https://www.spigotmc.org/resources/55010/"><img src="https://img.shields.io/badge/buy%20it-here-yellow.svg" alt=""></a></h3>
+                <?php echo localize("VD-Index-Enhancements-Content"); ?></h3>
             <ul>
                 <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.html"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a></li>
                 <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html"><?php echo localize("VD-Sidebar-Enhancements-FAQ"); ?></a>
