@@ -1,11 +1,7 @@
 {
     "VD-Index-Wiki-Hello": "Wiki-ul oficial Village Defense 3",
-    "General section": {
-        "VD-Sidebar-General": "General"
-    },
-    "Main page": {
-        "VD-Sidebar-Home": "Acasă"
-    },
+    "VD-Sidebar-General": "General",
+    "VD-Sidebar-Home": "Acasă",
     "VD-Sidebar-Cmds-And-Perms": "Comenzi și Permisiuni",
     "VD-Sidebar-Free-Maps": "Mape gratuite",
     "VD-Sidebar-Plugin-Addons": "Addon-uri Plugin",
@@ -52,9 +48,7 @@
     "VD-PAPI-VDLevel-Desc": "Vezi nivelul tău actual",
     "VD-PAPI-VDExp-Desc": "Vezi cât exp ai (număr decimal)",
     "VD-PAPI-VDNextLevelExp-Desc": "Vezi numărul de exp necesar pentru nivelul următor",
-    "Your native language name in your language": {
-        "Global-Language-Name": "Românesc"
-    },
+    "Global-Language-Name": "Românesc",
     "Global-Command": "Command",
     "Global-Permission": "Permission"
 }
