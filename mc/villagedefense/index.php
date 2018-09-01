@@ -40,7 +40,7 @@ include_once("../../tracking.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://plajer.xyz/wiki/mc/villagedefense/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/BGzirpT.png" alt=""></p>
+            <p><img src="https://i.imgur.com/zWY2BN7.png" alt=""></p>
             <h2><?php echo localize("VD-Index-Wiki-Hello"); ?></h2>
             <table>
                 <thead>
@@ -53,10 +53,10 @@ include_once("../../tracking.php");
                 </thead>
                 <tbody>
                 <tr>
-                    <td><img src="https://i.imgur.com/qzmGYY3.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/ekmDyHw.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/4SndPkW.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/RDZGbgs.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/cBRPKFZ.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/jWpKUlC.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/a1mWdrs.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/bNiewrg.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>
@@ -121,7 +121,7 @@ include_once("../../tracking.php");
 
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
             <div id="side-menu">
-                <img src="https://i.imgur.com/ZMPQeCz.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                 <div class="menu-content">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">

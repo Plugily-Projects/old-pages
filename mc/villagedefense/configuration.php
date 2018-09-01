@@ -154,8 +154,7 @@ include_once("../../tracking.php");
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
             <div id="side-menu">
-                <img src="https://i.imgur.com/ZMPQeCz.png" class="img-fluid mx-auto d-block" alt="logo"
-                     width="200">
+                <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                 <div class="menu-content">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
