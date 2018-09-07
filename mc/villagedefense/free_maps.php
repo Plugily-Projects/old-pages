@@ -35,15 +35,7 @@ include_once("../../tracking.php");
         <div class="col-lg-8 col-md-8 col-sm-12">
             <h1 id="village-defense-custom-maps">Village Defense custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
-            <p>Every map contains Secret Well, Lobby room and configured arena.</p>
-            <div class="alert alert-warning alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-warning"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
-                    The shop is not included with the maps!
-                </div>
-            </div>
+            <p>Every map contains Secret well, simple shop, lobby room and configured arena.</p>
             <h2 id="table-of-contents">Table of contents</h2>
             <ul>
                 <li><a href="#quarry">Quarry</a></li>
@@ -51,24 +43,14 @@ include_once("../../tracking.php");
             </ul>
             <h2 id="quarry">Quarry</h2>
             <p><strong>Quarry map from original Village Defense map pack</strong></p>
-            <p><strong>Download link:</strong> <a target="_blank"
-                                                  href="http://www.mediafire.com/file/71cs388sh2m884f/Quarry_-_VD_map_and_config.zip/file">http://www.mediafire.com/file/71cs388sh2m884f/Quarry_-_VD_map_and_config.zip/file</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="http://www.mediafire.com/file/pea5p4qf3lovk8p/Quarry_-_configs_and_map.zip/file">http://www.mediafire.com/file/pea5p4qf3lovk8p/Quarry_-_configs_and_map.zip/file</a>
             </p>
             <p><strong>Coordinates:</strong> 0, 80, 0</p>
             <p><strong>Screenshots:</strong></p>
             <p><img src="https://i.imgur.com/N8EHEZP.jpg" alt=""></p>
             <h2 id="hollow">Hollow</h2>
             <p><strong>Hollow map from original Village Defense map pack</strong></p>
-            <div class="alert alert-danger alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-times-circle"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
-                    Door setup in this map may be broken! Please re-setup it when it breaks.
-                </div>
-            </div>
-            <p><strong>Download link:</strong> <a target="_blank"
-                                                  href="http://www.mediafire.com/file/b5ffhdd4ladfr5l/Hollow+-+VD+map+and+config.zip">http://www.mediafire.com/file/b5ffhdd4ladfr5l/Hollow+-+VD+map+and+config.zip</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="http://www.mediafire.com/file/v8fyvf29cuq3x59/Hollow+-+configs+and+map.zip">http://www.mediafire.com/file/v8fyvf29cuq3x59/Hollow+-+configs+and+map.zip</a>
             </p>
             <p><strong>Coordinates:</strong> -50, 72, 50</p>
             <p><strong>Screenshots:</strong></p>
