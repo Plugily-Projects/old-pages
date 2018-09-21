@@ -20,12 +20,6 @@ include_once("../../tracking.php");
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
 
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#9e9e9e">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#9e9e9e">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#9e9e9e">
     <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>

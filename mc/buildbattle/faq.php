@@ -20,20 +20,14 @@ include_once("../../tracking.php");
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
 
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#9e9e9e">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#9e9e9e">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#9e9e9e">
-
     <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-xl-2 col-lg-1 col-0"></div>
+        <div class="col-xl-7 col-lg-6 col-md-8 col-12">
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents">Table of contents</h2>
             <ul>
@@ -140,7 +134,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 </tbody>
             </table>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+        <div class="col-xl col-lg-3 col-md-4 col-sm-7 col-12 pl-lg-0 pl-md-1">
             <div id="side-menu">
                 <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                 <div class="menu-content">
@@ -188,14 +182,16 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-1 col-0"></div>
+        <footer class="page-footer font-small elegant-color-dark flex-fill">
+
+            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+            </div>
+
+        </footer>
     </div>
 </div>
-<footer class="page-footer font-small grey">
-
-    <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
-        Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-    </div>
-
-</footer>
 </body>
 </html>
