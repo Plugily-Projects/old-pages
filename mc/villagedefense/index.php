@@ -47,7 +47,8 @@ include_once("../../tracking.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://plajer.xyz/wiki/mc/villagedefense/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/zWY2BN7.png" alt=""></p>
+            <br/>
+            <p><img src="https://i.imgur.com/3eTsAMG.png" alt=""></p>
             <h2><?php echo localize("VD-Index-Wiki-Hello"); ?></h2>
             <table>
                 <thead>
@@ -185,14 +186,13 @@ include_once("../../tracking.php");
                 </div>
             </div>
         </div>
-
+        <footer class="col-12 page-footer font-small elegant-color-dark p-0">
+            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
+                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+            </div>
+        </footer>
     </div>
 </div>
-<footer class="col-12 page-footer font-small elegant-color-dark p-0">
-    <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
-        Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
-                                                                                                                   href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-    </div>
-</footer>
 </body>
 </html>

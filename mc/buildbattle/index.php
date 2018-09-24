@@ -24,6 +24,12 @@ include_once("../../tracking.php");
 
     <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+
+    <style>
+        .fixed-nav-index {
+            z-index: 9;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
@@ -107,7 +113,7 @@ include_once("../../tracking.php");
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
-                    <img src="https://i.imgur.com/5svtmLD.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                    <img src="https://i.imgur.com/OGAv7qB.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../img/you-are-here.png');">
