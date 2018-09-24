@@ -26,8 +26,7 @@ include_once("../../tracking.php");
 <body>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-2 col-lg-1 col-0"></div>
-        <div class="col-xl-7 col-lg-6 col-md-8 col-12">
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <p><img src="https://i.imgur.com/dplq0h0.png" alt=""></p>
             <h2 id="build-battle-3-official-wiki-">Build Battle 3 official wiki!</h2>
             <table>
@@ -97,10 +96,10 @@ include_once("../../tracking.php");
             </ul>
         </div>
 
-        <div class="col-xl col-lg-3 col-md-4 col-sm-7 col-12 pl-lg-0 pl-md-1">
+        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
-                <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                <div class="menu-content">
+                <div class="menu-content px-3 py-2">
+                    <img src="https://i.imgur.com/AqiABjQ.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../img/you-are-here.png');">
@@ -141,18 +140,14 @@ include_once("../../tracking.php");
                             <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("VD-Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <br/>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-1 col-0"></div>
-        <footer class="page-footer font-small elegant-color-dark flex-fill">
-
+        <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
             </div>
-
         </footer>
     </div>
 </div>

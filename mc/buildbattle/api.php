@@ -26,8 +26,7 @@ include_once("../../tracking.php");
 <body>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-2 col-lg-1 col-0"></div>
-        <div class="col-xl-7 col-lg-6 col-md-8 col-12">
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="developer-api">Developer API</h1>
             <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://plajer-lair.github.io/BuildBattle/">https://plajer-lair.github.io/BuildBattle/</a>
             </h4>
@@ -37,7 +36,16 @@ include_once("../../tracking.php");
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#stats-storage">Stats storage</a></li>
                 <li>Manipulating player join/leave attempts (soon)</li>
             </ul>
-            <p>❗️ <strong>Contents may be not up to date! Please use java docs instead. Here you can only get some simple examples.</strong></p>
+
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
+                    Contents may be not up to date! Please use java docs instead. Here you can only get some simple examples.
+                </div>
+            </div>
+
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
@@ -171,7 +179,14 @@ include_once("../../tracking.php");
         }
     }
 </code></pre>
-            <p>❗️ <strong>Be aware of IndexOutOfBoundsException as the list might be not enough big</strong></p>
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
+                    Be aware of IndexOutOfBoundsException as the list might be not enough big!
+                </div>
+            </div>
             <hr>
             <h3 id="-available-statistic-types-"><strong>Available statistic types</strong></h3>
             <table>
@@ -221,10 +236,11 @@ include_once("../../tracking.php");
                 </tbody>
             </table>
         </div>
-        <div class="col-xl col-lg-3 col-md-4 col-sm-7 col-12 pl-lg-0 pl-md-1">
+
+        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
-                <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                <div class="menu-content">
+                <div class="menu-content px-3 py-2">
+                    <img src="https://i.imgur.com/AqiABjQ.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
@@ -265,18 +281,14 @@ include_once("../../tracking.php");
                             <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("VD-Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <br/>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-1 col-0"></div>
-        <footer class="page-footer font-small elegant-color-dark flex-fill">
-
+        <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
             </div>
-
         </footer>
     </div>
 </div>
