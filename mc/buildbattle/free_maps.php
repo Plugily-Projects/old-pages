@@ -69,7 +69,7 @@ include_once("../../tracking.php");
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
-                    <img src="https://i.imgur.com/AqiABjQ.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                    <img src="https://i.imgur.com/5svtmLD.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
