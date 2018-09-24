@@ -24,6 +24,12 @@ include_once("../../../tracking.php");
     <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
+    <a class="navbar-brand" href="#">
+        <img src="https://i.imgur.com/HuLGRxV.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Plajer's Lair wiki
+    </a>
+</nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">

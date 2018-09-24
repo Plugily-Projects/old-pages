@@ -19,11 +19,25 @@ include_once("../../tracking.php");
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
 
     <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+
+    <style>
+        .fixed-nav-index {
+            z-index: 9;
+        }
+    </style>
 </head>
 <body>
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
+    <a class="navbar-brand" href="#">
+        <img src="https://i.imgur.com/HuLGRxV.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Plajer's Lair wiki
+    </a>
+</nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
@@ -172,13 +186,13 @@ include_once("../../tracking.php");
             </div>
         </div>
 
-        <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
-                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-            </div>
-        </footer>
     </div>
 </div>
+<footer class="col-12 page-footer font-small elegant-color-dark p-0">
+    <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
+        Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
+                                                                                                                   href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+    </div>
+</footer>
 </body>
 </html>
