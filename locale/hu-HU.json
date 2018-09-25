@@ -30,7 +30,7 @@
     "Alert-Info": "Infó!",
     "Alert-Warn": "Figyelmeztetés!",
     "Alert-Danger": "Veszély!",
-    "Alert-Tip-Desc": "Jó tipp, amit használhatsz!",
+    "Alert-Tip-Description": "Jó tipp, amit használhatsz!",
     "Alert-Info-Description": "Néhány menő tartalom, amit érdemes olvasni!",
     "Alert-Warn-Description": "Valamit rosszul csináltál!",
     "Alert-Danger-Description": "Olvasd el ezt, ha nem akarsz problémákat!",
