@@ -46,7 +46,7 @@ include_once("../../inc/tracking.php");
                 </div>
             </div>
             <p><strong>Let&#39;s start taking profit from our server!</strong></p>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#buyable-kits-for-coins">Buyable kits for
                         coins</a></li>
@@ -64,7 +64,7 @@ include_once("../../inc/tracking.php");
             <p>Just create good-looking GUI via Chest Commands, set item prices (requires Vault) and in command to
                 execute use
                 command from your permissions plugin.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-yaml"><span class="hljs-attribute">cleaner-buy</span>:
     <span class="hljs-attribute">ID</span>: magma_cream
     <span class="hljs-attribute">COMMAND</span>: <span class="hljs-string">'console: pex user {player} add villagedefense.kit.cleaner;tell: &amp;eThanks for purchase!'</span> #for PermissionsEx

@@ -36,7 +36,7 @@ include_once("../../inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="build-battle-3-addons">Build Battle 3 Addons</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Addons#bungee-signs-not-official">Bungee signs addon</a></li>
             </ul>

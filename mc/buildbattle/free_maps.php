@@ -52,7 +52,7 @@ include_once("../../inc/tracking.php");
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="build-battle-custom-maps">Build Battle custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/BuildBattle-maps#abstract">Abstract</a></li>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/BuildBattle-maps#candyland">Candyland</a></li>

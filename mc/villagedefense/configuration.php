@@ -38,7 +38,7 @@ include_once("../../inc/poeditor_reader.php");
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="plugin-files-explained-a-k-a-plugin-configuration-section-">Plugin files - explained (a.k.a Plugin
                 configuration section)</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <p><strong>Basic files</strong></p>
             <ul>
                 <li>

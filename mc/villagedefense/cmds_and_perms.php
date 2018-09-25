@@ -36,7 +36,7 @@ include_once("../../inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1>Commands and Permissions</h1>
-            <h2>Table of contents</h2>
+            <h2><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li>
                     <a href="#commands-and-permissions">Commands
@@ -50,7 +50,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <h2 id="commands-and-permissions">Commands and permissions</h2>
             <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
-            <h3 id="-player-commands">🔵 Player commands</h3>
+            <h3 id="-player-commands">🔵 <?php localize("Player-Commands") ?></h3>
             <table>
                 <thead>
                 <tr>
@@ -93,7 +93,7 @@ include_once("../../inc/tracking.php");
                 </tr>
                 </tbody>
             </table>
-            <h3 id="-admin-commands">🔴 Admin commands</h3>
+            <h3 id="-admin-commands">🔴 <?php localize("Admin-Commands") ?></h3>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>
@@ -123,49 +123,49 @@ include_once("../../inc/tracking.php");
                     <td>/vd create [arena]</td>
                     <td>villagedefense.admin.create</td>
                     <td>Creates new arena with specified name</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vd [arena] edit</td>
                     <td>villagedefense.admin.create</td>
                     <td>Edits existing arena</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda list</td>
                     <td>villagedefense.admin.list</td>
                     <td>Prints list of available arenas</td>
-                    <td>Player/Console</td>
+                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td>/vda stop</td>
                     <td>villagedefense.admin.stopgame</td>
                     <td>Stops game you&#39;re playing</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda forcestart</td>
                     <td>villagedefense.admin.forcestart</td>
                     <td>Force starts game you&#39;re in</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda respawn (player)</td>
                     <td>villagedefense.admin.respawn villagedefense.admin.respawn.others</td>
                     <td>Respawn you/specified player in your arena</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda spychat</td>
                     <td>villagedefense.admin.spychat</td>
                     <td>Toggles all arenas chat visibility (multi-arena feature only)</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda reload</td>
                     <td>villagedefense.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped</strong></td>
-                    <td>Player/Console</td>
+                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td>
@@ -177,43 +177,43 @@ include_once("../../inc/tracking.php");
                         signs)
                     </td>
                     <td>Adds new sign for specified arena</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda delete [arena]</td>
                     <td>villagedefense.admin.delete</td>
                     <td>Deletes specified arena</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda tp [arena] [location type]</td>
                     <td>villagedefense.admin.teleport</td>
                     <td>Teleports to specified arena location <strong>Location types:</strong> START, END, LOBBY</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda clear [zombie/villager/golem]</td>
                     <td>villagedefense.admin.clear</td>
                     <td>Clears specified mobs in your game</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda addorbs [amount] (player)</td>
                     <td>villagedefense.admin.addorbs villagedefense.admin.addorbs.others</td>
                     <td>Adds orbs (game currency) to you/specified player</td>
-                    <td>Player/Console when player argument is specified</td>
+                    <td><?php localize("Player") ?>/Console when player argument is specified</td>
                 </tr>
                 <tr>
                     <td>/vda setwave [number]</td>
                     <td>villagedefense.admin.setwave</td>
                     <td>Sets wave of game</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/vda setprice [amount]</td>
                     <td>villagedefense.admin.setprice</td>
                     <td>Sets price of holding item (use this for shop otherwise item won&#39;t work)</td>
-                    <td>Player</td>
+                    <td><?php localize("Player") ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -289,7 +289,7 @@ include_once("../../inc/tracking.php");
                 getting
                 its
                 permission.</p>
-            <p><strong>Examples:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <ul>
                 <li>Archer kit permission - <strong>villagedefense.kit.archer</strong></li>
                 <li>Tornado kit permission - <strong>villagedefense.kit.tornado</strong></li>

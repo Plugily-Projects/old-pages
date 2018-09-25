@@ -39,7 +39,7 @@ include_once("../../inc/tracking.php");
             <h4 id="full-java-documentation-https-plajer-lair-github-io-village_defense-">Full java documentation: <a
                         href="https://plajer-lair.github.io/Village_Defense/">https://plajer-lair.github.io/Village_Defense/</a>
             </h4>
-            <h2>Table of contents</h2>
+            <h2><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#events">API Events</a></li>
                 <li><a href="#stats-storage">Stats storage</a>
@@ -81,7 +81,7 @@ include_once("../../inc/tracking.php");
             <p>The event is called <strong>everytime</strong> any Village Defense event is called because it&#39;s a
                 generic
                 event</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onEventCall</span><span
@@ -98,7 +98,7 @@ include_once("../../inc/tracking.php");
             <h3 id="-villagegamejoinattemptevent-cancellable-"><strong>VillageGameJoinAttemptEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameJoin(VillageGameJoinAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -124,7 +124,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
                     A message from language file is sent to the player when the attempt is cancelled (see
                     <code>In-Game.Join-Cancelled-Via-API</code> in language.yml)
                 </div>
@@ -132,7 +132,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestartevent-"><strong>VillageGameStartEvent</strong></h3>
             <p>The event is called when the arena starts.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStart</span><span
@@ -148,7 +148,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegameleaveattemptevent-"><strong>VillageGameLeaveAttemptEvent</strong></h3>
             <p>The event is called when a player is trying to leave an arena.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameQuit(VillageGameLeaveAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -166,7 +166,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestopevent-"><strong>VillageGameStopEvent</strong></h3>
             <p>The event is called when a game is stopped.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStop</span><span
@@ -183,7 +183,7 @@ include_once("../../inc/tracking.php");
             <h3 id="-villageplayerchoosekitevent-cancellable-"><strong>VillagePlayerChooseKitEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when the player chose kit in game.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onKitChoose</span><span
@@ -216,7 +216,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagewaveendevent-"><strong>VillageWaveEndEvent</strong></h3>
             <p>The event is called when the wave is finished (all zombies are killed).</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveEnd</span><span class="hljs-params">(VillageWaveEndEvent event)</span></span>{
@@ -234,7 +234,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagewavestartevent-"><strong>VillageWaveStartEvent</strong></h3>
             <p>The event is called when the wave starts.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveStart</span><span
@@ -251,7 +251,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestatechangeevent-"><strong>VillageGameStateChangeEvent</strong></h3>
             <p>The event is called when arena game state changes.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @EventHandler
     public void <span class="hljs-keyword">on</span>GameStateChange(VillageGameStateChangeEvent event){
         String <span class="hljs-keyword">state</span> = e.getArenaState().getFormattedName();
@@ -268,7 +268,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villageplayerstatisticchangeevent-"><strong>VillagePlayerStatisticChangeEvent</strong></h3>
             <p>The event is called when the player receives a new statistic.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onStatChange</span><span class="hljs-params">(VillagePlayerStatisticChangeEvent event)</span></span>{
@@ -289,7 +289,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegolemupgradeevent-"><strong>VillageGolemUpgradeEvent</strong></h3>
             <p>The event is called when the player upgrades a golem.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGolemUpgrade</span>(<span
                                 class="hljs-params">VillageGolemUpgradeEvent <span
@@ -317,7 +317,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagepoweruppickevent-"><strong>VillagePowerupPickEvent</strong></h3>
             <p>The event is called when the player picks up a power-up.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span
                                 class="hljs-params">VillagePowerupPickEvent <span
@@ -335,7 +335,7 @@ include_once("../../inc/tracking.php");
                 <p><strong>event#getArena()</strong> - returns arena player is playing</p>
             </blockquote>
             <h1 id="stats-storage">Stats storage</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#-retrieving-online-players-stats-">Retrieving online players stats</a></li>
                 <li><a href="#-requesting-sorted-statistics-of-all-players-">Requesting sorted statistics of all
@@ -345,7 +345,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using VD3 API - Stats Storage class.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span
                                 class="hljs-keyword">int</span> <span class="hljs-title">getZombieKills</span><span
                                 class="hljs-params">(Player p)</span></span>{
@@ -359,7 +359,7 @@ include_once("../../inc/tracking.php");
                     players</strong>
             </h3>
             <p>To access sorted statistics Map with players you must call it from StatsStorage class.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span
                                 class="hljs-keyword">void</span> <span class="hljs-title">printBestStats</span>(<span
                                 class="hljs-params">StatsStorage.StatisticType statistic</span>)</span>{
@@ -442,7 +442,7 @@ include_once("../../inc/tracking.php");
             <p>Registering new kit is quite simple.
                 We need to implement all methods from abstract Kit class and edit it by yourself.
                 After that just register it via KitRegistry.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">        <span class="hljs-comment">//This kit will be premium</span>
         Kit supporter = <span class="hljs-keyword">new</span> PremiumKit() {
             <span class="hljs-comment">//We need to implement methods from abstract Kit class</span>

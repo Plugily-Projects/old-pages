@@ -38,7 +38,7 @@ include_once("../../inc/tracking.php");
             <h1 id="village-defense-custom-maps">Village Defense custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
             <p>Every map contains Secret well, simple shop, lobby room and configured arena.</p>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#quarry">Quarry</a></li>
                 <li><a href="#hollow">Hollow</a></li>

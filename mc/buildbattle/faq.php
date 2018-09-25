@@ -36,7 +36,7 @@ include_once("../../inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Frequently-Asked-Questions#supported-versions-of-village-defense-3">What versions do support Build Battle 3?</a></li>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Frequently-Asked-Questions#players-cant-join-through-signs">Players can&#39;t join through signs</a></li>

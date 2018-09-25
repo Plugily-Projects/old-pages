@@ -38,7 +38,7 @@ include_once("../../inc/tracking.php");
             <h1 id="developer-api">Developer API</h1>
             <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://plajer-lair.github.io/BuildBattle/">https://plajer-lair.github.io/BuildBattle/</a>
             </h4>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#events">API Events</a></li>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#stats-storage">Stats storage</a></li>
@@ -49,7 +49,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
                     Contents may be not up to date! Please use java docs instead. Here you can only get some simple examples.
                 </div>
             </div>
@@ -68,7 +68,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbevent-generic-"><strong>BBEvent</strong> (<strong>Generic</strong>)</h3>
             <p>The event is called <strong>everytime</strong> any Build Battle event is called because it&#39;s a generic event.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onEventCall</span><span
                                 class="hljs-params">(BBEvent event)</span></span>{
@@ -83,7 +83,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbgamejoinevent-cancellable-"><strong>BBGameJoinEvent</strong> (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameJoin</span>(<span class="hljs-params">BBGameJoinEvent <span class="hljs-keyword">event</span></span>)</span>{
         <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You have joined "</span> + <span class="hljs-keyword">event</span>.getArena().getID());
@@ -98,7 +98,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbgamestartevent-"><strong>BBGameStartEvent</strong></h3>
             <p>The event is called when the arena starts.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onGameStart</span><span class="hljs-params">(BBGameStartEvent event)</span></span>{
         <span class="hljs-keyword">for</span>(Player p : event.getArena().getPlayers()){
@@ -112,7 +112,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbgameleaveevent-"><strong>BBGameLeaveEvent</strong></h3>
             <p>The event is called when a player is trying to leave an arena.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameQuit</span>(<span class="hljs-params">BBGameLeaveEvent <span class="hljs-keyword">event</span></span>)</span>{
         <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You have quitted"</span> + e.getArena().getID());
@@ -125,7 +125,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbgameendevent-"><strong>BBGameEndEvent</strong></h3>
             <p>The event is called when a game has ended.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onGameStop</span><span class="hljs-params">(BBGameStartEvent event)</span></span>{
         <span class="hljs-keyword">for</span>(Player p : event.getArena().getPlayers()){
@@ -139,7 +139,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-bbgamestatechangeevent-"><strong>BBGameStateChangeEvent</strong></h3>
             <p>The event is called when a game arena state has changed.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameStop</span>(<span class="hljs-params">BBGameStateChangeEvent <span
                                     class="hljs-keyword">event</span></span>)</span>{
@@ -157,7 +157,7 @@ include_once("../../inc/tracking.php");
             </blockquote>
             <hr>
             <h1 id="stats-storage">Stats storage</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#retrieving-online-players-stats">Retrieving online players stats</a></li>
                 <li><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API#requesting-sorted-statistics-of-all-players">Requesting sorted statistics of all players</a></li>
@@ -165,7 +165,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using BB3 API - Stats Storage class.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getWins</span><span
                                 class="hljs-params">(Player p)</span></span>{
         <span class="hljs-function"><span class="hljs-keyword">return</span> StatsStorage.<span class="hljs-title">getUserStats</span><span
@@ -176,7 +176,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-requesting-sorted-statistics-of-all-players-"><strong>Requesting sorted statistics of all players</strong></h3>
             <p>To access sorted statistics hMap with players you must call it from StatsStorage class.</p>
-            <p><strong>Example:</strong></p>
+            <p><strong><?php echo localize("Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printBestStats</span>(<span
                                 class="hljs-params">StatsStorage.StatisticType statistic</span>)</span>{
         Map&lt;UUID, Integer&gt; statsMap = StatsStorage.getStats(statistic);

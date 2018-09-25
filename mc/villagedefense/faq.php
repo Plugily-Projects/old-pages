@@ -36,7 +36,7 @@ include_once("../../inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-            <h2 id="table-of-contents">Table of contents</h2>
+            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
                 <li><strong><a
                                 href="#-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> Limitation of
@@ -94,7 +94,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
                     You <strong>may</strong> want use Secret well too in your map, see how to use it below.
                 </div>
             </div>
@@ -115,7 +115,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
                     Always delete VD 3 files when the server is stopped. It&#39;s recommended too to edit them manually
                     when the
                     server is stopped.
