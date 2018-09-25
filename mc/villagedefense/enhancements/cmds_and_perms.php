@@ -46,7 +46,7 @@ include_once("../../../inc/tracking.php");
                         and Permissions - Achievements</a></li>
             </ul>
             <h2 id="commands-and-permissions-custom-kits-module">Commands and Permissions - custom kits module</h2>
-            <p><code><?php localize("Command-Aliases-Explained") ?></code></p>
+            <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>

@@ -46,7 +46,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <h2 id="commands-and-permissions">Commands and permissions</h2>
             <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
-            <h3 id="-player-commands">🔵 <?php localize("Player-Commands") ?></h3>
+            <h3 id="-player-commands">🔵 <?php echo localize("Player-Commands") ?></h3>
             <table>
                 <thead>
                 <tr>
@@ -113,91 +113,91 @@ include_once("../../inc/tracking.php");
                     <td>/bb create [arena]</td>
                     <td>buildbattle.admin.create</td>
                     <td>Creates new arena with specified name</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bb [arena] edit</td>
                     <td>buildbattle.admin.create</td>
                     <td>Edits existing arena</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba list</td>
                     <td>buildbattle.admin.list</td>
                     <td>Prints list of available arenas</td>
-                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
+                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba stop</td>
                     <td>buildbattle.admin.stopgame</td>
                     <td>Stops game you&#39;re playing</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba forcestart (theme)</td>
                     <td>buildbattle.admin.forcestart</td>
                     <td>Force starts game you&#39;re in When <code>theme</code> argument is typed arena starts with predefined theme without Voting phase</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba reload</td>
                     <td>buildbattle.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped</strong></td>
-                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
+                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td><del>/bba addsign [arena]</del> <strong>Deprecated</strong></td>
                     <td><strong>Command itself is deprecated and was removed</strong>  buildbattle.admin.sign.create (creating signs by hand) buildbattle.admin.sign.break (destroying signs)</td>
                     <td>Adds new sign for specified arena</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba delete [arena]</td>
                     <td>buildbattle.admin.delete</td>
                     <td>Deletes specified arena</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addplot [arena]</td>
                     <td>buildbattle.admin.addplot</td>
                     <td>Adds new plot to the arena</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba removeplot [arena] [plot ID]</td>
                     <td>buildbattle.admin.removeplot</td>
                     <td>Remove target plot from the arena</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addnpc</td>
                     <td>buildbattle.admin.addnpc</td>
                     <td>Spawn floor changer NPC at your location <br/><strong>Requires Citizens</strong></td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba settheme [theme]</td>
                     <td>buildbattle.admin.settheme</td>
                     <td>Set new theme of arena <br/><strong>Works only when game started, and for 20 seconds after start</strong></td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addvotes [player] [amount]</td>
                     <td>buildbattle.admin.supervotes.add</td>
                     <td>Add super votes to target player <br/>Use <code>- (minus)</code> to remove votes</td>
-                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
+                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba setvotes [player] [amount]</td>
                     <td>buildbattle.admin.supervotes.set</td>
                     <td>Set super votes of target player</td>
-                    <td><?php localize("Player") ?>/<?php localize("Console") ?></td>
+                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba plotwand</td>
                     <td>buildbattle.admin.plotwand</td>
                     <td>Get plot wand for setupping arenas</td>
-                    <td><?php localize("Player") ?></td>
+                    <td><?php echo localize("Player") ?></td>
                 </tr>
                 </tbody>
             </table>
