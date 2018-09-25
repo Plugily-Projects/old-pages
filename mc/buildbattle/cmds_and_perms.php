@@ -83,7 +83,7 @@ include_once("../../inc/tracking.php");
                 </tr>
                 </tbody>
             </table>
-            <h3 id="-admin-commands">🔴 <?php localize("Admin-Commands") ?></h3>
+            <h3 id="-admin-commands">🔴 <?php echo localize("Admin-Commands") ?></h3>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>
