@@ -18,16 +18,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 function readLanguages($projectId) {
-    $apiKey = file_get_contents(__DIR__ . "/POEditorAPIKey.txt");
+    static $json = null;
 
-    $curl = curl_init("https://api.poeditor.com/v2/languages/list");
-    curl_setopt($curl, CURLOPT_POST, true);
+    if(is_null($json)) {
+        $apiKey = file_get_contents(__DIR__ . "/POEditorAPIKey.txt");
 
-    curl_setopt($curl, CURLOPT_POSTFIELDS, "api_token=" . $apiKey . "&id=" . $projectId);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($curl);
-    curl_close($curl);
+        $curl = curl_init("https://api.poeditor.com/v2/languages/list");
+        curl_setopt($curl, CURLOPT_POST, true);
 
-    $json = json_decode($response);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, "api_token=" . $apiKey . "&id=" . $projectId);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($curl);
+        curl_close($curl);
+
+        $json = json_decode($response);
+    }
     return $json;
 }
