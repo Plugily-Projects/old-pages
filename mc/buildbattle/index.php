@@ -80,7 +80,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-check"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                        <?php echo localize("Alert-Tip-Desc"); ?>
+                        <?php echo localize("Alert-Tip-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-info alert-white rounded">
@@ -88,7 +88,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-info-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Info"); ?></strong>
-                        <?php echo localize("Alert-Info-Desc"); ?>
+                        <?php echo localize("Alert-Info-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-warning alert-white rounded">
@@ -96,7 +96,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-warning"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
-                        <?php echo localize("Alert-Warn-Desc"); ?>
+                        <?php echo localize("Alert-Warn-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-danger alert-white rounded">
@@ -104,7 +104,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-times-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
-                        <?php echo localize("Alert-Danger-Desc"); ?>
+                        <?php echo localize("Alert-Danger-Description"); ?>
                     </div>
                 </div>
             </ul>

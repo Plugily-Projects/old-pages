@@ -81,7 +81,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-check"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                        <?php echo localize("Alert-Tip-Desc"); ?>
+                        <?php echo localize("Alert-Tip-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-info alert-white rounded">
@@ -89,7 +89,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-info-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Info"); ?></strong>
-                        <?php echo localize("Alert-Info-Desc"); ?>
+                        <?php echo localize("Alert-Info-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-warning alert-white rounded">
@@ -97,7 +97,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-warning"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
-                        <?php echo localize("Alert-Warn-Desc"); ?>
+                        <?php echo localize("Alert-Warn-Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-danger alert-white rounded">
@@ -105,7 +105,7 @@ include_once("../../inc/tracking.php");
                         <i class="fa fa-times-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
-                        <?php echo localize("Alert-Danger-Desc"); ?>
+                        <?php echo localize("Alert-Danger-Description"); ?>
                     </div>
                 </div>
             </ul>
@@ -113,7 +113,7 @@ include_once("../../inc/tracking.php");
                 <?php echo localize("Village-Index-Enhancements-Content"); ?></h3>
             <ul>
                 <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.html"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a></li>
-                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html"><?php echo localize("Sidebar-Enhancements-FAQ"); ?></a>
+                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
                 </li>
             </ul>
         </div>
@@ -152,7 +152,7 @@ include_once("../../inc/tracking.php");
                             <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("VD-Sidebar-Files-Explained"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
