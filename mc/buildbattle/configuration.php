@@ -58,10 +58,14 @@ include_once("../../inc/poeditor_reader.php");
             <hr>
             <h3 id="bungee-yml">bungee.yml</h3>
             <p>BungeeCord configuration is there. You must enable bungee support first in <strong>config.yml</strong>. Set <strong>BungeeActivated</strong> to <strong>true</strong> to enable it.</p>
-            <h3 id="-what-is-motd-manager-">💡 What is MOTD Manager?</h3>
-            <p>MOTD Manager modifies server&#39;s MOTD to make it readable by Server Bungeecord systems like <a
-                        href="https://www.spigotmc.org/resources/timocloud-the-most-efficient-cloud-system.53757/">Timo Cloud</a> and <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">Bungee
-                    Signs</a>. MOTD is based on game state if that option is enabled.</p>
+            <div style="margin-left: 45px;"><strong>What is MOTD Manager?</strong>
+                MOTD Manager modifies server&#39;s MOTD to make it readable by Server Bungeecord systems like <a
+                        href="https://www.spigotmc.org/resources/timocloud-the-most-efficient-cloud-system.53757/">Timo
+                    Cloud</a>
+                and <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">Bungee Signs</a>. MOTD is based
+                on game state
+                if that option is enabled.
+            </div>
             <hr>
             <h3 id="config-yml">config.yml</h3>
             <p>config.yml is very well commented. No need to explain more any part of it.</p>
@@ -86,7 +90,7 @@ include_once("../../inc/poeditor_reader.php");
                 <?php
                 $json = readLanguages(196919);
                 foreach ($json->result->languages as $value) {
-                    if ($value->name == "English" || $value->percentage < 80.0) {
+                    if ($value->name == "English") {
                         continue;
                     }
                     $flag = $value->code;
@@ -105,8 +109,18 @@ include_once("../../inc/poeditor_reader.php");
                         case "Korean":
                             $flag = "kr";
                             break;
+                        case "Japanese":
+                            $flag = "jp";
+                            break;
+                        case "Norwegian Bokmål":
+                            $flag = "no";
+                            break;
                     }
-                    echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                    if($value->percentage < 80.0) {
+                        echo "<li class='text-muted'><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated) (not implemented)</li>";
+                    } else {
+                        echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                    }
                 }
                 ?>
             </ul>

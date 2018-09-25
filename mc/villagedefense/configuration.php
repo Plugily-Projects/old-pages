@@ -113,7 +113,7 @@ include_once("../../inc/poeditor_reader.php");
                 <?php
                     $json = readLanguages(190635);
                     foreach($json->result->languages as $value) {
-                        if($value->name == "English" || $value->percentage < 80.0) {
+                        if($value->name == "English") {
                             continue;
                         }
                         $flag = $value->code;
@@ -132,8 +132,18 @@ include_once("../../inc/poeditor_reader.php");
                             case "Korean":
                                 $flag = "kr";
                                 break;
+                            case "Japanese":
+                                $flag = "jp";
+                                break;
+                            case "Norwegian Bokmål":
+                                $flag = "no";
+                                break;
                         }
-                        echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                        if($value->percentage < 80.0) {
+                            echo "<li class='text-muted'><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated) (not implemented)</li>";
+                        } else {
+                            echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                        }
                     }
                 ?>
             </ul>
