@@ -1,6 +1,6 @@
 <?php
-include_once('../../json_localization.php');
-include_once("../../tracking.php");
+include_once('../../inc/json_localization.php');
+include_once("../../inc/tracking.php");
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,8 @@ include_once("../../tracking.php");
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <link rel="stylesheet" href="../../markdown.css">
-    <link rel="stylesheet" href="../../alerts.css">
+    <link rel="stylesheet" href="../../inc/css/markdown.css">
+    <link rel="stylesheet" href="../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,8 +22,8 @@ include_once("../../tracking.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
 
-    <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="../../inc/img/faviconmobile.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../inc/img/favicon.ico">
 
     <style>
         .fixed-nav-index {
@@ -116,7 +116,7 @@ include_once("../../tracking.php");
                     <img src="https://i.imgur.com/OGAv7qB.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
-                        <li style="list-style-image: url('../../img/you-are-here.png');">
+                        <li style="list-style-image: url('../../inc/img/you-are-here.png');">
                             <a href="https://plajer.xyz/wiki/mc/buildbattle/index.php"><?php echo localize("VD-Sidebar-Home"); ?></a>
                         </li>
                         <li>

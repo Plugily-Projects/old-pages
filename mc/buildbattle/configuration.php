@@ -1,6 +1,7 @@
 <?php
-include_once('../../json_localization.php');
-include_once("../../tracking.php");
+include_once('../../inc/json_localization.php');
+include_once("../../inc/tracking.php");
+include_once("../../inc/poeditor_reader.php");
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +11,8 @@ include_once("../../tracking.php");
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <link rel="stylesheet" href="../../markdown.css">
-    <link rel="stylesheet" href="../../alerts.css">
+    <link rel="stylesheet" href="../../inc/css/markdown.css">
+    <link rel="stylesheet" href="../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,8 +23,8 @@ include_once("../../tracking.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
 
-    <link rel="icon" sizes="192x192" href="../../img/faviconmobile.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="../../inc/img/faviconmobile.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../inc/img/favicon.ico">
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
@@ -79,19 +80,44 @@ include_once("../../tracking.php");
             <p>However, you can use localization support which was implemented in BB 3.</p>
             <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.</p>
             <p><img src="https://i.imgur.com/avlfYLU.png" alt=""></p>
-            <p><strong>Valid localizations:</strong></p>
+            <p><strong>Valid localizations (gathered via POEditor API):</strong></p>
             <ul>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-gb.png" alt=""> default (English)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-pl.png" alt=""> pl (Polish/Polski)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-de.png" alt=""> de (German/Deutsch) (by Tigerkatze)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-es.png" alt=""> es (Spanish/Español) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-hu.png" alt=""> hu (Hungarian/Magyar) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-vn.png" alt=""> vn (Vietnamese/Việt) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-cn.png" alt=""> zh (Chinese (Simplified)/简体中文) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-kr.png" alt=""> kr (Korean/한국의) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-tr.png" alt=""> tr (Turkish/Türk) (by POEditor contributors)</li>
-                <li><img src="https://www.icon2s.com/wp-content/uploads/2013/08/00_cctld-id.png" alt=""> id (Indonesian/Indonesia) (by POEditor contributors)</li>
+                <li><img src="https://www.plajer.xyz/shared/flags/gb.png" alt=""> English (primary)</li>
+                <?php
+                $json = readLanguages(196919);
+                foreach ($json->result->languages as $value) {
+                    if ($value->name == "English" || $value->percentage < 80.0) {
+                        continue;
+                    }
+                    $flag = $value->code;
+
+                    //Flag fixer
+                    switch ($value->name) {
+                        case "Vietnamese":
+                            $flag = "vn";
+                            break;
+                        case "Chinese (simplified)":
+                            $flag = "cn";
+                            break;
+                        case "Chinese (traditional)":
+                            $flag = "hk";
+                            break;
+                        case "Korean":
+                            $flag = "kr";
+                            break;
+                    }
+                    echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                }
+                ?>
             </ul>
+            <div class="alert alert-success alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
+                    You can always translate our plugin for free <a href="https://poeditor.com/join/project/wEpcZ7Htnn" target="_blank">joining here (click)</a>
+                </div>
+            </div>
             <hr>
             <h3 id="stats-storage-types">Stats storage types</h3>
             <p><strong>Current stats storage types for player statistics:</strong></p>
@@ -131,7 +157,7 @@ include_once("../../tracking.php");
                         <li>
                             <a href="https://plajer.xyz/wiki/mc/buildbattle/faq.php"><?php echo localize("VD-Sidebar-FAQ"); ?></a> - <?php echo localize("VD-Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
-                        <li style="list-style-image: url('../../img/you-are-here.png');">
+                        <li style="list-style-image: url('../../inc/img/you-are-here.png');">
                             <a href="https://plajer.xyz/wiki/mc/buildbattle/configuration.php"><?php echo localize("VD-Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
@@ -151,7 +177,8 @@ include_once("../../tracking.php");
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
+                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
             </div>
         </footer>
     </div>
