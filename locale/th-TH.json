@@ -30,7 +30,7 @@
     "Alert-Info": "ข้อมูล!",
     "Alert-Warn": "คำเตือน!",
     "Alert-Danger": "อันตราย!",
-    "Alert-Tip-Desc": "เคล็ดลับที่ดีคุณควรใช้",
+    "Alert-Tip-Description": "เคล็ดลับที่ดีคุณควรใช้",
     "Alert-Info-Description": "เนื้อหาบางอย่างคุณอาจต้องอ่าน",
     "Alert-Warn-Description": "คุณได้ทำอะไรบางอย่างผิดพลาด",
     "Alert-Danger-Description": "อ่านนี่ถ้าคุณไม่อยากมีปัญหา",
