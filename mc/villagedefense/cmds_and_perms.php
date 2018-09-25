@@ -49,14 +49,14 @@ include_once("../../inc/tracking.php");
                     permissions</a></li>
             </ul>
             <h2 id="commands-and-permissions">Commands and permissions</h2>
-            <p><code>[required argument] (optional argument)</code></p>
+            <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
             <h3 id="-player-commands">🔵 Player commands</h3>
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Global-Command"); ?></th>
-                    <th><?php echo localize("Global-Permission"); ?></th>
-                    <th><?php echo localize("Global-Description"); ?></th>
+                    <th><?php echo localize("Command"); ?></th>
+                    <th><?php echo localize("Permission"); ?></th>
+                    <th><?php echo localize("Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -73,17 +73,17 @@ include_once("../../inc/tracking.php");
                 </tr>
                 <tr>
                     <td>/vd stats (online player)</td>
-                    <td>none</td>
+                    <td><?php echo localize("None"); ?></td>
                     <td>Shows your stats</td>
                 </tr>
                 <tr>
                     <td>/vd leave</td>
-                    <td>none</td>
+                    <td><?php echo localize("None"); ?></td>
                     <td>Quits current game. You can disable game quit in config.yml</td>
                 </tr>
                 <tr>
                     <td>/vd top [statistic]</td>
-                    <td>none</td>
+                    <td><?php echo localize("None"); ?></td>
                     <td>Shows top 10 users from requested statistic</td>
                 </tr>
                 <tr>
@@ -98,7 +98,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
                     You can use <code>villagedefense.admin.*</code> permission to give all admin commands
                     permission
                 </div>
@@ -106,10 +106,10 @@ include_once("../../inc/tracking.php");
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Global-Command"); ?></th>
-                    <th><?php echo localize("Global-Permission"); ?></th>
-                    <th><?php echo localize("Global-Description"); ?></th>
-                    <th>Valid executors</th>
+                    <th><?php echo localize("Command"); ?></th>
+                    <th><?php echo localize("Permission"); ?></th>
+                    <th><?php echo localize("Description"); ?></th>
+                    <th><?php echo localize("Valid-Executors"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -248,7 +248,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
                     Using dots <code>.</code> in custom permissions will not work and will break permission, don't use
                     them!
                 </div>
@@ -299,7 +299,7 @@ include_once("../../inc/tracking.php");
                 <div class="icon">
                     <i class="fa fa-info-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Info"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Info"); ?></strong>
                     <strong>Premium kits</strong> also unlocks with Vip/Mvp or Elite permissions and <strong>leveled
                         kits</strong>
                     are
@@ -312,56 +312,56 @@ include_once("../../inc/tracking.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/index.php"><?php echo localize("VD-Sidebar-Home"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("VD-Sidebar-Free-Maps"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/addons.php"><?php echo localize("VD-Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/tips.php"><?php echo localize("VD-Sidebar-Server-Tips"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/papi_placeholders.php"><?php echo localize("VD-Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("VD-Sidebar-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("VD-Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("VD-Sidebar-FAQ"); ?></a> - <?php echo localize("VD-Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("VD-Sidebar-Files-Explained"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("VD-Sidebar-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("VD-Sidebar-Developer-API"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("VD-Sidebar-Java-Docs"); ?></a>
+                            <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("VD-Sidebar-Enhancements-Addon"); ?></h3>
+                    <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.php"><?php echo localize("VD-Sidebar-Enhancements-FAQ"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
                         </li>
                     </ul>
                 </div>

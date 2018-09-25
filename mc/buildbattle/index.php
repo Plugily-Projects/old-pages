@@ -41,15 +41,21 @@ include_once("../../inc/tracking.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+            <?php
+            if (localize("Language-Name") != "English") {
+                echo "<div class='alert alert-warning' role='alert'>" . localize("Language-Name") . " is not your language?
+                <a href='https://plajer.xyz/wiki/reset.php?redirect=https://plajer.xyz/wiki/mc/buildbattle/index.php'>Click here to use English one!</a></div>";
+            }
+            ?>
             <p><img src="https://i.imgur.com/dplq0h0.png" alt=""></p>
             <h2 id="build-battle-3-official-wiki-">Build Battle 3 official wiki!</h2>
             <table>
                 <thead>
                 <tr>
-                    <th>Commands and Permissions</th>
-                    <th>Simple arena setup</th>
-                    <th>Maps</th>
-                    <th>Developers API</th>
+                    <th><a href="https://plajer.xyz/wiki/mc/buildbattle/cmds_and_perms.php">Commands and Permissions</a></th>
+                    <th><a href="https://www.youtube.com/watch?v=UOfrzj0WdzM">Simple arena setup</a></th>
+                    <th><a href="https://plajer.xyz/wiki/mc/buildbattle/free_maps.php">Maps</a></th>
+                    <th><a href="https://plajer.xyz/wiki/mc/buildbattle/api.php">Developers API</a></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -60,12 +66,6 @@ include_once("../../inc/tracking.php");
                     <td><img src="https://i.imgur.com/RDZGbgs.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Commands-and-Permissions">Commands and Permissions</a></td>
-                    <td><a href="https://www.youtube.com/watch?v=UOfrzj0WdzM">Simple arena setup</a></td>
-                    <td><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/BuildBattle-maps">Free maps</a></td>
-                    <td><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API">Developers API</a></td>
-                </tr>
-                <tr>
                     <td>BB 3 commands and permissions</td>
                     <td>How to create arena tutorial</td>
                     <td>Download free game maps</td>
@@ -73,38 +73,38 @@ include_once("../../inc/tracking.php");
                 </tr>
                 </tbody>
             </table>
-            <h3 id="basic-icons-you-need-to-know-"><?php echo localize("VD-Index-Basic-Alerts-Info"); ?></h3>
+            <h3 id="basic-icons-you-need-to-know-"><?php echo localize("Basic-Alerts-Info"); ?></h3>
             <ul>
                 <div class="alert alert-success alert-white rounded">
                     <div class="icon">
                         <i class="fa fa-check"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Tip"); ?></strong>
-                        <?php echo localize("VD-Alert-Tip-Desc"); ?>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
+                        <?php echo localize("Alert-Tip-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-info alert-white rounded">
                     <div class="icon">
                         <i class="fa fa-info-circle"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Info"); ?></strong>
-                        <?php echo localize("VD-Alert-Info-Desc"); ?>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Info"); ?></strong>
+                        <?php echo localize("Alert-Info-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-warning alert-white rounded">
                     <div class="icon">
                         <i class="fa fa-warning"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Warn"); ?></strong>
-                        <?php echo localize("VD-Alert-Warn-Desc"); ?>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
+                        <?php echo localize("Alert-Warn-Desc"); ?>
                     </div>
                 </div>
                 <div class="alert alert-danger alert-white rounded">
                     <div class="icon">
                         <i class="fa fa-times-circle"></i>
                     </div>
-                    <div style="margin-left: 45px;"><strong><?php echo localize("VD-Alert-Danger"); ?></strong>
-                        <?php echo localize("VD-Alert-Danger-Desc"); ?>
+                    <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                        <?php echo localize("Alert-Danger-Desc"); ?>
                     </div>
                 </div>
             </ul>
@@ -114,44 +114,44 @@ include_once("../../inc/tracking.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="https://i.imgur.com/OGAv7qB.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("VD-Sidebar-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/index.php"><?php echo localize("VD-Sidebar-Home"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/cmds_and_perms.php"><?php echo localize("VD-Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/free_maps.php"><?php echo localize("VD-Sidebar-Free-Maps"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/addons.php"><?php echo localize("VD-Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/papi_placeholders.php"><?php echo localize("VD-Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("VD-Sidebar-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("VD-Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/faq.php"><?php echo localize("VD-Sidebar-FAQ"); ?></a> - <?php echo localize("VD-Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/configuration.php"><?php echo localize("VD-Sidebar-Files-Explained"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("VD-Sidebar-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/api.php"><?php echo localize("VD-Sidebar-Developer-API"); ?></a>
+                            <a href="https://plajer.xyz/wiki/mc/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("VD-Sidebar-Java-Docs"); ?></a>
+                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>
