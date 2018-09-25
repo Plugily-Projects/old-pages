@@ -30,7 +30,7 @@
     "Alert-Info": "Info!",
     "Alert-Warn": "Avertisment!",
     "Alert-Danger": "Pericol!",
-    "Alert-Tip-Desc": "Sfat pe care l-ai putea folosi!",
+    "Alert-Tip-Description": "Sfat pe care l-ai putea folosi!",
     "Alert-Info-Description": "Ceva tare ce s-ar putea să vrei să citești!",
     "Alert-Warn-Description": "Poți face ceva greșit!",
     "Alert-Danger-Description": "Citește asta dacă nu vrei probleme!",
