@@ -15,20 +15,18 @@ include_once("../../inc/tracking.php");
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../../inc/css/bootstrap-4.1.3.min.css" rel="stylesheet">
 
-    <link rel="icon" sizes="192x192" href="../../inc/img/faviconmobile.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../inc/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="../../inc/img/favicon/favicon-mobile.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../inc/img/favicon/favicon.ico">
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
     <a class="navbar-brand" href="#">
-        <img src="https://i.imgur.com/HuLGRxV.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="https://i.imgur.com/gDyj2on.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Plajer's Lair wiki
     </a>
 </nav>
@@ -60,7 +58,7 @@ include_once("../../inc/tracking.php");
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
-                    <img src="https://i.imgur.com/OGAv7qB.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                    <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
