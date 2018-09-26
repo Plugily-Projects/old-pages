@@ -133,6 +133,11 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                     <td>In-game teammate nick</td>
                     <td>Teams game type</td>
                 </tr>
+                <tr>
+                    <td><a href="https://www.spigotmc.org/wiki/placeholderapi-placeholders/" target="_blank">All PlaceholderAPI placeholders</a></td>
+                    <td>Every placeholder supported by PAPI</td>
+                    <td><a href="https://www.spigotmc.org/resources/placeholderapi.6245/" target="_blank">PlaceholderAPI</a></td>
+                </tr>
                 </tbody>
             </table>
         </div>

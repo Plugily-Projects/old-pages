@@ -38,31 +38,22 @@ include_once("../../inc/tracking.php");
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
-                <li><strong><a
-                                href="#-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> Limitation of
-                            liability disclaimer</a></strong></li>
+                <li><strong><a href="#-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> Limitation of liability disclaimer</a></strong></li>
                 <li>
-                    <a href="#how-to-set-up-the-shop-">How
-                        to setup the shop?</a></li>
+                    <a href="#how-to-set-up-the-shop-">How to setup the shop?</a></li>
                 <li>
-                    <a href="#can-i-set-up-secret-well-">Can
-                        I set up secret well?</a></li>
+                    <a href="#can-i-set-up-secret-well-">Can I set up secret well?</a></li>
                 <li>
-                    <a href="#supported-versions-of-village-defense-3">What
-                        versions do support Village Defense 3?</a></li>
+                    <a href="#supported-versions-of-village-defense-3">What versions do support Village Defense 3?</a></li>
                 <li>
-                    <a href="#players-can-t-join-through-signs">Players
-                        can&#39;t join through signs</a></li>
+                    <a href="#players-can-t-join-through-signs">Players can&#39;t join through signs</a></li>
                 <li>
-                    <a href="#language-yml-file-is-empty">language.yml
-                        file is empty!</a></li>
-                <li><a href="#how-power-ups-work-">How
-                        power-ups work?</a></li>
-                <li><a href="#what-s-new-in-vd-3-">What&#39;s
-                        new in VD 3?</a></li>
+                    <a href="#language-yml-file-is-empty">language.yml file is empty!</a></li>
+                <li><a href="#how-power-ups-work-">How power-ups work?</a></li>
+                <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
+                <li><a href="#what-s-new-in-vd-3-">What&#39;s new in VD 3?</a></li>
                 <li>
-                    <a href="#how-can-i-donate-you-">Can
-                        I donate you?</a></li>
+                    <a href="#how-can-i-donate-you-">Can I donate you?</a></li>
             </ul>
             <hr>
             <h3 id="-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> <strong>Limitation of liability
@@ -192,6 +183,64 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <p>Every option and messages from these power-ups are configurable. Drop chance, time of power-up,
                 disabling/enabling specific power-ups are configurable via <strong>config.yml</strong>. Messages are
                 configurable via <strong>language.yml</strong>.</p>
+            <hr>
+            <h3 id="scoreboard-variables">Scoreboard variables</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th><?php echo localize("Description"); ?></th>
+                    <th>Requirements</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>%MIN_PLAYERS%</td>
+                    <td>Minimum players size</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%PLAYERS%</td>
+                    <td>Size of all players in arena</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%PLAYERS_LEFT%</td>
+                    <td>Size of alive players in arena</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%TIME%</td>
+                    <td>Current arena timer (ex. 10 seconds before start)</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%VILLAGERS%</td>
+                    <td>Alive villagers number</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%ZOMBIES%</td>
+                    <td>Total zombies amount in wave (not alive ones!)</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%ORBS%</td>
+                    <td>Player's orbs amount (game currency)</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%ROTTEN_FLESH%</td>
+                    <td>Arena's rotten flesh amount (more flesh, more bonus hearts) (see more <a href="#can-i-set-up-secret-well-">here</a>)</td>
+                    <td><?php echo localize("None"); ?></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.spigotmc.org/wiki/placeholderapi-placeholders/" target="_blank">All PlaceholderAPI placeholders</a></td>
+                    <td>Every placeholder supported by PAPI</td>
+                    <td><a href="https://www.spigotmc.org/resources/placeholderapi.6245/" target="_blank">PlaceholderAPI</a></td>
+                </tr>
+                </tbody>
+            </table>
             <hr>
             <h3 id="what-s-new-in-vd-3-">What&#39;s new in VD 3?</h3>
             <p>There are many <strong>major and minor changes</strong> in Village Defense 3.</p>
