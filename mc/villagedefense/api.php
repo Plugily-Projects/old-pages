@@ -39,6 +39,7 @@ include_once("../../inc/tracking.php");
             </h4>
             <h2><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
+                <li><a href="#maven">Maven repository</a></li>
                 <li><a href="#events">API Events</a></li>
                 <li><a href="#stats-storage">Stats storage</a>
                 </li>
@@ -54,6 +55,28 @@ include_once("../../inc/tracking.php");
                     examples.
                 </div>
             </div>
+            <h1 id="maven">Maven repository</h1>
+            <p>Since version <strong>3.11.3</strong> we're using maven to distribute plugin archives for API purposes.</p>
+            <p>Maven repository usually contains latest releases, if not, please check in few days if release is there.</p>
+            <p><strong>How to access repo:</strong></p>
+            <p>1. Add repository</p>
+            <pre><code class="lang-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">repositories</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">repository</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>plajerlair-repo<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>https://maven.plajer.xyz/minecraft<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">repository</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">repositories</span>&gt;</span></code></pre>
+            <p>2. Add the dependency</p>
+            <pre><code class="lang-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>pl.plajer<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>villagedefense3<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span><strong>{version}</strong><span class="hljs-tag">&lt;/<span
+                                class="hljs-name">version</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">/dependencies</span>&gt;</span></code></pre>
+            <hr>
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
@@ -79,7 +102,7 @@ include_once("../../inc/tracking.php");
             <p>The event is called <strong>everytime</strong> any Village Defense event is called because it&#39;s a
                 generic
                 event</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onEventCall</span><span
@@ -96,7 +119,7 @@ include_once("../../inc/tracking.php");
             <h3 id="-villagegamejoinattemptevent-cancellable-"><strong>VillageGameJoinAttemptEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameJoin(VillageGameJoinAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -130,7 +153,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestartevent-"><strong>VillageGameStartEvent</strong></h3>
             <p>The event is called when the arena starts.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStart</span><span
@@ -146,7 +169,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegameleaveattemptevent-"><strong>VillageGameLeaveAttemptEvent</strong></h3>
             <p>The event is called when a player is trying to leave an arena.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameQuit(VillageGameLeaveAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -164,7 +187,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestopevent-"><strong>VillageGameStopEvent</strong></h3>
             <p>The event is called when a game is stopped.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStop</span><span
@@ -181,7 +204,7 @@ include_once("../../inc/tracking.php");
             <h3 id="-villageplayerchoosekitevent-cancellable-"><strong>VillagePlayerChooseKitEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when the player chose kit in game.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onKitChoose</span><span
@@ -214,7 +237,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagewaveendevent-"><strong>VillageWaveEndEvent</strong></h3>
             <p>The event is called when the wave is finished (all zombies are killed).</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveEnd</span><span class="hljs-params">(VillageWaveEndEvent event)</span></span>{
@@ -232,7 +255,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagewavestartevent-"><strong>VillageWaveStartEvent</strong></h3>
             <p>The event is called when the wave starts.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveStart</span><span
@@ -249,7 +272,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegamestatechangeevent-"><strong>VillageGameStateChangeEvent</strong></h3>
             <p>The event is called when arena game state changes.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    @EventHandler
     public void <span class="hljs-keyword">on</span>GameStateChange(VillageGameStateChangeEvent event){
         String <span class="hljs-keyword">state</span> = e.getArenaState().getFormattedName();
@@ -266,7 +289,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villageplayerstatisticchangeevent-"><strong>VillagePlayerStatisticChangeEvent</strong></h3>
             <p>The event is called when the player receives a new statistic.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onStatChange</span><span class="hljs-params">(VillagePlayerStatisticChangeEvent event)</span></span>{
@@ -287,7 +310,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagegolemupgradeevent-"><strong>VillageGolemUpgradeEvent</strong></h3>
             <p>The event is called when the player upgrades a golem.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGolemUpgrade</span>(<span
                                 class="hljs-params">VillageGolemUpgradeEvent <span
@@ -315,7 +338,7 @@ include_once("../../inc/tracking.php");
             <hr>
             <h3 id="-villagepoweruppickevent-"><strong>VillagePowerupPickEvent</strong></h3>
             <p>The event is called when the player picks up a power-up.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span
                                 class="hljs-params">VillagePowerupPickEvent <span
@@ -343,7 +366,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using VD3 API - Stats Storage class.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span
                                 class="hljs-keyword">int</span> <span class="hljs-title">getZombieKills</span><span
                                 class="hljs-params">(Player p)</span></span>{
@@ -357,7 +380,7 @@ include_once("../../inc/tracking.php");
                     players</strong>
             </h3>
             <p>To access sorted statistics Map with players you must call it from StatsStorage class.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span
                                 class="hljs-keyword">void</span> <span class="hljs-title">printBestStats</span>(<span
                                 class="hljs-params">StatsStorage.StatisticType statistic</span>)</span>{
@@ -440,7 +463,7 @@ include_once("../../inc/tracking.php");
             <p>Registering new kit is quite simple.
                 We need to implement all methods from abstract Kit class and edit it by yourself.
                 After that just register it via KitRegistry.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Example") ?>:</strong></p>
             <pre><code class="lang-java">        <span class="hljs-comment">//This kit will be premium</span>
         Kit supporter = <span class="hljs-keyword">new</span> PremiumKit() {
             <span class="hljs-comment">//We need to implement methods from abstract Kit class</span>
@@ -491,7 +514,8 @@ include_once("../../inc/tracking.php");
             <h1 id="manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</h1>
             <h2 id="join-attempt">Join attempt</h2>
             <p>To force player to join specified arena you can use our <code>ArenaManager</code> class.</p>
-            <pre><code class="lang-java">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span class="hljs-params">(String arena, Player player)</span></span>{
+            <pre><code class="lang-java">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span
+                                class="hljs-params">(String arena, Player player)</span></span>{
     ArenaManager.joinAttempt(player, ArenaRegistry.getArena(arena));
   }
 
