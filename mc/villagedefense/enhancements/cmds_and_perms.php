@@ -118,7 +118,7 @@ include_once("../../../inc/tracking.php");
                 <tbody>
                 <tr>
                     <td>/vdach list</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td>villagedefense.achievements.command</td>
                     <td>Shows list of unlocked achievements</td>
                 </tr>
                 <tr>
