@@ -40,33 +40,32 @@ include_once("../../inc/tracking.php");
             <?php
             if (localize("Language-Name") != "English") {
                 echo "<div class='alert alert-warning' role='alert'>" . localize("Language-Name") . " is not your language?
-                <a href='https://plajer.xyz/wiki/reset.php?redirect=https://plajer.xyz/wiki/mc/villagedefense/index.php'>Click here to use English one!</a></div>";
+                <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/buildbattle/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <br/>
-            <p><img src="../../inc/img/village-banner.png" alt=""></p>
-            <h2><?php echo localize("Village-Index-Wiki-Hello"); ?></h2>
+            <p><img src="https://i.imgur.com/dplq0h0.png" alt=""></p>
+            <h2 id="build-battle-3-official-wiki-">Build Battle 3 official wiki!</h2>
             <table>
                 <thead>
                 <tr>
-                    <th><a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Village-Index-List-FAQ"); ?> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?></a></th>
-                    <th><a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Village-Index-List-Simple-Arena-Setup"); ?></a></th>
-                    <th><a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("Village-Index-List-Maps"); ?></a></th>
-                    <th><a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("Village-Index-List-Developer-API"); ?></a></th>
+                    <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php">Commands and Permissions</a></th>
+                    <th><a href="https://www.youtube.com/watch?v=UOfrzj0WdzM">Simple arena setup</a></th>
+                    <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php">Maps</a></th>
+                    <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php">Developers API</a></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><img src="https://i.imgur.com/cBRPKFZ.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/jWpKUlC.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/a1mWdrs.png" alt=""></td>
-                    <td><img src="https://i.imgur.com/bNiewrg.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/8FJE8tg.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/ekmDyHw.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/4SndPkW.png" alt=""></td>
+                    <td><img src="https://i.imgur.com/RDZGbgs.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td><?php echo localize("Village-Index-List-FAQ-Description"); ?></td>
-                    <td><?php echo localize("Village-Index-List-Simple-Arena-Setup-Description"); ?></td>
-                    <td><?php echo localize("Village-Index-List-Maps-Description"); ?></td>
-                    <td><?php echo localize("Village-Index-List-Developer-API-Description"); ?></td>
+                    <td>BB 3 commands and permissions</td>
+                    <td>How to create arena tutorial</td>
+                    <td>Download free game maps</td>
+                    <td>Some stuff for developers</td>
                 </tr>
                 </tbody>
             </table>
@@ -105,78 +104,59 @@ include_once("../../inc/tracking.php");
                     </div>
                 </div>
             </ul>
-            <h3>
-                <?php echo localize("Village-Index-Enhancements-Content"); ?></h3>
-            <ul>
-                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.html"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a></li>
-                <li><a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.html"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
-                </li>
-            </ul>
         </div>
 
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
-                    <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                    <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
-                        </li>
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
-                        </li>
-                    </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
-                    <ul style="list-style-type: disc;">
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
-                        </li>
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
+                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
-                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
             </div>
         </footer>
     </div>

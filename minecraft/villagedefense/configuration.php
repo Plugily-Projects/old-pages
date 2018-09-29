@@ -85,7 +85,7 @@ include_once("../../inc/poeditor_reader.php");
             <h3 id="config-yml">config.yml</h3>
             <p>config.yml is very well commented. No need to explain more any part of it.</p>
             <p>For customizing custom permissions check out <a
-                        href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php#custom-permissions">this
+                        href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php#custom-permissions">this
                     section</a>.</p>
             <p><strong>Part of config.yml</strong></p>
             <p><img src="https://i.imgur.com/3fH8j8k.png" alt=""></p>
@@ -170,22 +170,22 @@ include_once("../../inc/poeditor_reader.php");
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
@@ -194,17 +194,17 @@ include_once("../../inc/poeditor_reader.php");
                             <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
                             <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
@@ -213,10 +213,10 @@ include_once("../../inc/poeditor_reader.php");
                     <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
                         </li>
                     </ul>
                 </div>

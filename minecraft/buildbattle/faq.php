@@ -147,19 +147,19 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
@@ -168,17 +168,17 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                             <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
                             <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>

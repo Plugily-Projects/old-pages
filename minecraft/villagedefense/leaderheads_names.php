@@ -11,7 +11,6 @@ include_once("../../inc/tracking.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
-    <link rel="stylesheet" href="../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,44 +32,41 @@ include_once("../../inc/tracking.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
-            <h1 id="village-defense-3-addons">Village Defense 3 Addons</h1>
-            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
-            <ul>
-                <li><a href="#bungee-signs-not-official">Bungee signs
-                        addon</a></li>
-                <li><a href="#enhancements-addon">VD Enhancements
-                        addon</a></li>
-            </ul>
-            <h2 id="bungee-signs-not-official">Bungee Signs (not official)</h2>
-            <p>To provide game signs support like this example:</p>
-            <p><img src="https://i.imgur.com/fY8sySX.png" alt=""></p>
-            <p>You need to use an external plugin. Bungee Signs offer this support.
-                Just put it on lobby server and configure it!</p>
-            <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">https://www.spigotmc.org/resources/bungeesigns.6563/</a>
-            </p>
-            <div class="alert alert-warning alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-warning"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
-                    Addon is not made by VD3 staff and bugs/features should be reported to plugin&#39;s
-                    author!
-                </div>
-            </div>
-            <h2 id="enhancements-addon">Enhancements addon</h2>
-            <p><img src="https://i.imgur.com/cfEvh40.png" alt=""></p>
-            <p>This addon extends Village Defense features allowing you to implement your own custom kits and
-                achievements.</p>
-            <div class="alert alert-warning alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-warning"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
-                    This addon is premium!
-                </div>
-            </div>
-            <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/55010/">https://www.spigotmc.org/resources/55010/</a>
-            </p>
+            <h1 id="list-of-leaderheads-statistics">List of LeaderHeads statistics</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>Statistic name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>vd-kills</td>
+                    <td>Shows the players with the most kills</td>
+                </tr>
+                <tr>
+                    <td>vd-deaths</td>
+                    <td>Shows the players with the most deaths</td>
+                </tr>
+                <tr>
+                    <td>vd-games</td>
+                    <td>Shows the players with the most games played</td>
+                </tr>
+                <tr>
+                    <td>vd-highestwave</td>
+                    <td>Shows the players with the highest wave reached</td>
+                </tr>
+                <tr>
+                    <td>vd-xp</td>
+                    <td>Shows the players with the most xp</td>
+                </tr>
+                <tr>
+                    <td>vd-level</td>
+                    <td>Shows the players with the highest level</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
@@ -80,22 +76,22 @@ include_once("../../inc/tracking.php");
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                        </li>
+                        <li>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                        </li>
+                        <li>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
-                        </li>
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
-                        </li>
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
@@ -104,17 +100,17 @@ include_once("../../inc/tracking.php");
                             <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
                             <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
@@ -123,10 +119,10 @@ include_once("../../inc/tracking.php");
                     <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
                         </li>
                     </ul>
                 </div>

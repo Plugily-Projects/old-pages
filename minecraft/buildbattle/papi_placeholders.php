@@ -11,7 +11,6 @@ include_once("../../inc/tracking.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
-    <link rel="stylesheet" href="../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,26 +32,45 @@ include_once("../../inc/tracking.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
-            <h1 id="build-battle-3-addons">Build Battle 3 Addons</h1>
-            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
-            <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Addons#bungee-signs-not-official">Bungee signs addon</a></li>
-            </ul>
-            <h2 id="bungee-signs-not-official-">Bungee Signs (not official)</h2>
-            <p>To provide game signs support like this example:</p>
-            <p><img src="https://i.imgur.com/4pOEcZH.png" alt=""></p>
-            <p>You need to use an external plugin. Bungee Signs offer this support.
-                Just put it on lobby server and configure it!</p>
-            <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">https://www.spigotmc.org/resources/bungeesigns.6563/</a></p>
-
-            <div class="alert alert-danger alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-times-circle"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
-                    Addon is not made by BuildBattle staff and bugs/features should be reported to plugin's author!
-                </div>
-            </div>
+            <h1 id="list-of-placeholderapi-s-placeholders"><?php echo localize("List-Of-Placeholders"); ?></h1>
+            <table>
+                <thead>
+                <tr>
+                    <th><?php echo localize("Placeholder"); ?></th>
+                    <th><?php echo localize("Description"); ?></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>%buildbattle_blocks_broken%</td>
+                    <td>Shows your broken blocks in game</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_blocks_placed%</td>
+                    <td>Shows your placed blocks in game</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_games_played%</td>
+                    <td>Shows your played games count</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_wins%</td>
+                    <td>Shows your total wins count</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_loses%</td>
+                    <td>Shows your total loses count</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_highest_win%</td>
+                    <td>Shows your highest win points number</td>
+                </tr>
+                <tr>
+                    <td>%buildbattle_particles_used%</td>
+                    <td>Shows amount of particles you&#39;ve placed</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
@@ -62,19 +80,19 @@ include_once("../../inc/tracking.php");
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                        </li>
+                        <li>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
-                        </li>
-                        <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
@@ -83,17 +101,17 @@ include_once("../../inc/tracking.php");
                             <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
                         </li>
                     </ul>
                     <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://plajer.xyz/wiki/mc/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
                             <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
