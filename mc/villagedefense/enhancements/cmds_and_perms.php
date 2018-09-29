@@ -14,9 +14,9 @@ include_once("../../../inc/tracking.php");
     <link rel="stylesheet" href="../../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../../inc/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Material Design Bootstrap -->
-    <link href="../../../inc/css/mdb-4.5.9.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="../../../inc/css/bootstrap-4.1.3.min.css" rel="stylesheet">
 
