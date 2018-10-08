@@ -37,7 +37,7 @@ include_once("../../inc/tracking.php");
                 <thead>
                 <tr>
                     <th>Statistic name</th>
-                    <th>Description</th>
+                    <th><?php echo localize("Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
