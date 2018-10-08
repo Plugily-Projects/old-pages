@@ -63,7 +63,7 @@ include_once("../../inc/tracking.php");
                     <td><img src="https://i.imgur.com/RDZGbgs.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td>BB 3 commands and permissions</td>
+                    <td>MM commands and permissions</td>
                     <td>How to create arena tutorial</td>
                     <td>Frequently asked questions</td>
                     <td>Some stuff for developers</td>
