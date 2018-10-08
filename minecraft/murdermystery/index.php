@@ -43,7 +43,7 @@ include_once("../../inc/tracking.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/murdermystery/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/dplq0h0.png" alt=""></p>
+            <p><img src="https://i.imgur.com/GsFfmWm.png" alt=""></p>
             <h2 id="murder-official-wiki-">Murder Mystery official wiki!</h2>
             <table>
                 <thead>
@@ -110,7 +110,7 @@ include_once("../../inc/tracking.php");
         <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
-                    <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
+                    <img src="../../inc/img/sidebar-murder-temp.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
