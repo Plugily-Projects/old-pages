@@ -326,6 +326,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
                                                                                                                            href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+                and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
         </footer>
     </div>
