@@ -38,15 +38,15 @@ include_once("../../../shared/inc/poeditor_reader.php");
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <p><strong>Basic files</strong></p>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#arenasyml">arenas.yml</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#bungeeyml">bungee.yml</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#configyml">config.yml</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#mysqlyml">mysql.yml</a></li>
+                <li><a href="#arenas-yml">arenas.yml</a></li>
+                <li><a href="#bungee-yml">bungee.yml</a></li>
+                <li><a href="#config-yml">config.yml</a></li>
+                <li><a href="#mysql-yml">mysql.yml</a></li>
             </ul>
             <p><strong>Additional content</strong></p>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#language-and-locales">Language and l10n (locale)</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#stats-storage-types">Stats storage types</a></li>
+                <li><a href="#language-and-locales">Language and l10n (locale)</a></li>
+                <li><a href="#stats-storage-types">Stats storage types</a></li>
             </ul>
             <hr>
             <h2 id="basic-files">Basic files</h2>
@@ -106,7 +106,7 @@ include_once("../../../shared/inc/poeditor_reader.php");
                     <i class="fa fa-check"></i>
                 </div>
                 <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                    You can always translate our plugin for free <a href="https://poeditor.com/join/project/wEpcZ7Htnn" target="_blank">joining here (click)</a>
+                    You can always translate our plugin for free <a href="https://translate.plajer.xyz/index.php" target="_blank">joining here (click)</a>
                 </div>
             </div>
             <hr>
@@ -114,7 +114,7 @@ include_once("../../../shared/inc/poeditor_reader.php");
             <p><strong>Current stats storage types for player statistics:</strong></p>
             <ul>
                 <li>Flat file (.yml) - enabled by default</li>
-                <li>MySQL (database) - can be enabled in config.yml (see <a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Plugin-files-explained#mysqlyml">mysql.yml</a>)</li>
+                <li>MySQL (database) - can be enabled in config.yml (see <a href="#mysql-yml">mysql.yml</a>)</li>
             </ul>
         </div>
 
@@ -159,7 +159,7 @@ include_once("../../../shared/inc/poeditor_reader.php");
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>

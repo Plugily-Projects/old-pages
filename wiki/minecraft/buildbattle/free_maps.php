@@ -52,8 +52,8 @@ include_once("../../../shared/inc/tracking.php");
             <p>In this section, you can download some additional maps for your server.</p>
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/BuildBattle-maps#abstract">Abstract</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/BuildBattle-maps#candyland">Candyland</a></li>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#candyland">Candyland</a></li>
             </ul>
             <h2 id="abstract">Abstract</h2>
             <p><strong>Abstract map from original Build Battle map pack</strong></p>
@@ -113,7 +113,7 @@ include_once("../../../shared/inc/tracking.php");
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>

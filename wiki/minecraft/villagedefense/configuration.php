@@ -129,7 +129,7 @@ include_once("../../../shared/inc/poeditor_reader.php");
                     <i class="fa fa-check"></i>
                 </div>
                 <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                    You can always translate our plugin for free <a href="https://poeditor.com/join/project/w8GqqwkET1" target="_blank">joining here (click)</a>
+                    You can always translate our plugin for free <a href="https://translate.plajer.xyz/index.php" target="_blank">joining here (click)</a>
                 </div>
             </div>
             <hr>
@@ -186,7 +186,7 @@ include_once("../../../shared/inc/poeditor_reader.php");
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                     <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>

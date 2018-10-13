@@ -36,9 +36,9 @@ include_once("../../../shared/inc/tracking.php");
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Frequently-Asked-Questions#supported-versions-of-village-defense-3">What versions do support Build Battle 3?</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Frequently-Asked-Questions#players-cant-join-through-signs">Players can&#39;t join through signs</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/Frequently-Asked-Questions#scoreboard-variables">What are scoreboard variables?</a></li>
+                <li><a href="#supported-versions-of-build-battle-3">What versions do support Build Battle 3?</a></li>
+                <li><a href="#players-can-t-join-through-signs">Players can&#39;t join through signs</a></li>
+                <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
             </ul>
             <hr>
             <h3 id="supported-versions-of-build-battle-3">Supported versions of Build Battle 3</h3>
@@ -181,7 +181,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>

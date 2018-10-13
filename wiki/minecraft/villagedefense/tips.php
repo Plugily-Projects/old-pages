@@ -150,7 +150,7 @@ include_once("../../../shared/inc/tracking.php");
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/Village_Defense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                     <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>

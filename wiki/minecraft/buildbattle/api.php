@@ -34,12 +34,12 @@ include_once("../../../shared/inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1 id="developer-api">Developer API</h1>
-            <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://plajer-lair.github.io/BuildBattle/">https://plajer-lair.github.io/BuildBattle/</a>
+            <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://jd.plajer.xyz/minecraft/buildbattle">https://jd.plajer.xyz/minecraft/buildbattle</a>
             </h4>
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#events">API Events</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#stats-storage">Stats storage</a></li>
+                <li><a href="#events">API Events</a></li>
+                <li><a href="#stats-storage">Stats storage</a></li>
                 <li>Manipulating player join/leave attempts (soon)</li>
             </ul>
 
@@ -55,12 +55,12 @@ include_once("../../../shared/inc/tracking.php");
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbevent-generic">BBEvent</a> [3.0.0] [Generic event]</li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbgamejoinevent-cancellable">BBGameJoinEvent</a> [3.0.0] [Cancellable]</li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbgameleaveevent">BBGameLeaveEvent</a> [3.0.0]</li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbgamestartevent">BBGameStartEvent</a> [3.0.0]</li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbgameendevent">BBGameEndEvent</a> [3.0.0]</li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#bbgamestatechangeevent">BBGameStateChangeEvent</a> [3.0.0]</li>
+                <li><a href="#-bbevent-generic-">BBEvent</a> [3.0.0] [Generic event]</li>
+                <li><a href="#-bbgamejoinevent-cancellable-">BBGameJoinEvent</a> [3.0.0] [Cancellable]</li>
+                <li><a href="#-bbgameleaveevent-">BBGameLeaveEvent</a> [3.0.0]</li>
+                <li><a href="#-bbgamestartevent-">BBGameStartEvent</a> [3.0.0]</li>
+                <li><a href="#-bbgameendevent-">BBGameEndEvent</a> [3.0.0]</li>
+                <li><a href="#-bbgamestatechangeevent-">BBGameStateChangeEvent</a> [3.0.0]</li>
                 <li>BBPlayerStatisticChangeEvent [3.4.1]</li>
             </ul>
             <hr>
@@ -157,9 +157,9 @@ include_once("../../../shared/inc/tracking.php");
             <h1 id="stats-storage">Stats storage</h1>
             <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
             <ul>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#retrieving-online-players-stats">Retrieving online players stats</a></li>
-                <li><a href="https://github.com/Plajer-Lair/Village_Defense/wiki/API#requesting-sorted-statistics-of-all-players">Requesting sorted statistics of all players</a></li>
-                <li><a href="https://github.com/Plajer-Lair/BuildBattle/wiki/API#available-statistic-types">Statistic types</a></li>
+                <li><a href="#-retrieving-online-players-stats-">Retrieving online players stats</a></li>
+                <li><a href="#-requesting-sorted-statistics-of-all-players-">Requesting sorted statistics of all players</a></li>
+                <li><a href="#-available-statistic-types-">Statistic types</a></li>
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using BB3 API - Stats Storage class.</p>
@@ -284,7 +284,7 @@ include_once("../../../shared/inc/tracking.php");
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://plajer-lair.github.io/BuildBattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>
