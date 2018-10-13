@@ -34,7 +34,7 @@ include_once("../../inc/json_localization.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1>Commands and Permissions</h1>
-            <h2><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li>
                     <a href="#commands-and-permissions">Commands
@@ -47,14 +47,14 @@ include_once("../../inc/json_localization.php");
                     permissions</a></li>
             </ul>
             <h2 id="commands-and-permissions">Commands and permissions</h2>
-            <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
-            <h3 id="-player-commands">🔵 <?php echo localize("Player-Commands"); ?></h3>
+            <p><code><?php echo localize("Wiki.Global.Command-Aliases-Explained"); ?></code></p>
+            <h3 id="-player-commands">🔵 <?php echo localize("Wiki.Global.Player-Commands"); ?></h3>
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Command"); ?></th>
-                    <th><?php echo localize("Permission"); ?></th>
-                    <th><?php echo localize("Description"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Command"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Permission"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -71,17 +71,17 @@ include_once("../../inc/json_localization.php");
                 </tr>
                 <tr>
                     <td>/vd stats (online player)</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Shows your stats</td>
                 </tr>
                 <tr>
                     <td>/vd leave</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Quits current game. You can disable game quit in config.yml</td>
                 </tr>
                 <tr>
                     <td>/vd top [statistic]</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Shows top 10 users from requested statistic</td>
                 </tr>
                 <tr>
@@ -91,23 +91,22 @@ include_once("../../inc/json_localization.php");
                 </tr>
                 </tbody>
             </table>
-            <h3 id="-admin-commands">🔴 <?php echo localize("Admin-Commands"); ?></h3>
+            <h3 id="-admin-commands">🔴 <?php echo localize("Wiki.Global.Admin-Commands"); ?></h3>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                    You can use <code>villagedefense.admin.*</code> permission to give all admin commands
-                    permission
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Tip"); ?></strong>
+                    <?php echo str_replace("%permission%", "villagedefense.admin.*", localize("Wiki.Global.You-Can-Use-Star-For-All-Admin-Permissions")); ?>
                 </div>
             </div>
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Command"); ?></th>
-                    <th><?php echo localize("Permission"); ?></th>
-                    <th><?php echo localize("Description"); ?></th>
-                    <th><?php echo localize("Valid-Executors"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Command"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Permission"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Description"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Valid-Executors"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -121,49 +120,49 @@ include_once("../../inc/json_localization.php");
                     <td>/vd create [arena]</td>
                     <td>villagedefense.admin.create</td>
                     <td>Creates new arena with specified name</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vd [arena] edit</td>
                     <td>villagedefense.admin.create</td>
                     <td>Edits existing arena</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda list</td>
                     <td>villagedefense.admin.list</td>
                     <td>Prints list of available arenas</td>
-                    <td><?php echo localize("Player"); ?>/<?php echo localize("Console"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?>/<?php echo localize("Wiki.Global.Console"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda stop</td>
                     <td>villagedefense.admin.stopgame</td>
                     <td>Stops game you&#39;re playing</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda forcestart</td>
                     <td>villagedefense.admin.forcestart</td>
                     <td>Force starts game you&#39;re in</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda respawn (player)</td>
                     <td>villagedefense.admin.respawn villagedefense.admin.respawn.others</td>
                     <td>Respawn you/specified player in your arena</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda spychat</td>
                     <td>villagedefense.admin.spychat</td>
                     <td>Toggles all arenas chat visibility (multi-arena feature only)</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda reload</td>
                     <td>villagedefense.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped</strong></td>
-                    <td><?php echo localize("Player"); ?>/<?php echo localize("Console"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?>/<?php echo localize("Wiki.Global.Console"); ?></td>
                 </tr>
                 <tr>
                     <td>
@@ -175,43 +174,43 @@ include_once("../../inc/json_localization.php");
                         signs)
                     </td>
                     <td>Adds new sign for specified arena</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda delete [arena]</td>
                     <td>villagedefense.admin.delete</td>
                     <td>Deletes specified arena</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda tp [arena] [location type]</td>
                     <td>villagedefense.admin.teleport</td>
                     <td>Teleports to specified arena location <strong>Location types:</strong> START, END, LOBBY</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda clear [zombie/villager/golem]</td>
                     <td>villagedefense.admin.clear</td>
                     <td>Clears specified mobs in your game</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda addorbs [amount] (player)</td>
                     <td>villagedefense.admin.addorbs villagedefense.admin.addorbs.others</td>
                     <td>Adds orbs (game currency) to you/specified player</td>
-                    <td><?php echo localize("Player"); ?>/Console when player argument is specified</td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?>/Console when player argument is specified</td>
                 </tr>
                 <tr>
                     <td>/vda setwave [number]</td>
                     <td>villagedefense.admin.setwave</td>
                     <td>Sets wave of game</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda setprice [amount]</td>
                     <td>villagedefense.admin.setprice</td>
                     <td>Sets price of holding item (use this for shop otherwise item won&#39;t work)</td>
-                    <td><?php echo localize("Player"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -246,7 +245,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
                     Using dots <code>.</code> in custom permissions will not work and will break permission, don't use
                     them!
                 </div>
@@ -287,7 +286,7 @@ include_once("../../inc/json_localization.php");
                 getting
                 its
                 permission.</p>
-            <p><strong><?php echo localize("Example"); ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example"); ?>:</strong></p>
             <ul>
                 <li>Archer kit permission - <strong>villagedefense.kit.archer</strong></li>
                 <li>Tornado kit permission - <strong>villagedefense.kit.tornado</strong></li>
@@ -297,7 +296,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-info-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Info"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
                     <strong>Premium kits</strong> also unlocks with Vip/Mvp or Elite permissions and <strong>leveled
                         kits</strong>
                     are
@@ -310,56 +309,56 @@ include_once("../../inc/json_localization.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Wiki.Sidebar.General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Wiki.Sidebar.General.Home"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Wiki.Sidebar.General.Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Wiki.Sidebar.General.Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Wiki.Sidebar.General.Server-Tips"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Wiki.Sidebar.Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Wiki.Sidebar.Development-Space.Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
+                    <h3 id="enhancements-addon"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Wiki.Sidebar.Enhancements.FAQ"); ?></a>
                         </li>
                     </ul>
                 </div>

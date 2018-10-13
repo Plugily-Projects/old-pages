@@ -37,7 +37,7 @@ include_once("../../inc/json_localization.php");
             <h4 id="full-java-documentation-https-plajer-lair-github-io-village_defense-">Full java documentation: <a
                         href="https://jd.plajer.xyz/minecraft/villagedefense">https://jd.plajer.xyz/minecraft/villagedefense</a>
             </h4>
-            <h2><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#maven">Maven repository</a></li>
                 <li><a href="#events">API Events</a></li>
@@ -102,7 +102,7 @@ include_once("../../inc/json_localization.php");
             <p>The event is called <strong>everytime</strong> any Village Defense event is called because it&#39;s a
                 generic
                 event</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onEventCall</span><span
@@ -119,7 +119,7 @@ include_once("../../inc/json_localization.php");
             <h3 id="-villagegamejoinattemptevent-cancellable-"><strong>VillageGameJoinAttemptEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameJoin(VillageGameJoinAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -145,7 +145,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
                     A message from language file is sent to the player when the attempt is cancelled (see
                     <code>In-Game.Join-Cancelled-Via-API</code> in language.yml)
                 </div>
@@ -153,7 +153,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagegamestartevent-"><strong>VillageGameStartEvent</strong></h3>
             <p>The event is called when the arena starts.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStart</span><span
@@ -169,7 +169,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagegameleaveattemptevent-"><strong>VillageGameLeaveAttemptEvent</strong></h3>
             <p>The event is called when a player is trying to leave an arena.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-keyword">EventHandler</span>
     public void onGameQuit(VillageGameLeaveAttemptEvent event){
         <span class="hljs-selector-tag">e</span><span class="hljs-selector-class">.getPlayer</span>()<span
@@ -187,7 +187,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagegamestopevent-"><strong>VillageGameStopEvent</strong></h3>
             <p>The event is called when a game is stopped.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onGameStop</span><span
@@ -204,7 +204,7 @@ include_once("../../inc/json_localization.php");
             <h3 id="-villageplayerchoosekitevent-cancellable-"><strong>VillagePlayerChooseKitEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
             <p>The event is called when the player chose kit in game.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onKitChoose</span><span
@@ -228,7 +228,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
                     Cancelling the event doesn&#39;t really influence the in-game kit chooser,
                     <code>#isCancelled()</code> should be
                     used for external add-ons!
@@ -237,7 +237,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagewaveendevent-"><strong>VillageWaveEndEvent</strong></h3>
             <p>The event is called when the wave is finished (all zombies are killed).</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveEnd</span><span class="hljs-params">(VillageWaveEndEvent event)</span></span>{
@@ -255,7 +255,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagewavestartevent-"><strong>VillageWaveStartEvent</strong></h3>
             <p>The event is called when the wave starts.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onWaveStart</span><span
@@ -272,7 +272,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagegamestatechangeevent-"><strong>VillageGameStateChangeEvent</strong></h3>
             <p>The event is called when arena game state changes.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @EventHandler
     public void <span class="hljs-keyword">on</span>GameStateChange(VillageGameStateChangeEvent event){
         String <span class="hljs-keyword">state</span> = e.getArenaState().getFormattedName();
@@ -289,7 +289,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villageplayerstatisticchangeevent-"><strong>VillagePlayerStatisticChangeEvent</strong></h3>
             <p>The event is called when the player receives a new statistic.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
                                 class="hljs-title">onStatChange</span><span class="hljs-params">(VillagePlayerStatisticChangeEvent event)</span></span>{
@@ -310,7 +310,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagegolemupgradeevent-"><strong>VillageGolemUpgradeEvent</strong></h3>
             <p>The event is called when the player upgrades a golem.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGolemUpgrade</span>(<span
                                 class="hljs-params">VillageGolemUpgradeEvent <span
@@ -338,7 +338,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-villagepoweruppickevent-"><strong>VillagePowerupPickEvent</strong></h3>
             <p>The event is called when the player picks up a power-up.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span
                                 class="hljs-params">VillagePowerupPickEvent <span
@@ -356,7 +356,7 @@ include_once("../../inc/json_localization.php");
                 <p><strong>event#getArena()</strong> - returns arena player is playing</p>
             </blockquote>
             <h1 id="stats-storage">Stats storage</h1>
-            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#-retrieving-online-players-stats-">Retrieving online players stats</a></li>
                 <li><a href="#-requesting-sorted-statistics-of-all-players-">Requesting sorted statistics of all
@@ -366,7 +366,7 @@ include_once("../../inc/json_localization.php");
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using VD3 API - Stats Storage class.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span
                                 class="hljs-keyword">int</span> <span class="hljs-title">getZombieKills</span><span
                                 class="hljs-params">(Player p)</span></span>{
@@ -380,7 +380,7 @@ include_once("../../inc/json_localization.php");
                     players</strong>
             </h3>
             <p>To access sorted statistics Map with players you must call it from StatsStorage class.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span
                                 class="hljs-keyword">void</span> <span class="hljs-title">printBestStats</span>(<span
                                 class="hljs-params">StatsStorage.StatisticType statistic</span>)</span>{
@@ -399,7 +399,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
                     Be aware of IndexOutOfBoundsException as the list might be not enough big!
                 </div>
             </div>
@@ -409,7 +409,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
                     Orbs statistic is temporary and shouldn&#39;t be used for out game usages!
                 </div>
             </div>
@@ -463,7 +463,7 @@ include_once("../../inc/json_localization.php");
             <p>Registering new kit is quite simple.
                 We need to implement all methods from abstract Kit class and edit it by yourself.
                 After that just register it via KitRegistry.</p>
-            <p><strong><?php echo localize("Example") ?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">        <span class="hljs-comment">//This kit will be premium</span>
         Kit supporter = <span class="hljs-keyword">new</span> PremiumKit() {
             <span class="hljs-comment">//We need to implement methods from abstract Kit class</span>
@@ -530,7 +530,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
                     You should check is arena name exist otherwise it will throw NullPointerException
                 </div>
             </div>
@@ -548,7 +548,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-warning"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Warn"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
                     You should check is arena isn't null otherwise it will throw NullPointerException
                 </div>
             </div>
@@ -558,56 +558,56 @@ include_once("../../inc/json_localization.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Wiki.Sidebar.General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/index.php"><?php echo localize("Wiki.Sidebar.General.Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Wiki.Sidebar.General.Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/addons.php"><?php echo localize("Wiki.Sidebar.General.Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Sidebar-Server-Tips"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/tips.php"><?php echo localize("Wiki.Sidebar.General.Server-Tips"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Wiki.Sidebar.Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Wiki.Sidebar.Development-Space.Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("Enhancements-Sidebar-Addon-Name"); ?></h3>
+                    <h3 id="enhancements-addon"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Enhancements-Sidebar-FAQ"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Wiki.Sidebar.Enhancements.FAQ"); ?></a>
                         </li>
                     </ul>
                 </div>

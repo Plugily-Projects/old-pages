@@ -36,7 +36,7 @@ include_once("../../inc/json_localization.php");
             <h1 id="developer-api">Developer API</h1>
             <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://jd.plajer.xyz/minecraft/buildbattle">https://jd.plajer.xyz/minecraft/buildbattle</a>
             </h4>
-            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#events">API Events</a></li>
                 <li><a href="#stats-storage">Stats storage</a></li>
@@ -47,7 +47,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
                     Contents may be not up to date! Please use java docs instead. Here you can only get some simple examples.
                 </div>
             </div>
@@ -66,7 +66,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbevent-generic-"><strong>BBEvent</strong> (<strong>Generic</strong>)</h3>
             <p>The event is called <strong>everytime</strong> any Build Battle event is called because it&#39;s a generic event.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onEventCall</span><span
                                 class="hljs-params">(BBEvent event)</span></span>{
@@ -81,7 +81,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbgamejoinevent-cancellable-"><strong>BBGameJoinEvent</strong> (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameJoin</span>(<span class="hljs-params">BBGameJoinEvent <span class="hljs-keyword">event</span></span>)</span>{
         <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You have joined "</span> + <span class="hljs-keyword">event</span>.getArena().getID());
@@ -96,7 +96,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbgamestartevent-"><strong>BBGameStartEvent</strong></h3>
             <p>The event is called when the arena starts.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onGameStart</span><span class="hljs-params">(BBGameStartEvent event)</span></span>{
         <span class="hljs-keyword">for</span>(Player p : event.getArena().getPlayers()){
@@ -110,7 +110,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbgameleaveevent-"><strong>BBGameLeaveEvent</strong></h3>
             <p>The event is called when a player is trying to leave an arena.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameQuit</span>(<span class="hljs-params">BBGameLeaveEvent <span class="hljs-keyword">event</span></span>)</span>{
         <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You have quitted"</span> + e.getArena().getID());
@@ -123,7 +123,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbgameendevent-"><strong>BBGameEndEvent</strong></h3>
             <p>The event is called when a game has ended.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onGameStop</span><span class="hljs-params">(BBGameStartEvent event)</span></span>{
         <span class="hljs-keyword">for</span>(Player p : event.getArena().getPlayers()){
@@ -137,7 +137,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-bbgamestatechangeevent-"><strong>BBGameStateChangeEvent</strong></h3>
             <p>The event is called when a game arena state has changed.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onGameStop</span>(<span class="hljs-params">BBGameStateChangeEvent <span
                                     class="hljs-keyword">event</span></span>)</span>{
@@ -155,7 +155,7 @@ include_once("../../inc/json_localization.php");
             </blockquote>
             <hr>
             <h1 id="stats-storage">Stats storage</h1>
-            <h2 id="table-of-contents"><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#-retrieving-online-players-stats-">Retrieving online players stats</a></li>
                 <li><a href="#-requesting-sorted-statistics-of-all-players-">Requesting sorted statistics of all players</a></li>
@@ -163,7 +163,7 @@ include_once("../../inc/json_localization.php");
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
             <p>You can easily get online players stats using BB3 API - Stats Storage class.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getWins</span><span
                                 class="hljs-params">(Player p)</span></span>{
         <span class="hljs-function"><span class="hljs-keyword">return</span> StatsStorage.<span class="hljs-title">getUserStats</span><span
@@ -174,7 +174,7 @@ include_once("../../inc/json_localization.php");
             <hr>
             <h3 id="-requesting-sorted-statistics-of-all-players-"><strong>Requesting sorted statistics of all players</strong></h3>
             <p>To access sorted statistics hMap with players you must call it from StatsStorage class.</p>
-            <p><strong><?php echo localize("Example")?>:</strong></p>
+            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printBestStats</span>(<span
                                 class="hljs-params">StatsStorage.StatisticType statistic</span>)</span>{
         Map&lt;UUID, Integer&gt; statsMap = StatsStorage.getStats(statistic);
@@ -189,7 +189,7 @@ include_once("../../inc/json_localization.php");
                 <div class="icon">
                     <i class="fa fa-times-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Danger"); ?></strong>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
                     Be aware of IndexOutOfBoundsException as the list might be not enough big!
                 </div>
             </div>
@@ -247,44 +247,44 @@ include_once("../../inc/json_localization.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Wiki.Sidebar.General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Wiki.Sidebar.General.Home"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Wiki.Sidebar.General.Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Wiki.Sidebar.General.Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Wiki.Sidebar.Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Wiki.Sidebar.Development-Space.Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>

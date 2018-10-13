@@ -34,7 +34,7 @@ include_once("../../inc/json_localization.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
             <h1>Commands and Permissions</h1>
-            <h2><?php echo localize("Table-Of-Contents"); ?></h2>
+            <h2><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li>
                     <a href="#commands-and-permissions">Commands
@@ -43,14 +43,14 @@ include_once("../../inc/json_localization.php");
                         permissions</a></li>
             </ul>
             <h2 id="commands-and-permissions">Commands and permissions</h2>
-            <p><code><?php echo localize("Command-Aliases-Explained"); ?></code></p>
-            <h3 id="-player-commands">🔵 <?php echo localize("Player-Commands") ?></h3>
+            <p><code><?php echo localize("Wiki.Global.Command-Aliases-Explained"); ?></code></p>
+            <h3 id="-player-commands">🔵 <?php echo localize("Wiki.Global.Player-Commands") ?></h3>
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Command"); ?></th>
-                    <th><?php echo localize("Permission"); ?></th>
-                    <th><?php echo localize("Description"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Command"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Permission"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Description"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -66,136 +66,135 @@ include_once("../../inc/json_localization.php");
                 </tr>
                 <tr>
                     <td>/bb stats (online player)</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Shows your stats</td>
                 </tr>
                 <tr>
                     <td>/bb leave</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Quits current game. You can disable game quit in config.yml</td>
                 </tr>
                 <tr>
                     <td>/bb top [statistic]</td>
-                    <td><?php echo localize("None"); ?></td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
                     <td>Shows TOP 10 players of specified statistic</td>
                 </tr>
                 </tbody>
             </table>
-            <h3 id="-admin-commands">🔴 <?php echo localize("Admin-Commands") ?></h3>
+            <h3 id="-admin-commands">🔴 <?php echo localize("Wiki.Global.Admin-Commands") ?></h3>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Alert-Tip"); ?></strong>
-                    You can use <code>buildbattle.admin.*</code> permission to give all admin commands
-                    permission
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Tip"); ?></strong>
+                    <?php echo str_replace("%permission%", "buildbattle.admin.*", localize("Wiki.Global.You-Can-Use-Star-For-All-Admin-Permissions")); ?>
                 </div>
             </div>
             <table>
                 <thead>
                 <tr>
-                    <th><?php echo localize("Command"); ?></th>
-                    <th><?php echo localize("Permission"); ?></th>
-                    <th><?php echo localize("Description"); ?></th>
-                    <th><?php echo localize("Valid-Executors"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Command"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Permission"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Description"); ?></th>
+                    <th><?php echo localize("Wiki.Global.Valid-Executors"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td></td>
                     <td>buildbattle.updatenotify</td>
-                    <td>Notifies about plugin update on join</td>
+                    <td><?php echo localize("Wiki.Battle.Commands-And-Permissions.Notify-Description"); ?></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>/bb create [arena]</td>
                     <td>buildbattle.admin.create</td>
-                    <td>Creates new arena with specified name</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Battle.Commands-And-Permissions.Create-Command-Description"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bb [arena] edit</td>
                     <td>buildbattle.admin.create</td>
-                    <td>Edits existing arena</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Battle.Commands-And-Permissions.Edit-Command-Description"); ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba list</td>
                     <td>buildbattle.admin.list</td>
                     <td>Prints list of available arenas</td>
-                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba stop</td>
                     <td>buildbattle.admin.stopgame</td>
                     <td>Stops game you&#39;re playing</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba forcestart (theme)</td>
                     <td>buildbattle.admin.forcestart</td>
                     <td>Force starts game you&#39;re in When <code>theme</code> argument is typed arena starts with predefined theme without Voting phase</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba reload</td>
                     <td>buildbattle.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped</strong></td>
-                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
                 </tr>
                 <tr>
                     <td><del>/bba addsign [arena]</del> <strong>Deprecated</strong></td>
                     <td><strong>Command itself is deprecated and was removed</strong>  buildbattle.admin.sign.create (creating signs by hand) buildbattle.admin.sign.break (destroying signs)</td>
                     <td>Adds new sign for specified arena</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba delete [arena]</td>
                     <td>buildbattle.admin.delete</td>
                     <td>Deletes specified arena</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addplot [arena]</td>
                     <td>buildbattle.admin.addplot</td>
                     <td>Adds new plot to the arena</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba removeplot [arena] [plot ID]</td>
                     <td>buildbattle.admin.removeplot</td>
                     <td>Remove target plot from the arena</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addnpc</td>
                     <td>buildbattle.admin.addnpc</td>
                     <td>Spawn floor changer NPC at your location <br/><strong>Requires Citizens</strong></td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba settheme [theme]</td>
                     <td>buildbattle.admin.settheme</td>
                     <td>Set new theme of arena <br/><strong>Works only when game started, and for 20 seconds after start</strong></td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
                     <td>/bba addvotes [player] [amount]</td>
                     <td>buildbattle.admin.supervotes.add</td>
                     <td>Add super votes to target player <br/>Use <code>- (minus)</code> to remove votes</td>
-                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba setvotes [player] [amount]</td>
                     <td>buildbattle.admin.supervotes.set</td>
                     <td>Set super votes of target player</td>
-                    <td><?php echo localize("Player") ?>/<?php echo localize("Console") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
                 </tr>
                 <tr>
                     <td>/bba plotwand</td>
                     <td>buildbattle.admin.plotwand</td>
                     <td>Get plot wand for setupping arenas</td>
-                    <td><?php echo localize("Player") ?></td>
+                    <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -212,44 +211,44 @@ include_once("../../inc/json_localization.php");
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
-                    <h3 id="-general-"><strong><?php echo localize("Sidebar-Category-General"); ?></strong></h3>
+                    <h3 id="-general-"><strong><?php echo localize("Wiki.Sidebar.General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Sidebar-Home"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/index.php"><?php echo localize("Wiki.Sidebar.General.Home"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Sidebar-Cmds-And-Perms"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Sidebar-Free-Maps"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php"><?php echo localize("Wiki.Sidebar.General.Free-Maps"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Sidebar-Plugin-Addons"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/addons.php"><?php echo localize("Wiki.Sidebar.General.Plugin-Addons"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Sidebar-PAPI-Placeholders"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-support-"><strong><?php echo localize("Sidebar-Category-Support"); ?></strong></h3>
+                    <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Sidebar-Setup-Tutorial"); ?></a>
+                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Sidebar-FAQ"); ?></a> - <?php echo localize("Sidebar-FAQ-Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Sidebar-Files-Explained"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="-developement-space-"><strong><?php echo localize("Sidebar-Category-Development-Space"); ?></strong>
+                    <h3 id="-developement-space-"><strong><?php echo localize("Wiki.Sidebar.Development-Space"); ?></strong>
                     </h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Sidebar-Developer-API"); ?></a>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php"><?php echo localize("Wiki.Sidebar.Development-Space.Developer-API"); ?></a>
                         </li>
                         <li>
-                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Sidebar-Java-Docs"); ?></a>
+                            <a href="https://jd.plajer.xyz/minecraft/buildbattle/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>
