@@ -142,7 +142,7 @@ include_once("../../inc/poeditor_reader.php");
                 </li>
         </div>
 
-        <div class="col-auto">
+        <div class="col-auto mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">

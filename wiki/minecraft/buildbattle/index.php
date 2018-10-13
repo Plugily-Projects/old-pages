@@ -108,7 +108,7 @@ include_once("../../inc/tracking.php");
             </ul>
         </div>
 
-        <div class="col-auto">
+        <div class="col-auto mb-3">
             <div id="side-menu">
                 <div class="side-menu menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">

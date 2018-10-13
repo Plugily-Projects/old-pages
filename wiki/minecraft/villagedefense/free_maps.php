@@ -58,7 +58,7 @@ include_once("../../inc/json_localization.php");
 
         </div>
 
-        <div class="col-auto">
+        <div class="col-auto mb-3">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="https://i.imgur.com/vilATio.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
