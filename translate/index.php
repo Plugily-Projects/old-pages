@@ -1,5 +1,6 @@
 <?php
 include_once("inc/poeditor_reader.php");
+include_once("inc/tracking.php");
 ?>
 
 <!DOCTYPE html>
