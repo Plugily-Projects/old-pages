@@ -6,11 +6,13 @@
 
 #side-menu {
     font-size: 14px;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 4px;
     background-color: #fff;
     margin-top: 25%;
-    padding-top: 6%;
+    padding-top: 1rem;
+    min-width: 250px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,9 +22,9 @@
     padding-left: 6%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #side-menu {
-        margin: 0 !important;
+        margin-top: 0 !important;
     }
 }
 

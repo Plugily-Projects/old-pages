@@ -24,7 +24,9 @@ include_once("../../inc/tracking.php");
     <link rel="shortcut icon" type="image/x-icon" href="../../inc/img/favicon/favicon.ico">
 
     <style>
-        .fixed-nav-index {z-index: 9;}
+        .fixed-nav-index {
+            z-index: 9;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +38,7 @@ include_once("../../inc/tracking.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <?php
             if (localize("Wiki.Global.Language-Name") != "English") {
                 echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
@@ -106,9 +108,9 @@ include_once("../../inc/tracking.php");
             </ul>
         </div>
 
-        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
+        <div class="col-auto">
             <div id="side-menu">
-                <div class="menu-content px-3 py-2">
+                <div class="side-menu menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
                     <h3 id="-general-"><strong><?php echo localize("Wiki.Sidebar.General"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
@@ -134,7 +136,8 @@ include_once("../../inc/tracking.php");
                             <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a>
+                            - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
@@ -156,11 +159,11 @@ include_once("../../inc/tracking.php");
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
+                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
                 and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
         </footer>
     </div>
-</div>
 </body>
 </html>

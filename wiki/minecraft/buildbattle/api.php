@@ -32,7 +32,7 @@ include_once("../../inc/json_localization.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="developer-api">Developer API</h1>
             <h4 id="full-java-documentation-https-plajer-lair-github-io-buildbattle-">Full java documentation: <a href="https://jd.plajer.xyz/minecraft/buildbattle">https://jd.plajer.xyz/minecraft/buildbattle</a>
             </h4>
@@ -243,7 +243,7 @@ include_once("../../inc/json_localization.php");
             </table>
         </div>
 
-        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
+        <div class="col-auto">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-battle.png" class="img-fluid mx-auto d-block" alt="logo" width="200">

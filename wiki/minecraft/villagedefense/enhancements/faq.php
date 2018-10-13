@@ -31,7 +31,7 @@ include_once("../../../inc/json_localization.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h2 id="how-does-replay-ability-work-">How does replay ability work?</h2>
             <p>After the game ends players receive message &quot;Game has ended! Want to play again? Click here&quot;
                 like in

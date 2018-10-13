@@ -32,7 +32,7 @@ include_once("../../inc/json_localization.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="useful-tips-for-your-server">Useful tips for your server</h1>
             <p>This section contains some useful tips to enhance your Village Defense server!</p>
             <div class="alert alert-warning alert-white rounded">
@@ -106,7 +106,7 @@ include_once("../../inc/json_localization.php");
             <p><strong>3. Profit</strong></p>
         </div>
 
-        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
+        <div class="col-auto">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">

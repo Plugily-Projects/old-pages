@@ -33,7 +33,7 @@ include_once("../../inc/poeditor_reader.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="plugin-files-explained-a-k-a-plugin-configuration-section-">Plugin files - explained (a.k.a Plugin
                 configuration section)</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
@@ -142,7 +142,7 @@ include_once("../../inc/poeditor_reader.php");
                 </li>
         </div>
 
-        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
+        <div class="col-auto">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-village.png" class="img-fluid mx-auto d-block" alt="logo" width="200">

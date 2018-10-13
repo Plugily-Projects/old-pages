@@ -36,7 +36,7 @@ include_once("../../inc/json_localization.php");
 </nav>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-10 col-xs-12">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <?php
             if (localize("Wiki.Global.Language-Name") != "English") {
                 echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
@@ -107,7 +107,7 @@ include_once("../../inc/json_localization.php");
             </ul>
         </div>
 
-        <div class="col-lg-auto col-md-4 col-sm-6 col-xs-12 mb-3">
+        <div class="col-auto">
             <div id="side-menu">
                 <div class="menu-content px-3 py-2">
                     <img src="../../inc/img/sidebar-murder-temp.png" class="img-fluid mx-auto d-block" alt="logo" width="200">
