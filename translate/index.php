@@ -1,4 +1,5 @@
 <?php
+include_once("inc/json_localization.php");
 include_once("inc/poeditor_reader.php");
 include_once("inc/tracking.php");
 ?>
@@ -72,7 +73,7 @@ include_once("inc/tracking.php");
 <div class="container-fluid vertically-center">
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
-            <h2 class="jumbotron text-center mb-3">Select project to translate</h2>
+            <h2 class="jumbotron text-center mb-3"><?php echo localize("Translation.Select-Project"); ?></h2>
             <div class="card-deck justify-content-center align-items-center">
                 <div class="card fixed-card">
                     <a target="_blank" href="https://poeditor.com/join/project/w8GqqwkET1" class="card-body">
@@ -80,7 +81,7 @@ include_once("inc/tracking.php");
                         <h5 class="card-title">Village Defense</h5>
                     </a>
                     <div class="card-footer px-5">
-                        <strong>Current languages</strong>
+                        <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
                         <?php
@@ -99,13 +100,14 @@ include_once("inc/tracking.php");
                             }
                             $i++;
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
-                        <strong>Pending languages</strong>
+                        <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
-                        <small class="text-muted">Awaiting for more translations</small>
+                        <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
                         <?php
                         $i = 0;
@@ -122,8 +124,9 @@ include_once("inc/tracking.php");
                             }
                             $i++;
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
 
@@ -134,7 +137,7 @@ include_once("inc/tracking.php");
                         <h5 class="card-title">Build Battle</h5>
                     </a>
                     <div class="card-footer">
-                        <strong>Current languages</strong>
+                        <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
                         <?php
@@ -153,13 +156,14 @@ include_once("inc/tracking.php");
                                 $i++;
                             }
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
-                        <strong>Pending languages</strong>
+                        <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
-                        <small class="text-muted">Awaiting for more translations</small>
+                        <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
                         <?php
                         $i = 0;
@@ -176,8 +180,9 @@ include_once("inc/tracking.php");
                             }
                             $i++;
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
 
@@ -187,7 +192,7 @@ include_once("inc/tracking.php");
                         <h5 class="card-title">Murder Mystery</h5>
                     </a>
                     <div class="card-footer px-5">
-                        <strong>Current languages</strong>
+                        <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
                         <?php
@@ -206,13 +211,14 @@ include_once("inc/tracking.php");
                                 $i++;
                             }
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
-                        <strong>Pending languages</strong>
+                        <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
-                        <small class="text-muted">Awaiting for more translations</small>
+                        <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
                         <?php
                         $i = 0;
@@ -229,8 +235,9 @@ include_once("inc/tracking.php");
                             }
                             $i++;
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
                 <div class="card fixed-card">
@@ -239,7 +246,7 @@ include_once("inc/tracking.php");
                         <h5 class="card-title">Plajer's Lair Pages</h5>
                     </a>
                     <div class="card-footer">
-                        <strong>Current languages</strong>
+                        <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <div class="px-max">
                             <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
@@ -259,14 +266,15 @@ include_once("inc/tracking.php");
                                     $i++;
                                 }
                             }
-                            echo "<br/><small class='text-muted'>($i in total)</small>"
                             ?>
+                            <br/>
+                            <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <strong>Pending languages</strong>
+                        <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
-                        <small class="text-muted">Awaiting for more translations</small>
+                        <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
                         <?php
                         $i = 0;
@@ -283,8 +291,9 @@ include_once("inc/tracking.php");
                             }
                             $i++;
                         }
-                        echo "<br/><small class='text-muted'>($i in total)</small>"
                         ?>
+                        <br/>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
             </div>
