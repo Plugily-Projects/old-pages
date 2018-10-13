@@ -1,5 +1,5 @@
 <?php
-include_once("../shared/inc/poeditor_reader.php");
+include_once("inc/poeditor_reader.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +15,10 @@ include_once("../shared/inc/poeditor_reader.php");
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../shared/inc/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="inc/css/bootstrap-4.1.3.min.css">
 
-    <link rel="icon" sizes="192x192" href="../shared/inc/img/favicon/favicon-mobile.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../shared/inc/img/favicon/favicon.ico">
+    <link rel="icon" sizes="192x192" href="inc/img/favicon/favicon-mobile.png">
+    <link rel="shortcut icon" type="image/x-icon" href="inc/img/favicon/favicon.ico">
 
     <style>
         body {
