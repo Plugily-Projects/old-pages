@@ -1,6 +1,6 @@
 <?php
 include_once('../../inc/tracking.php');
-include_once("../../inc/tracking.php");
+include_once("../../inc/json_localization.php");
 ?>
 
 <!DOCTYPE html>

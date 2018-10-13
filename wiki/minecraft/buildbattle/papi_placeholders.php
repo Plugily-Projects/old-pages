@@ -1,5 +1,5 @@
 <?php
-include_once('../../inc/tracking.php');
+include_once('../../inc/json_localization.php');
 include_once("../../inc/tracking.php");
 ?>
 

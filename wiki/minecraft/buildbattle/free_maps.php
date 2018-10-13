@@ -16,7 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-include_once('../../inc/tracking.php');
+include_once('../../inc/json_localization.php');
 include_once("../../inc/tracking.php");
 ?>
 <!DOCTYPE html>

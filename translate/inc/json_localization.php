@@ -5,12 +5,12 @@ function localize($phrase) {
     /* Static keyword is used to ensure the file is loaded only once */
     static $translations = NULL;
     if (is_null($translations)) {
-        $lang_file = 'locale/' . explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0] . '.json';
+        $lang_file = '../locale/' . explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0] . '.json';
         /* If no instance of $translations has occured load the language file */
         if (!file_exists(__DIR__ . '/wiki' . $lang_file) || isset($_COOKIE["preferred_default_locale"])) {
             $lang_file = 'locale/en-GB.json';
         }
-        $lang_file_content = file_get_contents("https://wiki.plajer.xyz/" . $lang_file);
+        $lang_file_content = file_get_contents("https://translate.plajer.xyz/" . $lang_file);
         /* Load the language file as a JSON object
            and transform it into an associative array */
         $translations = json_decode($lang_file_content, true);
