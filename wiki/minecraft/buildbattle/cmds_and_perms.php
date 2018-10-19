@@ -107,6 +107,12 @@ include_once("../../inc/json_localization.php");
                     <td></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td>buildbattle.command.override</td>
+                    <td>Allows to use every command while being in-game</td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td>/bb create [arena]</td>
                     <td>buildbattle.admin.create</td>
                     <td><?php echo localize("Wiki.Battle.Commands-And-Permissions.Create-Command-Description"); ?></td>

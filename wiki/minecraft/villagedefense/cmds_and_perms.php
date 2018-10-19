@@ -117,6 +117,12 @@ include_once("../../inc/json_localization.php");
                     <td></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td>villagedefense.command.override</td>
+                    <td>Allows to use every command while being in-game</td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td>/vd create [arena]</td>
                     <td>villagedefense.admin.create</td>
                     <td>Creates new arena with specified name</td>
