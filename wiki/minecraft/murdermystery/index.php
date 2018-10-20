@@ -49,8 +49,7 @@ include_once("../../inc/json_localization.php");
                 <thead>
                 <tr>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/cmds_and_perms.php">Commands and Permissions</a></th>
-                    <!-- todo -->
-                    <th>Simple arena setup (soon)</th>
+                    <th><a href="https://bit.ly/2CuSR5E">Simple arena setup</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/faq.php">FAQ</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/api.php">Developers API</a></th>
                 </tr>
@@ -132,8 +131,7 @@ include_once("../../inc/json_localization.php");
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <!-- todo -->
-                            <a href=""><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?> (soon)</a>
+                            <a href="https://bit.ly/2CuSR5E"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
@@ -149,8 +147,7 @@ include_once("../../inc/json_localization.php");
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/api.php"><?php echo localize("Wiki.Sidebar.Development-Space.Developer-API"); ?></a>
                         </li>
                         <li>
-                            <!-- todo -->
-                            <a href=""><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?> (soon)</a>
+                            <a href="https://jd.plajer.xyz/minecraft/murdermystery"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
                 </div>

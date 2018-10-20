@@ -1,6 +1,7 @@
 <?php
 include_once('../../inc/tracking.php');
 include_once("../../inc/json_localization.php");
+include_once("../../inc/poeditor_reader.php");
 ?>
 
 <!DOCTYPE html>
@@ -33,26 +34,93 @@ include_once("../../inc/json_localization.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
-            <h1 id="build-battle-3-addons">Murder Mystery Addons</h1>
+            <h1 id="plugin-files-explained-a-k-a-plugin-configuration-section-">Plugin files - explained (a.k.a Plugin configuration section)</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
+            <p><strong>Basic files</strong></p>
             <ul>
-                <li><a href="#bungee-signs-not-official-">Bungee signs addon</a></li>
+                <li><a href="#arenas-yml">arenas.yml</a></li>
+                <li><a href="#bungee-yml">bungee.yml</a></li>
+                <li><a href="#config-yml">config.yml</a></li>
+                <li><a href="#mysql-yml">mysql.yml</a></li>
             </ul>
-            <h2 id="bungee-signs-not-official-">Bungee Signs (not official)</h2>
-            <p>To provide game signs support like this example:</p>
-            <p><img src="https://i.imgur.com/4pOEcZH.png" alt=""></p>
-            <p>You need to use an external plugin. Bungee Signs offer this support.
-                Just put it on lobby server and configure it!</p>
-            <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">https://www.spigotmc.org/resources/bungeesigns.6563/</a></p>
-
-            <div class="alert alert-danger alert-white rounded">
+            <p><strong>Additional content</strong></p>
+            <ul>
+                <li><a href="#language-and-locales">Language and l10n (locale)</a></li>
+                <li><a href="#stats-storage-types">Stats storage types</a></li>
+            </ul>
+            <hr>
+            <h2 id="basic-files">Basic files</h2>
+            <h3 id="arenas-yml">arenas.yml</h3>
+            <p>This file is only for in-game usage. It&#39;s not recommended to edit it while the server is on!
+                The file contains all information about created arenas.</p>
+            <hr>
+            <h3 id="bungee-yml">bungee.yml</h3>
+            <p>BungeeCord configuration is there. You must enable bungee support first in <strong>config.yml</strong>. Set <strong>BungeeActivated</strong> to <strong>true</strong> to enable it.</p>
+            <div class="alert alert-info alert-white rounded">
                 <div class="icon">
-                    <i class="fa fa-times-circle"></i>
+                    <i class="fa fa-info-circle"></i>
                 </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
-                    Addon is not made by MurderMystery staff and bugs/features should be reported to plugin's author!
+                <div style="margin-left: 45px;"><strong>What is MOTD Manager?</strong>
+                    MOTD Manager modifies server&#39;s MOTD to make it readable by Server Bungeecord systems like <a
+                        href="https://www.spigotmc.org/resources/timocloud-the-most-efficient-cloud-system.53757/">Timo
+                        Cloud</a>
+                    and <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">Bungee Signs</a>. MOTD is based
+                    on game state
+                    if that option is enabled.
                 </div>
             </div>
+            <hr>
+            <h3 id="config-yml">config.yml</h3>
+            <p>config.yml is very well commented. No need to explain more any part of it.</p>
+            <p><strong>Part of config.yml</strong></p>
+            <p><img src="https://i.imgur.com/CXSgf0i.png" alt=""></p>
+            <hr>
+            <h3 id="mysql-yml">mysql.yml</h3>
+            <p>Here you can set up MySQL plugin configuration.
+                You need to enable MySQL first in <strong>config.yml</strong>. Set <strong>DatabaseActivated</strong> option to <strong>true</strong>.</p>
+            <p><strong>This is mysql.yml file with explanations of individual options.</strong>
+                <img src="https://i.imgur.com/m31nvuz.png" alt=""></p>
+            <h2 id="additional-content">Additional content</h2>
+            <h3 id="language-and-locales">Language and locales</h3>
+            <p>Plugin is 95% translatable via <strong>language.yml</strong> file.</p>
+            <p><img src="https://i.imgur.com/L6CqpIE.png" alt=""></p>
+            <p>However, you can use localization support which was implemented in MM.</p>
+            <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.</p>
+            <p><img src=https://i.imgur.com/b9sKAYK.png" alt=""></p>
+            <p><strong>Valid localizations (gathered via POEditor API):</strong></p>
+            <ul>
+                <li><img src="https://www.plajer.xyz/shared/flags/gb.png" alt=""> English (primary)</li>
+                <?php
+                $json = readLanguages(202329);
+                foreach ($json->result->languages as $value) {
+                    if ($value->name == "English") {
+                        continue;
+                    }
+                    $flag = $value->code;
+                    $flag = fixFlag($value->name, $flag);
+                    if($value->percentage < 80.0) {
+                        echo "<li class='text-muted'><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated) (not implemented)</li>";
+                    } else {
+                        echo "<li><img src='https://www.plajer.xyz/shared/flags/$flag.png' alt=''> $value->code - $value->name ($value->percentage% translated)</li>";
+                    }
+                }
+                ?>
+            </ul>
+            <div class="alert alert-success alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Tip"); ?></strong>
+                    <a href="https://translate.plajer.xyz/index.php" target="_blank"><?php echo localize("Wiki.Global.You-Can-Translate-Here"); ?></a>
+                </div>
+            </div>
+            <hr>
+            <h3 id="stats-storage-types">Stats storage types</h3>
+            <p><strong>Current stats storage types for player statistics:</strong></p>
+            <ul>
+                <li>Flat file (.yml) - enabled by default</li>
+                <li>MySQL (database) - can be enabled in config.yml (see <a href="#mysql-yml">mysql.yml</a>)</li>
+            </ul>
         </div>
 
         <div class="col-auto mb-3">
@@ -67,7 +135,7 @@ include_once("../../inc/json_localization.php");
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
                         </li>
-                        <li style="list-style-image: url('../../inc/img/you-are-here.png');">
+                        <li>
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/addons.php"><?php echo localize("Wiki.Sidebar.General.Plugin-Addons"); ?></a>
                         </li>
                         <li>
@@ -85,7 +153,7 @@ include_once("../../inc/json_localization.php");
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
-                        <li>
+                        <li style="list-style-image: url('../../inc/img/you-are-here.png');">
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
                         </li>
                     </ul>

@@ -56,13 +56,18 @@ include_once("../../inc/poeditor_reader.php");
             <hr>
             <h3 id="bungee-yml">bungee.yml</h3>
             <p>BungeeCord configuration is there. You must enable bungee support first in <strong>config.yml</strong>. Set <strong>BungeeActivated</strong> to <strong>true</strong> to enable it.</p>
-            <div style="margin-left: 45px;"><strong>What is MOTD Manager?</strong>
-                MOTD Manager modifies server&#39;s MOTD to make it readable by Server Bungeecord systems like <a
-                        href="https://www.spigotmc.org/resources/timocloud-the-most-efficient-cloud-system.53757/">Timo
-                    Cloud</a>
-                and <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">Bungee Signs</a>. MOTD is based
-                on game state
-                if that option is enabled.
+            <div class="alert alert-info alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong>What is MOTD Manager?</strong>
+                    MOTD Manager modifies server&#39;s MOTD to make it readable by Server Bungeecord systems like <a
+                            href="https://www.spigotmc.org/resources/timocloud-the-most-efficient-cloud-system.53757/">Timo
+                        Cloud</a>
+                    and <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">Bungee Signs</a>. MOTD is based
+                    on game state
+                    if that option is enabled.
+                </div>
             </div>
             <hr>
             <h3 id="config-yml">config.yml</h3>
@@ -81,7 +86,7 @@ include_once("../../inc/poeditor_reader.php");
             <p><img src="https://i.imgur.com/svoppHN.png" alt=""></p>
             <p>However, you can use localization support which was implemented in BB 3.</p>
             <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.</p>
-            <p><img src="https://i.imgur.com/avlfYLU.png" alt=""></p>
+            <p><img src="https://i.imgur.com/Mhcnt8F.png" alt=""></p>
             <p><strong>Valid localizations (gathered via POEditor API):</strong></p>
             <ul>
                 <li><img src="https://www.plajer.xyz/shared/flags/gb.png" alt=""> English (primary)</li>

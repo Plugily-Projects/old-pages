@@ -104,7 +104,7 @@ include_once("../../inc/poeditor_reader.php");
             <p>However, you can use localization support which was implemented in VD 3.</p>
             <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.
             </p>
-            <p><img src="https://i.imgur.com/bHYXt2q.png" alt=""></p>
+            <p><img src="https://i.imgur.com/gFDRqPP.png" alt=""></p>
             <p><strong>Valid localizations (gathered via POEditor API):</strong></p>
             <ul>
                 <li><img src="https://www.plajer.xyz/shared/flags/gb.png" alt=""> English (primary)</li>

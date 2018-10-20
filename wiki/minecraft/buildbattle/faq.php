@@ -42,7 +42,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <hr>
             <h3 id="supported-versions-of-build-battle-3">Supported versions of Build Battle 3</h3>
-            <p>Supported versions are currently 1.9.x, 1.10.x, 1.11.x and 1.12.x.
+            <p>Supported versions are currently 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13 and 1.13.1.
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this message:</p>
             <pre><code>  _   _           _                                                    _                _
  |<span class="hljs-string"> \ </span>|<span class="hljs-string"> </span>|<span class="hljs-string">   ___   </span>|<span class="hljs-string"> </span>|<span class="hljs-string">_     ___   _   _   _ __    _ __     ___    _ __  </span>|<span
