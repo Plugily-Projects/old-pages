@@ -200,44 +200,36 @@ include_once("../../inc/json_localization.php");
                 <tr>
                     <th>Statistic name (enum)</th>
                     <th>Statistic identifier (string) (for advanced things)</th>
-                    <th>Type</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>BLOCKS_BROKEN</td>
                     <td>blocksbroken</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>BLOCKS_PLACED</td>
                     <td>blocksplaced</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>GAMES_PLAYED</td>
                     <td>gamesplayed</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>WINS</td>
                     <td>wins</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>LOSES</td>
                     <td>loses</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>HIGHEST_WIN</td>
                     <td>highestwin</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>PARTICLES_USED</td>
                     <td>particles</td>
-                    <td>int</td>
                 </tr>
                 </tbody>
             </table>

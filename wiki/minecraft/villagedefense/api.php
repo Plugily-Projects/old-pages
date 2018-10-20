@@ -418,44 +418,36 @@ include_once("../../inc/json_localization.php");
                 <tr>
                     <th>Statistic name (enum)</th>
                     <th>Statistic identifier (string) (for advanced things)</th>
-                    <th>Type</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>ORBS <strong>(<i class="fa fa-warning"></i> non-persistent)</strong></td>
                     <td>orbs</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>KILLS</td>
                     <td>kills</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>DEATHS</td>
                     <td>deaths</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>GAMES_PLAYED</td>
                     <td>gamesplayed</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>HIGHEST_WAVE</td>
                     <td>highestwave</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>LEVEL</td>
                     <td>level</td>
-                    <td>int</td>
                 </tr>
                 <tr>
                     <td>XP</td>
                     <td>xp</td>
-                    <td>int</td>
                 </tr>
                 </tbody>
             </table>
