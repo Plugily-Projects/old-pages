@@ -70,13 +70,13 @@ include_once("../../inc/json_localization.php");
             <pre><code class="lang-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
                  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>pl.plajer<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>villagedefense3<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>villagedefense<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span><strong>{version}</strong><span class="hljs-tag">&lt;/<span
                                 class="hljs-name">version</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">/dependencies</span>&gt;</span></code></pre>
-            <hr>
+
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>

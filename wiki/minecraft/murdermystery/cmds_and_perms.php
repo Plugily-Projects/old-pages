@@ -146,7 +146,7 @@ include_once("../../inc/json_localization.php");
                     <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
-                    <td>/mma forcestart (theme)</td>
+                    <td>/mma forcestart</td>
                     <td>murdermystery.admin.forcestart</td>
                     <td>Force starts game</td>
                     <td><?php echo localize("Wiki.Global.Player") ?></td>

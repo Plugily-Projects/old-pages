@@ -38,9 +38,10 @@ include_once("../../inc/json_localization.php");
             </h4>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
+                <li><a href="#maven">Maven repository</a></li>
                 <li><a href="#events">API Events</a></li>
                 <li><a href="#stats-storage">Stats storage</a></li>
-                <li>Manipulating player join/leave attempts (soon)</li>
+                <li><a href="#manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</a></li>
             </ul>
 
             <div class="alert alert-danger alert-white rounded">
@@ -52,6 +53,27 @@ include_once("../../inc/json_localization.php");
                 </div>
             </div>
 
+            <h1 id="maven">Maven repository</h1>
+            <p>Maven repository usually contains latest releases, if not, please check in few days if release is there.</p>
+            <p><strong>How to access repo:</strong></p>
+            <p>1. Add repository</p>
+            <pre><code class="lang-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">repositories</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">repository</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>plajerlair-repo<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>https://maven.plajer.xyz/minecraft<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">repository</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">repositories</span>&gt;</span></code></pre>
+            <p>2. Add the dependency</p>
+            <pre><code class="lang-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>pl.plajer<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>murdermystery<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span><strong>{version}</strong><span class="hljs-tag">&lt;/<span
+                                class="hljs-name">version</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">/dependencies</span>&gt;</span></code></pre>
+
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
@@ -61,7 +83,7 @@ include_once("../../inc/json_localization.php");
                 <li><a href="#mmgamestartevent-">MMGameStartEvent</a> [0.0.8]</li>
                 <li><a href="#mmgameendevent-">MMGameStopEvent</a> [0.0.8]</li>
                 <li><a href="#mmgamestatechangeevent-">MMGameStateChangeEvent</a> [0.0.8]</li>
-                <li><a href="#mmplayerstatisticchangeevent-">MMPlayerStatisticChangeEvent [0.0.8]</li>
+                <li><a href="#mmplayerstatisticchangeevent-">MMPlayerStatisticChangeEvent [0.0.8]</a></li>
             </ul>
             <hr>
             <h3 id="murdermysteryevent-generic"><strong>MurderMysteryEvent</strong> (<strong>Generic</strong>)</h3>
@@ -148,6 +170,27 @@ include_once("../../inc/json_localization.php");
         }
     }
 </code></pre>
+            <hr>
+            <h3 id="mmplayerstatisticchangeevent-"><strong>MMPlayerStatisticChangeEvent</strong></h3>
+            <p>The event is called when the player receives a new statistic.</p>
+            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
+            <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
+                                class="hljs-title">onStatChange</span><span class="hljs-params">(MMPlayerStatisticChangeEvent event)</span></span>{
+        StatisticType stat = e.getStatisticType();
+        <span class="hljs-keyword">int</span> statNumber = e.getNumber();
+        e.getPlayer().sendMessage(<span class="hljs-string">"Your statistic "</span> + stat.getName() + <span
+                            class="hljs-string">" has changed to "</span> + statNumber);
+    }
+</code></pre>
+            <blockquote>
+                <p><strong>event#getPlayer()</strong> - returns player involved in this event</p>
+                <p><strong>event#getArena()</strong> - returns arena player is playing (player is always in arena when
+                    this
+                    event is called)</p>
+                <p><strong>event#getStatisticType()</strong> - returns statistic of StatsStorage.StatisticType enum</p>
+                <p><strong>event#getNumber()</strong> - returns current value of statistic</p>
+            </blockquote>
             <blockquote>
                 <p><strong>event.getPreviousState()</strong> - returns arena state before change</p>
                 <p><strong>event.getState()</strong> - returns current arena state</p>
@@ -278,6 +321,48 @@ include_once("../../inc/json_localization.php");
                 </tr>
                 </tbody>
             </table>
+
+            <h1 id="manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</h1>
+            <h2 id="join-attempt">Join attempt</h2>
+            <p>To force player to join specified arena you can use our <code>ArenaManager</code> class.</p>
+            <pre><code class="lang-java">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span
+                                class="hljs-params">(String arena, Player player)</span></span>{
+    ArenaManager.joinAttempt(player, ArenaRegistry.getArena(arena));
+  }
+
+  <span class="hljs-comment">// or</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendPlayerToArena</span><span class="hljs-params">(Arena arena, Player player)</span></span>{
+    ArenaManager.joinAttempt(player, arena);
+  }
+</code></pre>
+
+            <div class="alert alert-warning alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-warning"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
+                    You should check is arena name exist otherwise it will throw NullPointerException
+                </div>
+            </div>
+
+            <p>After that you can check for <code>#isCancelled()</code> if join attempt was cancelled or not.</p>
+            <h2 id="leave-attempt">Leave attempt</h2>
+            <p>You can also use <code>ArenaManager</code> class to force player to quit arena.</p>
+            <pre><code class="lang-java">  public void forcePlayerQuit(<span class="hljs-built_in">Player</span> <span class="hljs-built_in">player</span>){
+    Arena arena = ArenaRegistry.getArena(<span class="hljs-built_in">player</span>);
+
+    ArenaManager.leaveAttempt(<span class="hljs-built_in">player</span>, arena);
+  }
+</code></pre>
+            <div class="alert alert-warning alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-warning"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
+                    You should check is arena isn't null otherwise it will throw NullPointerException
+                </div>
+            </div>
         </div>
 
         <div class="col-auto mb-3">

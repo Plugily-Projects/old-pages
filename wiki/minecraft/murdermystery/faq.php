@@ -154,6 +154,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <table>
                 <thead>
                 <tr>
+                    <th>Priority</th>
                     <th>Last word</th>
                     <th><?php echo localize("Wiki.Global.Description"); ?></th>
                     <th><?php echo localize("Wiki.Global.Permission"); ?></th>
@@ -161,21 +162,25 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 </thead>
                 <tbody>
                 <tr>
+                    <td>1</td>
                     <td>Meme</td>
                     <td>Despacito 2 is confirmed by God</td>
                     <td>murdermystery.lastwords.meme</td>
                 </tr>
                 <tr>
+                    <td>2</td>
                     <td>Rage</td>
                     <td>WHY YOU KILLED ME?!!?</td>
                     <td>murdermystery.lastwords.rage</td>
                 </tr>
                 <tr>
+                    <td>3</td>
                     <td>Pro</td>
                     <td>It was lagging...</td>
                     <td>murdermystery.lastwords.pro</td>
                 </tr>
                 <tr>
+                    <td>4</td>
                     <td>Default</td>
                     <td>Please respawn :(</td>
                     <td><?php echo localize("Wiki.Global.None"); ?></td>
@@ -196,26 +201,31 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <table>
                 <thead>
                 <tr>
+                    <td>Priority</td>
                     <th>Particle type</th>
                     <th><?php echo localize("Wiki.Global.Permission"); ?></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
+                    <td>1</td>
                     <td>Hearts</td>
                     <td>murdermystery.trails.heart</td>
                 </tr>
                 <tr>
+                    <td>2</td>
                     <td>Flames</td>
-                    <td>murdermystery.trails.heart</td>
+                    <td>murdermystery.trails.flame</td>
                 </tr>
                 <tr>
+                    <td>3</td>
                     <td>Critical</td>
-                    <td>murdermystery.trails.heart</td>
+                    <td>murdermystery.trails.critical</td>
                 </tr>
                 <tr>
+                    <td>4</td>
                     <td>Cloud</td>
-                    <td>murdermystery.trails.heart</td>
+                    <td>murdermystery.trails.cloud</td>
                 </tr>
                 </tbody>
             </table>
