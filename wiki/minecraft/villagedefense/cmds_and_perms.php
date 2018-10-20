@@ -123,6 +123,12 @@ include_once("../../inc/json_localization.php");
                     <td></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td>villagedefense.admin.sign.create (creating signs by hand) villagedefense.admin.sign.break (destroying signs)</td>
+                    <td>You can create or break signs with those permissions</td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td>/vd create [arena]</td>
                     <td>villagedefense.admin.create</td>
                     <td>Creates new arena with specified name</td>
@@ -167,20 +173,8 @@ include_once("../../inc/json_localization.php");
                 <tr>
                     <td>/vda reload</td>
                     <td>villagedefense.admin.reload</td>
-                    <td>Reloads all game instances <strong>they will be stopped</strong></td>
+                    <td>Reloads all game instances <strong>they will be stopped. <i class="fa fa-warning"></i> Usage highly discouraged!</strong></td>
                     <td><?php echo localize("Wiki.Global.Player"); ?>/<?php echo localize("Wiki.Global.Console"); ?></td>
-                </tr>
-                <tr>
-                    <td>
-                        <del>/vda addsign [arena]</del>
-                    </td>
-                    <td><strong>Command itself isn&#39;t available anymore, use setup menu instead</strong>
-                        villagedefense.admin.sign.create (creating signs by hand) villagedefense.admin.sign.break
-                        (destroying
-                        signs)
-                    </td>
-                    <td>Adds new sign for specified arena</td>
-                    <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda delete [arena]</td>
