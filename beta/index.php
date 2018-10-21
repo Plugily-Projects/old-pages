@@ -5,7 +5,7 @@ include_once("inc/tracking.php");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plajer's Lair translation project</title>
+    <title>Plajer's Lair beta tests program</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
