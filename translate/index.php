@@ -60,6 +60,24 @@ include_once("inc/tracking.php");
             padding-left: 4.5rem !important;
         }
 
+        .corner-ribbon{
+            width: 200px;
+            background: #2f2f2f;
+            color: #fff;
+            position: fixed;
+            text-align: center;
+            bottom: 35px;
+            line-height: 40px;
+            z-index: 100;
+        }
+
+        .corner-ribbon.right{
+            right: -45px;
+            left: auto;
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
     </style>
 
 </head>
@@ -71,6 +89,7 @@ include_once("inc/tracking.php");
     </a>
 </nav>
 <div class="container-fluid vertically-center">
+    <a target="_blank" href="https://beta.plajer.xyz" class="corner-ribbon right" style="text-decoration: none; color:white">Join beta program</a>
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
             <h2 class="jumbotron text-center mb-3"><?php echo localize("Translation.Select-Project"); ?></h2>
