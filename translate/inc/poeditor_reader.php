@@ -40,6 +40,9 @@ function readLanguages($projectId) {
 
 function fixFlag($languageID, $flag) {
     switch ($languageID) {
+        case 'Czech':
+            $flag = 'cz';
+            break;
         case 'Vietnamese':
             $flag = 'vn';
             break;
