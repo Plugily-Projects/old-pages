@@ -148,7 +148,7 @@ include_once("../../inc/json_localization.php");
                     <td>Force starts game you&#39;re in When <code>theme</code> argument is typed arena starts with predefined theme without Voting phase</td>
                     <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
-                <tr>
+                <tr class="text-danger">
                     <td>/bba reload</td>
                     <td>buildbattle.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped. <i class="fa fa-warning"></i> Usage highly discouraged!</strong></td>

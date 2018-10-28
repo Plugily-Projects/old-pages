@@ -170,7 +170,7 @@ include_once("../../inc/json_localization.php");
                     <td>Toggles all arenas chat visibility (multi-arena feature only)</td>
                     <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
-                <tr>
+                <tr class="text-danger">
                     <td>/vda reload</td>
                     <td>villagedefense.admin.reload</td>
                     <td>Reloads all game instances <strong>they will be stopped. <i class="fa fa-warning"></i> Usage highly discouraged!</strong></td>
