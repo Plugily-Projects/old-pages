@@ -7,7 +7,7 @@ include_once("inc/tracking.php");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plajer's Lair translation project</title>
+    <title>Plajer's Lair Translation Project</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
@@ -82,12 +82,23 @@ include_once("inc/tracking.php");
 
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-nav-index">
     <a class="navbar-brand text-truncate" href="#">
-        <img src="https://i.imgur.com/gDyj2on.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Plajer's Lair translation project
-    </a>
+        <img src="https://i.imgur.com/gDyj2on.png" width="30" height="30" class="d-inline-block align-top" alt=""> Plajer's Lair Translation Project</a>
+    <button class="navbar-toggler px-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ml-2">
+                <a class="nav-link" href="https://plajer.xyz"><i class="fa fa-home mr-1"></i> Command Center</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
 <div class="container-fluid vertically-center">
     <a target="_blank" href="https://beta.plajer.xyz" class="corner-ribbon right" style="text-decoration: none; color:white">Join beta program</a>
     <div class="row justify-content-center">
@@ -319,5 +330,9 @@ include_once("inc/tracking.php");
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
