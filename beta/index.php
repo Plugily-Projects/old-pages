@@ -97,8 +97,8 @@ include_once("inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
             <div class="jumbotron text-center mb-3 py-5">
-                <h1><?php localize("Beta.Join-Beta-Now") ?></h1>
-                <h4 class="text-muted"><?php localize("Beta.Join-Beta-Now.Benefits") ?></h4>
+                <h1><?php echo localize("Beta.Join-Beta-Now"); ?></h1>
+                <h4 class="text-muted"><?php echo localize("Beta.Join-Beta-Now.Benefits"); ?></h4>
             </div>
             <div class="card-deck justify-content-center align-items-center">
                 <div class="card fixed-card">
@@ -135,7 +135,7 @@ include_once("inc/tracking.php");
         </div>
         <div class="col-md-6 col-12">
             <a target="_blank" href="https://discord.gg/zJpyV9U" style="text-decoration: none !important; color: black !important;">
-                <h2 class="jumbotron jumbotron-fluid text-center mt-2"><?php localize("Beta.Join-Now") ?></h2>
+                <h2 class="jumbotron jumbotron-fluid text-center mt-2"><?php echo localize("Beta.Join-Now"); ?></h2>
             </a>
         </div>
     </div>
