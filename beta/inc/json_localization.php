@@ -9,13 +9,13 @@ function localize($phrase) {
     if (is_null($translations)) {
         $locale = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0];
 
-        $server_output = getCachedContent('https://plajer.xyz/localeservice/fetch.php', 'pass=localeservice&type=Pages&locale=' . $locale,
+        $server_output = getCachedContent('https://api.plajer.xyz/locale/fetch.php', 'pass=localeservice&type=Pages&locale=' . $locale,
             'locale_' . $locale);
 
         //use default locale if not found
         if($server_output == '' || isset($_COOKIE['preferred_default_locale'])) {
             $locale = 'en-GB';
-            $server_output = getCachedContent('https://plajer.xyz/localeservice/fetch.php', 'pass=localeservice&type=Pages&locale=' . $locale,
+            $server_output = getCachedContent('https://api.plajer.xyz/locale/fetch.php', 'pass=localeservice&type=Pages&locale=' . $locale,
                 'locale_' . $locale);
         }
 

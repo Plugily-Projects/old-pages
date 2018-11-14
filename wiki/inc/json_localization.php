@@ -8,7 +8,7 @@ function localize($phrase) {
         $locale = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0];
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,"https://plajer.xyz/localeservice/fetch.php");
+        curl_setopt($ch, CURLOPT_URL,"https://api.plajer.xyz/locale/fetch.php");
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, "pass=localeservice&type=Pages&locale=" . $locale);
 
@@ -19,7 +19,7 @@ function localize($phrase) {
         //use default locale if not found
         if($server_output == "" || isset($_COOKIE["preferred_default_locale"])) {
             $locale = "en-GB";
-            curl_setopt($ch, CURLOPT_URL,"https://plajer.xyz/localeservice/fetch.php");
+            curl_setopt($ch, CURLOPT_URL,"https://api.plajer.xyz/locale/fetch.php");
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, "pass=localeservice&type=Pages&locale=" . $locale);
 
