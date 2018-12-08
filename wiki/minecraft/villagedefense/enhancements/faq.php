@@ -19,13 +19,13 @@ include_once("../../../inc/json_localization.php");
     <!-- Bootstrap core CSS -->
     <link href="../../../inc/css/bootstrap-4.1.3.min.css" rel="stylesheet">
 
-    <link rel="icon" sizes="192x192" href="../../../inc/img/favicon/favicon-mobile.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../inc/img/favicon/favicon.ico">
+    <link rel="icon" sizes="192x192" href="https://plajer.xyz/images/favicon.php?type=favicon-mobile">
+    <link rel="shortcut icon" type="image/x-icon" href="https://plajer.xyz/images/favicon.php?type=favicon">
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
     <a class="navbar-brand" href="#">
-        <img src="https://i.imgur.com/gDyj2on.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
         Plajer's Lair wiki
     </a>
 </nav>
