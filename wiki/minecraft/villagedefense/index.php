@@ -108,8 +108,8 @@ include_once("../../inc/json_localization.php");
             <h3>
                 <?php echo localize("Wiki.Village.Index.Enhancements-Content"); ?></h3>
             <ul>
-                <li><a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.html"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a></li>
-                <li><a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.html"><?php echo localize("Wiki.Sidebar.Enhancements.FAQ"); ?></a>
+                <li><a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a></li>
+                <li><a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/faq.php"><?php echo localize("Wiki.Sidebar.Enhancements.FAQ"); ?></a>
                 </li>
             </ul>
         </div>
