@@ -45,7 +45,8 @@ include_once("../../inc/tracking.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/buildbattle/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/7XAGeBU.png" alt=""></p>
+            <br/>
+            <p><img src="https://i.imgur.com/7XAGeBU.png" alt="" height="600" </p>
             <h2 id="build-battle-3-official-wiki-"><?php echo str_replace("%name%", "Build Battle", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>
@@ -158,7 +159,7 @@ include_once("../../inc/tracking.php");
         </div>
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Build Battle 3</a> |
+            <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://www.spigotmc.org/resources/44703/">Build Battle</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
                                                                                                                            href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
                 and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>

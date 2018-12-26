@@ -167,7 +167,7 @@ include_once("../../inc/json_localization.php");
         </div>
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense 3</a> |
+            <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
                                                                                                                            href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
                 and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>

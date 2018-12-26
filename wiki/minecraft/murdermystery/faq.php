@@ -280,7 +280,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
         </div>
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2018 <a target="_blank" href="https://www.spigotmc.org/resources/buildbattle-1-9-1-13-1.44703/">Murder Mystery</a> |
+            <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://github.com/Plajer-Lair/MurderMystery">Murder Mystery</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
                 and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
