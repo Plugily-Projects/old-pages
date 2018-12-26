@@ -43,7 +43,7 @@ include_once("../../inc/json_localization.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/murdermystery/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/GsFfmWm.png" alt=""></p>
+            <p><img src="https://i.imgur.com/mDZCCJ3.png" alt=""></p>
             <h2 id="murder-official-wiki-">Murder Mystery official wiki!</h2>
             <table>
                 <thead>

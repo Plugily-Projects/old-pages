@@ -45,7 +45,7 @@ include_once("../../inc/tracking.php");
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/buildbattle/index.php'>Click here to use English one!</a></div>";
             }
             ?>
-            <p><img src="https://i.imgur.com/dplq0h0.png" alt=""></p>
+            <p><img src="https://i.imgur.com/7XAGeBU.png" alt=""></p>
             <h2 id="build-battle-3-official-wiki-"><?php echo str_replace("%name%", "Build Battle", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>
