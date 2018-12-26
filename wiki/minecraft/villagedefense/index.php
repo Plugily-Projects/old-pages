@@ -50,7 +50,7 @@ include_once("../../inc/json_localization.php");
                 <thead>
                 <tr>
                     <th><a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Village.Index.List.FAQ"); ?> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?></a></th>
-                    <th><a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Wiki.Village.Index.List.Simple-Arena-Setup"); ?></a></th>
+                    <th><a href="https://www.youtube.com/watch?v=t48N9A3ls3g"><?php echo localize("Wiki.Village.Index.List.Simple-Arena-Setup"); ?></a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/villagedefense/free_maps.php"><?php echo localize("Wiki.Village.Index.List.Maps"); ?></a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/villagedefense/api.php"><?php echo localize("Wiki.Village.Index.List.Developer-API"); ?></a></th>
                 </tr>
@@ -142,7 +142,7 @@ include_once("../../inc/json_localization.php");
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://youtu.be/16GS6zAte5I"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
+                            <a href="https://www.youtube.com/watch?v=t48N9A3ls3g"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>

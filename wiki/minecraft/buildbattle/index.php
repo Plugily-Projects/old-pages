@@ -46,7 +46,7 @@ include_once("../../inc/tracking.php");
             }
             ?>
             <br/>
-            <p><img src="https://i.imgur.com/7XAGeBU.png" alt="" height="600" </p>
+            <p><img src="https://i.imgur.com/7XAGeBU.png" alt="" height="208" width="600"></p>
             <h2 id="build-battle-3-official-wiki-"><?php echo str_replace("%name%", "Build Battle", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>
