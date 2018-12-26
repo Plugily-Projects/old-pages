@@ -165,7 +165,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
+                            <a href="https://tutorial.plajer.xyz"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>

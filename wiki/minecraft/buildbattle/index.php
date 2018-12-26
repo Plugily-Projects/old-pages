@@ -52,7 +52,7 @@ include_once("../../inc/tracking.php");
                 <thead>
                 <tr>
                     <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/cmds_and_perms.php">Commands and Permissions</a></th>
-                    <th><a href="https://www.youtube.com/watch?v=UOfrzj0WdzM">Simple arena setup</a></th>
+                    <th><a href="https://tutorial.plajer.xyz">Simple arena setup</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/free_maps.php">Maps</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/buildbattle/api.php">Developers API</a></th>
                 </tr>
@@ -134,7 +134,7 @@ include_once("../../inc/tracking.php");
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://www.youtube.com/watch?v=UOfrzj0WdzM"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
+                            <a href="https://tutorial.plajer.xyz"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/buildbattle/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a>

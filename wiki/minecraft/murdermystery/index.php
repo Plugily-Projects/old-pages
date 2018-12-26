@@ -50,7 +50,7 @@ include_once("../../inc/json_localization.php");
                 <thead>
                 <tr>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/cmds_and_perms.php">Commands and Permissions</a></th>
-                    <th><a href="https://bit.ly/2CuSR5E">Simple arena setup</a></th>
+                    <th><a href="https://tutorial.plajer.xyz">Simple arena setup</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/faq.php">FAQ</a></th>
                     <th><a href="https://wiki.plajer.xyz/minecraft/murdermystery/api.php">Developers API</a></th>
                 </tr>
@@ -132,7 +132,7 @@ include_once("../../inc/json_localization.php");
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
                     <ul style="list-style-type: disc;">
                         <li>
-                            <a href="https://bit.ly/2CuSR5E"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
+                            <a href="https://tutorial.plajer.xyz"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
