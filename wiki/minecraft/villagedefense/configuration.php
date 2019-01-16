@@ -101,7 +101,7 @@ include_once("../../inc/poeditor_reader.php");
             <h3 id="language-and-locales">Language and locales</h3>
             <p>Plugin is 95% translatable via <strong>language.yml</strong> file.</p>
             <p><img src="https://i.imgur.com/WTG1CL2.png" alt=""></p>
-            <p>However, you can use localization support which was implemented in VD 3.</p>
+            <p>However, you can use localization support which was implemented in VillageDefense 3.7.4</p>
             <p>To change locale of plugin go to <strong>config.yml</strong> and modify <strong>locale</strong> value.
             </p>
             <p><img src="https://i.imgur.com/gFDRqPP.png" alt=""></p>

@@ -37,13 +37,24 @@ include_once("../../../inc/json_localization.php");
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li>
-                    <a href="#commands-and-permissions-custom-kits-module">Commands
-                        and Permissions - Custom kits</a></li>
+                    <a href="#commands-and-permissions-custom-kits-module">Commands and Permissions - Custom kits</a></li>
                 <li>
-                    <a href="#commands-and-permissions-achievements-module">Commands
-                        and Permissions - Achievements</a></li>
+                    <a href="#commands-and-permissions-achievements-module">Commands and Permissions - Achievements</a></li>
             </ul>
+
+            <div class="alert alert-info alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
+                    Since Village Defense 4.0.0 Enhancements addon commands are registered directly into Village Defense plugin.
+                    Before 3.0.0 the commands were having /vdck (for custom kits) and /vdach (for achievements) names.
+                </div>
+            </div>
+
             <h2 id="commands-and-permissions-custom-kits-module">Commands and Permissions - custom kits module</h2>
+            <p>In game view:</p>
+            <img class="img-fluid" src="https://i.imgur.com/I6g02yc.png" width="200px">
             <p><code><?php echo localize("Wiki.Global.Command-Aliases-Explained"); ?></code></p>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
@@ -63,44 +74,42 @@ include_once("../../../inc/json_localization.php");
                 </thead>
                 <tbody>
                 <tr>
-                    <td>/vdck create [kit]</td>
+                    <td>/vda customkits create [kit]</td>
                     <td>villagedefense.customkits.command.create</td>
                     <td>Create new custom kit</td>
                 </tr>
                 <tr>
-                    <td>/vdck edit [kit]</td>
+                    <td>/vda customkits edit [kit]</td>
                     <td>villagedefense.customkits.command.edit</td>
                     <td>Edit already existing custom kit</td>
                 </tr>
                 <tr>
-                    <td>/vdck delete [kit]</td>
+                    <td>/vda customkits delete [kit]</td>
                     <td>villagedefense.customkits.command.delete</td>
                     <td>Delete existing custom kit</td>
                 </tr>
                 <tr>
-                    <td>/vdck list</td>
+                    <td>/vda customkits list</td>
                     <td>villagedefense.customkits.command.list</td>
                     <td>Open inventory will all loaded custom kits</td>
                 </tr>
                 <tr>
-                    <td>/vdck reload</td>
+                    <td>/vda customkits reload</td>
                     <td>villagedefense.customkits.command.reload</td>
                     <td>Reload configuration and re-register custom kits to update them</td>
                 </tr>
                 <tr>
-                    <td>/vdck potiongen [potion type] [duration] [amplifier]</td>
+                    <td>/vda customkits potiongen [potion type] [duration] [amplifier]</td>
                     <td>villagedefense.customkts.command.potiongen</td>
-                    <td>Create custom potion effect for kits <strong>(effects will be applied to player not given into
-                            his
-                            inventory)</strong></td>
+                    <td>Create custom potion effect for kits <strong>(effects will be applied to player not given into their inventory)</strong></td>
                 </tr>
                 <tr>
-                    <td>/vdck mobgen [iron_golem/wolf] [amount of mobs]</td>
+                    <td>/vda customkits mobgen [iron_golem/wolf] [amount of mobs]</td>
                     <td>villagedefense.customkits.command.mobgen</td>
                     <td>Create custom mobs for kits <strong>(they will be spawned at the start/per wave)</strong></td>
                 </tr>
                 <tr>
-                    <td>/vdck commandgen [player/console] [command]</td>
+                    <td>/vda customkits commandgen [player/console] [command]</td>
                     <td>villagedefense.customkits.command.commandgen</td>
                     <td>Create command for kits <strong>(%player% placeholder supported)</strong></td>
                 </tr>
@@ -117,12 +126,12 @@ include_once("../../../inc/json_localization.php");
                 </thead>
                 <tbody>
                 <tr>
-                    <td>/vdach list</td>
+                    <td>/vd achievements list</td>
                     <td>villagedefense.achievements.command</td>
                     <td>Shows list of unlocked achievements</td>
                 </tr>
                 <tr>
-                    <td>/vdach reload</td>
+                    <td>/vd achievements reload</td>
                     <td>villagedefense.achievements.command.reload</td>
                     <td>Reloads achievements configuration</td>
                 </tr>

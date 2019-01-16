@@ -42,24 +42,26 @@ include_once("../../inc/json_localization.php");
                 <li>
                     <a href="#can-i-set-up-secret-well-">Can I set up secret well?</a></li>
                 <li>
-                    <a href="#supported-versions-of-village-defense-3">What versions do support Village Defense 3?</a></li>
+                    <a href="#supported-versions-of-village-defense">What versions do support Village Defense?</a></li>
                 <li>
                     <a href="#players-can-t-join-through-signs"><?php echo localize("Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs"); ?></a></li>
                 <li>
                     <a href="#language-yml-file-is-empty">language.yml file is empty!</a></li>
-                <li><a href="#how-power-ups-work-">How power-ups work?</a></li>
+                <li><a href="#how-power-ups-work-">How do power-ups work?</a></li>
+                <li><a href="#special-shop-items">Are there any special shop items?</a></li>
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
-                <li><a href="#what-s-new-in-vd-3-">What&#39;s new in VD 3?</a></li>
+                <li><a href="#what-s-new-in-vd-4-">What&#39;s new in VillageDefense 4?</a></li>
+                <li><a href="#what-s-new-in-vd-3-">What&#39;s new in VillageDefense 3?</a></li>
                 <li>
                     <a href="#how-can-i-donate-you-">Can I donate you?</a></li>
             </ul>
             <hr>
             <h3 id="-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> <strong>Limitation of liability
                     disclaimer</strong></h3>
-            <p><strong>Village Defense 3</strong> plugin <strong>SHOULD BE RUN</strong> on a separate map when using it
+            <p><strong>Village Defense </strong> plugin <strong>SHOULD BE RUN</strong> on a separate map when using it
                 on
                 multi-mode servers like Factions, Survival, SkyBlock etc.</p>
-            <p><strong>What Village Defense 3 modifies in the world:</strong></p>
+            <p><strong>What Village Defense modifies in the world:</strong></p>
             <ul>
                 <li>Blocks mob spawning other than Village Defense ones</li>
                 <li>Cleans hoppers inventories</li>
@@ -76,9 +78,7 @@ include_once("../../inc/json_localization.php");
             </div>
             <hr>
             <h3 id="how-to-set-up-the-shop-">How to set up the shop?</h3>
-            <p>If you follow <a href="https://www.youtube.com/watch?v=16GS6zAte5I&feature=youtu.bep">this tutorial</a> you
-                will
-                setup it properly.</p>
+            <p>If you follow <a href="https://tutorial.plajer.xyz">tutorial at this page</a> you will setup it properly.</p>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
                     <i class="fa fa-check"></i>
@@ -105,14 +105,14 @@ include_once("../../inc/json_localization.php");
                     <i class="fa fa-times-circle"></i>
                 </div>
                 <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
-                    Always delete VD 3 files when the server is stopped. It&#39;s recommended too to edit them manually
+                    Always delete Village Defense files when the server is stopped. It&#39;s recommended too to edit them manually
                     when the
                     server is stopped.
                 </div>
             </div>
             <hr>
-            <h3 id="supported-versions-of-village-defense-3">Supported versions of Village Defense 3</h3>
-            <p>Supported versions are currently 1.11-1.13.1
+            <h3 id="supported-versions-of-village-defense">Supported versions of Village Defense</h3>
+            <p>Supported versions are currently 1.11-1.13.2
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this
                 message:</p>
             <pre><code>  _   _           _                                                    _                _
@@ -164,12 +164,11 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <hr>
             <h3 id="how-power-ups-work-">How power-ups work?</h3>
             <p>Power-ups added in Village Defense <strong>3.3.0</strong> enhances your game a bit.</p>
-            <p><strong>Requires <a href="https://dev.bukkit.org/projects/holographic-displays">Holographic Displays</a>
-                    to work!</strong>
+            <p><strong>Requires <a href="https://dev.bukkit.org/projects/holographic-displays">Holographic Displays</a> to work!</strong>
             </p>
             <p><strong>There are few types of them right now:</strong></p>
             <ul>
-                <li>Map clean power-up (cleans map from all zombies that are spawned, not every zombie from the pool)
+                <li>Map clean power-up (Cleans map from all zombies that are spawned, not every zombie from the pool)
                 </li>
                 <li>Double damage power-up (Every player gets Strength I potion for 15 seconds by default)</li>
                 <li>Healing power-up (Every player gets Regeneration I for 10 seconds by default)</li>
@@ -181,6 +180,24 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <p>Every option and messages from these power-ups are configurable. Drop chance, time of power-up,
                 disabling/enabling specific power-ups are configurable via <strong>config.yml</strong>. Messages are
                 configurable via <strong>language.yml</strong>.</p>
+            <hr>
+            <h2 id="special-shop-items">Special shop items</h2>
+            <p>There are few special shop items that you can put into the shop to enhance gameplay a bit.</p>
+            <ul>
+                <li><strong>Entity items</strong><ul>
+                        <li>Spawn Wolf item<br/>
+                            Item for spawning wolves in game.
+                            It should be named &#39;Spawn Wolf&#39; or like you&#39;ve translated it in language.yml under <code>In-Game.Messages.Shop-Messages.Wolf-Item-Name</code>. It can be any item, <strong>only display name of item will be checked while buying it!</strong></li>
+                        <li>Spawn Golem item<br/>
+                            Item for spawning golems in game.
+                            It should be named &#39;Spawn Golem&#39; or like you&#39;ve translated it in language.yml under <code>In-Game.Messages.Shop-Messages.Golem-Item-Name</code>. It can be any item, <strong>only display name of item will be checked while buying it!</strong></li>
+                    </ul>
+                </li>
+                <li>Special kit items<ul>
+                        <li>Soon</li>
+                    </ul>
+                </li>
+            </ul>
             <hr>
             <h3 id="scoreboard-variables">Scoreboard variables</h3>
             <table>
@@ -240,7 +257,19 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 </tbody>
             </table>
             <hr>
-            <h3 id="what-s-new-in-vd-3-">What&#39;s new in VD 3?</h3>
+            <h3 id="what-s-new-in-vd-4-">What&#39;s new in VillageDefense 4?</h3>
+            <p>Village Defense 4 is a <strong>huge recode with many improvements</strong> and other changes.</p>
+            <p>Primary changes:</p>
+            <ul>
+                <li>Code performance increased a lot! (No more lag!)</li>
+                <li>Implemented brand new entity upgrade menus!</li>
+                <li>Many bug fixes from version 3.0.0</li>
+                <li>Lots of parts of the plugin were recoded and improved</li>
+                <li>Plus other minor changes and fixes...</li>
+            </ul>
+            <p>All changes can be seen in this pull: https://github.com/Plajer-Lair/Village_Defense/pull/21</p>
+            <hr>
+            <h3 id="what-s-new-in-vd-3-">What&#39;s new in VillageDefense 3?</h3>
             <p>There are many <strong>major and minor changes</strong> in Village Defense 3.</p>
             <p>Primary changes:</p>
             <ul>

@@ -51,7 +51,7 @@ include_once("../../inc/json_localization.php");
                     <i class="fa fa-warning"></i>
                 </div>
                 <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
-                    Addon is not made by VD3 staff and bugs/features should be reported to plugin&#39;s
+                    Addon is not made by Village Defense staff and bugs/features should be reported to plugin&#39;s
                     author!
                 </div>
             </div>

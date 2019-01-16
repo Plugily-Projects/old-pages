@@ -41,10 +41,10 @@ include_once("../../inc/json_localization.php");
             <ul>
                 <li><a href="#maven">Maven repository</a></li>
                 <li><a href="#events">API Events</a></li>
-                <li><a href="#stats-storage">Stats storage</a>
-                </li>
+                <li><a href="#stats-storage">Stats storage</a></li>
                 <li><a href="#kit-registry">Kit registry</a></li>
                 <li><a href="#manipulating-player-join-leave-attempts">Manipulating player join/leave attempts</a></li>
+                <li><a href="#">Registering own power-ups</a> (soon)</li>
             </ul>
             <div class="alert alert-danger alert-white rounded">
                 <div class="icon">
@@ -80,41 +80,21 @@ include_once("../../inc/json_localization.php");
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
-                <li><a href="#-villageevent-generic-">VillageEvent</a> [3.0.0] [Generic event]</li>
                 <li><a href="#-villagegamejoinattemptevent-cancellable-">VillageGameJoinAttemptEvent</a> [3.0.0]
                     [Cancellable]
                 </li>
                 <li><a href="#-villagegameleaveattemptevent-">VillageGameLeaveAttemptEvent</a> [3.0.0]</li>
                 <li><a href="#-villagegamestartevent-">VillageGameStartEvent</a> [3.0.0]</li>
                 <li><a href="#-villagegamestopevent-">VillageGameStopEvent</a> [3.0.0]</li>
-                <li><a href="#-villageplayerchoosekitevent-cancellable-">VillagePlayerChooseKitEvent</a> [2.0.0]
-                    [Cancellable]
-                </li>
+                <li><a href="#-villageplayerchoosekitevent-cancellable-">VillagePlayerChooseKitEvent</a> [2.0.0] [Cancellable]</li>
                 <li><a href="#-villagewaveendevent-">VillageWaveEndEvent</a> [3.0.0]</li>
                 <li><a href="#-villagewavestartevent-">VillageWaveStartEvent</a> [3.0.0]</li>
                 <li><a href="#-villagegamestatechangeevent-">VillageGameStateChangeEvent</a> [3.8.0]</li>
                 <li><a href="#-villageplayerstatisticchangeevent-">VillagePlayerStatisticChangeEvent</a> [3.8.0]</li>
-                <li><a href="#-villagegolemupgradeevent-">VillageGolemUpgradeEvent</a> [3.8.0]</li>
+                <li><s><a href="#-villagegolemupgradeevent-">VillageGolemUpgradeEvent</a></s> [3.8.0] [Removed in 4.0.0]</li>
+                <li><a href="#villageentityupgradeevent">VillageEntityUpgradeEvent</a> [4.0.0]</li>
                 <li><a href="#-villagepoweruppickevent-">VillagePowerupPickEvent</a> [3.8.0]</li>
             </ul>
-            <hr>
-            <h3 id="-villageevent-generic-"><strong>VillageEvent</strong> (<strong>Generic</strong>)</h3>
-            <p>The event is called <strong>everytime</strong> any Village Defense event is called because it&#39;s a
-                generic
-                event</p>
-            <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
-            <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span
-                                class="hljs-title">onEventCall</span><span
-                                class="hljs-params">(VillageEvent event)</span></span>{
-        <span class="hljs-keyword">if</span>(event <span class="hljs-keyword">instanceof</span> VillagePowerupPickEvent){
-            Bukkit.getConsoleSender().sendMessage(<span class="hljs-string">"VillagePowerupPickEvent was called!"</span>);
-        }
-    }
-</code></pre>
-            <blockquote>
-                <p>event#getArena() - returns event arena for which event was called</p>
-            </blockquote>
             <hr>
             <h3 id="-villagegamejoinattemptevent-cancellable-"><strong>VillageGameJoinAttemptEvent</strong>
                 (<strong>Cancellable</strong>)</h3>
@@ -308,7 +288,7 @@ include_once("../../inc/json_localization.php");
                 <p><strong>event#getNumber()</strong> - returns current value of statistic</p>
             </blockquote>
             <hr>
-            <h3 id="-villagegolemupgradeevent-"><strong>VillageGolemUpgradeEvent</strong></h3>
+            <h3 id="-villagegolemupgradeevent-"><strong><s>VillageGolemUpgradeEvent</s> (Deprecated)</strong></h3>
             <p>The event is called when the player upgrades a golem.</p>
             <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
@@ -335,23 +315,50 @@ include_once("../../inc/json_localization.php");
             <blockquote>
                 <p><strong>event#getArena()</strong> - returns arena where golem was upgraded</p>
             </blockquote>
+
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
+                    Event was replaced by VillageEntityUpgradeEvent in Village Defense 4.0.0
+                </div>
+            </div>
+            <hr>
+            <h2 id="villageentityupgradeevent">VillageEntityUpgradeEvent</h2>
+            <p>The event is called when player upgrades entity.</p>
+            <p>Example:</p>
+            <pre><code>  @<span class="hljs-function">EventHandler
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onEntityUpgrade</span>(<span class="hljs-params">VillagePlayerEntityUpgradeEvent <span
+                                    class="hljs-keyword">event</span></span>) </span>{
+    <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You applied "</span> + <span class="hljs-keyword">event</span>.getAppliedUpgrade().getName() + <span
+                            class="hljs-string">" upgrade! You paid "</span> + <span class="hljs-keyword">event</span>.getAppliedUpgrade().getCost(e.getTier()) + <span
+                            class="hljs-string">" orbs!"</span>);
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">event</span>.getEntity().getType() == EntityType.WOLF) {
+      <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You applied this upgrade to wolf!"</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You applied this upgrade to iron golem!"</span>);
+    }
+  }
+</code></pre>
+            <blockquote>
+                <p><strong>event#getEntity()</strong> - returns entity which was upgraded
+                    <strong>event#getUpgrade()</strong> - returns upgrade that was applied
+                    <strong>event#getPlayer()</strong> - returns player who upgraded entity
+                    <strong>event#getArena()</strong> - returns arena where entity was upgraded</p>
+            </blockquote>
             <hr>
             <h3 id="-villagepoweruppickevent-"><strong>VillagePowerupPickEvent</strong></h3>
             <p>The event is called when the player picks up a power-up.</p>
             <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
-            <pre><code class="lang-java">    @<span class="hljs-function">EventHandler
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span
-                                class="hljs-params">VillagePowerupPickEvent <span
-                                    class="hljs-keyword">event</span></span>)</span>{
-        PowerupManager.PowerupType powerupType = <span class="hljs-keyword">event</span>.getPowerupType();
-        <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span
-                            class="hljs-string">"You've picked up "</span> + powerupType.getName() + <span
-                            class="hljs-string">"!"</span>);
-    }
+            <pre><code>@<span class="hljs-function">EventHandler
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span class="hljs-params">VillagePlayerPowerupPickupEvent <span class="hljs-keyword">event</span></span>) </span>{
+    Powerup powerup = <span class="hljs-keyword">event</span>.getPowerup();
+    <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You picked up "</span> + powerup.getName() + <span class="hljs-string">" with identifier "</span> + powerup.getId());
+  }
 </code></pre>
             <blockquote>
-                <p><strong>event#getPowerupType()</strong> - returns power up type of PowerupManager.PowerupType enum
-                </p>
+                <p><strong>event#getPowerup()</strong> - returns powerup</p>
                 <p><strong>event#getPlayer()</strong> - returns player involved in this event</p>
                 <p><strong>event#getArena()</strong> - returns arena player is playing</p>
             </blockquote>
@@ -365,7 +372,7 @@ include_once("../../inc/json_localization.php");
                 <li><a href="#-available-statistic-types-">Statistic types</a></li>
             </ul>
             <h3 id="-retrieving-online-players-stats-"><strong>Retrieving online players stats</strong></h3>
-            <p>You can easily get online players stats using VD3 API - Stats Storage class.</p>
+            <p>You can easily get online players stats using Village Defense API - Stats Storage class.</p>
             <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
             <pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span
                                 class="hljs-keyword">int</span> <span class="hljs-title">getZombieKills</span><span
@@ -577,7 +584,8 @@ include_once("../../inc/json_localization.php");
                             <a href="https://tutorial.plajer.xyz"><?php echo localize("Wiki.Sidebar.Support.Setup-Tutorial"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a> - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
+                            <a href="https://wiki.plajer.xyz/minecraft/villagedefense/faq.php"><?php echo localize("Wiki.Sidebar.Support.FAQ"); ?></a>
+                            - <?php echo localize("Wiki.Sidebar.Support.FAQ.Problems-And-Tips"); ?>
                         </li>
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/configuration.php"><?php echo localize("Wiki.Sidebar.Support.Files-Explained"); ?></a>
@@ -608,7 +616,8 @@ include_once("../../inc/json_localization.php");
 
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://www.spigotmc.org/resources/41869/">Village Defense</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
+                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank"
+                                                                                                                           href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
                 and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
         </footer>
