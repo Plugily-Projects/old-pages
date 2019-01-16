@@ -181,7 +181,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 disabling/enabling specific power-ups are configurable via <strong>config.yml</strong>. Messages are
                 configurable via <strong>language.yml</strong>.</p>
             <hr>
-            <h2 id="special-shop-items">Special shop items</h2>
+            <h3 id="special-shop-items">Special shop items</h3>
             <p>There are few special shop items that you can put into the shop to enhance gameplay a bit.</p>
             <ul>
                 <li><strong>Entity items</strong><ul>
@@ -267,7 +267,7 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 <li>Lots of parts of the plugin were recoded and improved</li>
                 <li>Plus other minor changes and fixes...</li>
             </ul>
-            <p>All changes can be seen in this pull: https://github.com/Plajer-Lair/Village_Defense/pull/21</p>
+            <p>All changes can be seen in <a href="https://github.com/Plajer-Lair/Village_Defense/pull/21" target="_blank">this pull</a>.</p>
             <hr>
             <h3 id="what-s-new-in-vd-3-">What&#39;s new in VillageDefense 3?</h3>
             <p>There are many <strong>major and minor changes</strong> in Village Defense 3.</p>

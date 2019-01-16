@@ -325,7 +325,7 @@ include_once("../../inc/json_localization.php");
                 </div>
             </div>
             <hr>
-            <h2 id="villageentityupgradeevent">VillageEntityUpgradeEvent</h2>
+            <h3 id="villageentityupgradeevent">VillageEntityUpgradeEvent</h3>
             <p>The event is called when player upgrades entity.</p>
             <p>Example:</p>
             <pre><code>  @<span class="hljs-function">EventHandler
@@ -342,16 +342,16 @@ include_once("../../inc/json_localization.php");
   }
 </code></pre>
             <blockquote>
-                <p><strong>event#getEntity()</strong> - returns entity which was upgraded
-                    <strong>event#getUpgrade()</strong> - returns upgrade that was applied
-                    <strong>event#getPlayer()</strong> - returns player who upgraded entity
-                    <strong>event#getArena()</strong> - returns arena where entity was upgraded</p>
+                <p><strong>event#getEntity()</strong> - returns entity which was upgraded</p>
+                    <p><strong>event#getUpgrade()</strong> - returns upgrade that was applied</p>
+                <p><strong>event#getPlayer()</strong> - returns player who upgraded entity</p>
+                    <p><strong>event#getArena()</strong> - returns arena where entity was upgraded</p>
             </blockquote>
             <hr>
             <h3 id="-villagepoweruppickevent-"><strong>VillagePowerupPickEvent</strong></h3>
             <p>The event is called when the player picks up a power-up.</p>
             <p><strong><?php echo localize("Wiki.Global.Example") ?>:</strong></p>
-            <pre><code>@<span class="hljs-function">EventHandler
+            <pre><code>  @<span class="hljs-function">EventHandler
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPowerupPick</span>(<span class="hljs-params">VillagePlayerPowerupPickupEvent <span class="hljs-keyword">event</span></span>) </span>{
     Powerup powerup = <span class="hljs-keyword">event</span>.getPowerup();
     <span class="hljs-keyword">event</span>.getPlayer().sendMessage(<span class="hljs-string">"You picked up "</span> + powerup.getName() + <span class="hljs-string">" with identifier "</span> + powerup.getId());

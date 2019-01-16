@@ -83,10 +83,159 @@ include_once("../../inc/poeditor_reader.php");
             </div>
             <hr>
             <h3 id="config-yml">config.yml</h3>
-            <p>config.yml is very well commented. No need to explain more any part of it.</p>
-            <p>For customizing custom permissions check out <a
-                        href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php#custom-permissions">this
-                    section</a>.</p>
+            <p>config.yml is very well commented itself but if you don't see all the options you can check here!</p>
+            <p><strong>Not all latest options may be available here!</strong></p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Option</th>
+                    <th><?php echo localize("Wiki.Global.Description"); ?></th>
+                    <th>Default value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>locale</td>
+                    <td>Language that plugin will use</td>
+                    <td>default (English)</td>
+                </tr>
+                <tr>
+                    <td>Bossbar-Enabled</td>
+                    <td>Should in-game boss bar be enabled?</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>BungeeActivated</td>
+                    <td>Should plugin hook into bungee cord (arena per server)?<br/><strong>You still need to use external plugins for signs and hub server!</strong></td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>InventoryManager</td>
+                    <td>Should we save all player data (inventory, health etc.) into file and restore it after player leaves arena?<br/><strong>Useful for shared servers (multi modes)</strong></td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Respawn-After-Wave</td>
+                    <td>Should players respawn after the wave ends/starts?</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Custom-Permissions</td>
+                    <td>Section for creating custom permissions that will give players extra orbs in game (see <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php#custom-permissions">here</a>)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Basic-Permissions</td>
+                    <td>Basic permissions configuration <a href="https://wiki.plajer.xyz/minecraft/villagedefense/cmds_and_perms.php#basic-permissions">here</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Disable-Leave-Command</td>
+                    <td>Should /vd leave command be blocked?</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>Whitelisted-Commands</td>
+                    <td>List of all commands that can be used in-game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DatabaseActivated</td>
+                    <td>Should MySQL database be enabled for this plugin?<br/><strong>There is no migrator between yaml files and MySQL database!</strong></td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>Starting-Waiting-Time</td>
+                    <td>Amount of seconds to start the game</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Cooldown-Before-Next-Wave</td>
+                    <td>Time before next wave starts</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Mini-Zombie-Speed</td>
+                    <td>Speed of baby zombie, suggested between 1.8 and 2.0</td>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <td>Zombie-Speed</td>
+                    <td>Speed of normal zombies, suggested between 1.2 and 1.4</td>
+                    <td>1.3</td>
+                </tr>
+                <tr>
+                    <td>Rewards-Enabled</td>
+                    <td>Should rewards.yml rewards be enabled? Rewards after game end/zombie kill etc.</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>ChatFormat-Enabled</td>
+                    <td>Should in-game chat format be enabled?<br/><strong>You can use PlaceholderAPI&#39;s placeholders there!</strong></td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Orbs-Starting-Amount</td>
+                    <td>Amount of orbs given to player when game starts</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Block-Commands-In-Game</td>
+                    <td>Should we block every not Village Defense associated commands in game?</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Firework-When-Game-Ends</td>
+                    <td>Should we fire fireworks at location of every player after the game ends?</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Sign-Block-States-Enabled</td>
+                    <td>Should blocks behind the game signs change their colors based on current arena state?</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Entity-Upgrades</td>
+                    <td>Entity upgrades section, you can modify upgrades prices there</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wolves-Spawn-Limit and Golem-Spawn-Limit</td>
+                    <td>Limit of mobs player can spawn in-game, will only affect only buying them in shop</td>
+                    <td>20 and 15</td>
+                </tr>
+                <tr>
+                    <td>Holidays-Enabled</td>
+                    <td>Should special holiday events be enabled?<br/>Example: 4 days before and after and between Halloween spooky effects will be applied for zombies and when you die!</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Simple-Zombie-Health-Bar-Enabled</td>
+                    <td>Enable simple health bar for zombies? Their name will be their health bar</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>Powerups</td>
+                    <td>Power-ups section modify basic power-ups options here</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wave-Limit</td>
+                    <td>Should game have infinite amount of waves or limited one?</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Update-Notifier</td>
+                    <td>Should we notify you if the plugin update gets released?</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Debug</td>
+                    <td>Should we print some &#39;debug spam&#39; to help the developers in fixing problems?</td>
+                    <td>false</td>
+                </tr>
+                </tbody>
+            </table>
             <p><strong>Part of config.yml</strong></p>
             <p><img src="https://i.imgur.com/3fH8j8k.png" alt=""></p>
             <hr>

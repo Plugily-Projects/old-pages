@@ -54,7 +54,7 @@ include_once("../../../inc/json_localization.php");
 
             <h2 id="commands-and-permissions-custom-kits-module">Commands and Permissions - custom kits module</h2>
             <p>In game view:</p>
-            <img class="img-fluid" src="https://i.imgur.com/I6g02yc.png" width="200px">
+            <img class="img-fluid" src="https://i.imgur.com/I6g02yc.png" height="200px">
             <p><code><?php echo localize("Wiki.Global.Command-Aliases-Explained"); ?></code></p>
             <div class="alert alert-success alert-white rounded">
                 <div class="icon">
