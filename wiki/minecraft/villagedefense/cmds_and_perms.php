@@ -189,7 +189,7 @@ include_once("../../inc/json_localization.php");
                     <td><?php echo localize("Wiki.Global.Player"); ?></td>
                 </tr>
                 <tr>
-                    <td>/vda clear [zombie/villager/golem]</td>
+                    <td>/vda clear [zombie/villager/golem/wolf]</td>
                     <td>villagedefense.admin.clear</td>
                     <td>Clears specified mobs in your game</td>
                     <td><?php echo localize("Wiki.Global.Player"); ?></td>
@@ -199,6 +199,18 @@ include_once("../../inc/json_localization.php");
                     <td>villagedefense.admin.addorbs villagedefense.admin.addorbs.others</td>
                     <td>Adds orbs (game currency) to you/specified player</td>
                     <td><?php echo localize("Wiki.Global.Player"); ?>/Console when player argument is specified</td>
+                </tr>
+                <tr>
+                    <td>/vda addlevel [number] (player)</td>
+                    <td>villagedefense.admin.addlevel</td>
+                    <td>Add levels to player</td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?>/<?php echo localize("Wiki.Global.Console"); ?></td>
+                </tr>
+                <tr>
+                    <td>/vda setlevel [number] (player)</td>
+                    <td>villagedefense.admin.setlevel</td>
+                    <td>Set levels of player</td>
+                    <td><?php echo localize("Wiki.Global.Player"); ?>/<?php echo localize("Wiki.Global.Console"); ?></td>
                 </tr>
                 <tr>
                     <td>/vda setwave [number]</td>
