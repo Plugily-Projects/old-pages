@@ -25,6 +25,25 @@ include_once("../../inc/json_localization.php");
 
     <style>
         .fixed-nav-index {z-index: 9;}
+
+        .corner-ribbon {
+            width: 260px;
+            background: #2f2f2f !important;
+            color: #fff;
+            position: fixed;
+            text-align: center;
+            bottom: 50px;
+            line-height: 40px;
+            z-index: 100;
+        }
+
+        .corner-ribbon.right {
+            right: -55px;
+            left: auto;
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
     </style>
 </head>
 <body>
@@ -35,6 +54,8 @@ include_once("../../inc/json_localization.php");
     </a>
 </nav>
 <div class="container-fluid">
+    <a target="_blank" href="https://github.com/Plajer-Lair/pages" class="corner-ribbon right d-none d-sm-block" style="text-decoration: none; color:white">We're Open Source too!</a>
+
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <?php
