@@ -278,12 +278,19 @@ include_once("../../inc/json_localization.php");
                     <td>KILLS</td>
                     <td>kills</td>
                     <td>true</td>
+                    <td>Total kills amount</td>
                 </tr>
                 <tr>
                     <td>LOCAL_SCORE</td>
                     <td>local_score</td>
                     <td>false <i class="fa fa-warning"></i></td>
                     <td>In-game current score amount</td>
+                </tr>
+                <tr>
+                    <td>LOCAL_PRAISES</td>
+                    <td>local_praises</td>
+                    <td>false <i class="fa fa-warning"></i></td>
+                    <td>In-game praises amount</td>
                 </tr>
                 <tr>
                     <td>LOCAL_CURRENT_PRAY</td>
