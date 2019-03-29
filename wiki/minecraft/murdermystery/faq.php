@@ -44,7 +44,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <hr>
             <h3 id="supported-versions-of-murder-mystery">Supported versions of Murder Mystery</h3>
-            <p>Supported versions are currently 1.11.x, 1.12.x, 1.13 and 1.13.1.
+            <p>Supported versions are currently 1.11.x, 1.12.x, 1.13, 1.13.1 and 1.13.2.
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this message:</p>
             <pre><code>  _   _           _                                                    _                _
  |<span class="hljs-string"> \ </span>|<span class="hljs-string"> </span>|<span class="hljs-string">   ___   </span>|<span class="hljs-string"> </span>|<span class="hljs-string">_     ___   _   _   _ __    _ __     ___    _ __  </span>|<span
@@ -86,6 +86,11 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 <tr>
                     <td>%MIN_PLAYERS%</td>
                     <td>Minimum players size</td>
+                    <td><?php echo localize("Wiki.Global.None"); ?></td>
+                </tr>
+                <tr>
+                    <td>%MAX_PLAYERS%</td>
+                    <td>Maximum players size</td>
                     <td><?php echo localize("Wiki.Global.None"); ?></td>
                 </tr>
                 <tr>
@@ -282,7 +287,6 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://github.com/Plajer-Lair/MurderMystery">Murder Mystery</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-                and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
         </footer>
     </div>

@@ -77,7 +77,6 @@ include_once("../../inc/json_localization.php");
             <h1 id="events">Events</h1>
             <p><code>Event name [since] [extra attributes]</code></p>
             <ul>
-                <li><a href="#murdermysteryevent-generic">MurderMysteryEvent</a> [0.0.8] [Generic event]</li>
                 <li><a href="#mmgamejoinevent-cancellable-">MMGameJoinAttemptEvent</a> [0.0.8] [Cancellable]</li>
                 <li><a href="#mgameleaveevent-">MMGameLeaveAttemptEvent</a> [0.0.8]</li>
                 <li><a href="#mmgamestartevent-">MMGameStartEvent</a> [0.0.8]</li>
@@ -85,21 +84,6 @@ include_once("../../inc/json_localization.php");
                 <li><a href="#mmgamestatechangeevent-">MMGameStateChangeEvent</a> [0.0.8]</li>
                 <li><a href="#mmplayerstatisticchangeevent-">MMPlayerStatisticChangeEvent [0.0.8]</a></li>
             </ul>
-            <hr>
-            <h3 id="murdermysteryevent-generic"><strong>MurderMysteryEvent</strong> (<strong>Generic</strong>)</h3>
-            <p>The event is called <strong>everytime</strong> any Murder Mystery event is called because it&#39;s a generic event.</p>
-            <p><strong><?php echo localize("Wiki.Global.Example")?>:</strong></p>
-            <pre><code class="lang-java">    <span class="hljs-meta">@EventHandler</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onEventCall</span><span
-                            class="hljs-params">(MurderMysteryEvent event)</span></span>{
-        <span class="hljs-keyword">if</span>(event <span class="hljs-keyword">instanceof</span> MMGameChangeStateEvent){
-            Bukkit.getConsoleSender().sendMessage(<span class="hljs-string">"MMGameChangeStateEvent was called!"</span>);
-        }
-    }
-</code></pre>
-            <blockquote>
-                <p><strong>event#getArena()</strong> - returns event arena for which event was called</p>
-            </blockquote>
             <hr>
             <h3 id="mmgamejoinevent-cancellable-"><strong>MMGameJoinAttemptEvent</strong> (<strong>Cancellable</strong>)</h3>
             <p>The event is called when a player is trying to join an arena.</p>
@@ -416,7 +400,6 @@ include_once("../../inc/json_localization.php");
         <footer class="col-12 page-footer font-small elegant-color-dark p-0">
             <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://github.com/Plajer-Lair/MurderMystery">Murder Mystery</a> |
                 Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-                and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
             </div>
         </footer>
     </div>
