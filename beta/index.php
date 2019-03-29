@@ -24,6 +24,7 @@ include_once("inc/tracking.php");
     <style>
         body {
             background: url("https://i.imgur.com/kOzGO9k.png");
+	    font-family: 'Roboto', sans-serif !important;
         }
 
         .vertically-center {
@@ -127,7 +128,7 @@ include_once("inc/tracking.php");
                     </a>
                     <div class="card-footer">
                         <h5 class="card-title">Be heard - your ideas matters!</h5>
-                        Participating in <strong>beta program</strong> allows you to impact on the development of our projects!
+                        Participating in <strong>beta program</strong> allows you to directly impact on the development of our projects!
                     </div>
                 </div>
             </div>

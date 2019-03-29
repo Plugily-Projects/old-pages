@@ -25,6 +25,7 @@ include_once("inc/tracking.php");
     <style>
         body {
             background: url("https://i.imgur.com/kOzGO9k.png");
+            font-family: 'Roboto', sans-serif !important;
         }
 
         .vertically-center {
@@ -278,7 +279,7 @@ include_once("inc/tracking.php");
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
-                        <div class="px-max">
+                        <div class="px-5">
                             <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
                             <?php
                             $i = 1;

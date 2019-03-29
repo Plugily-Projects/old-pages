@@ -24,6 +24,7 @@ include_once("inc/tracking.php");
     <style>
         body {
             background: url("https://i.imgur.com/kOzGO9k.png");
+	    font-family: 'Roboto', sans-serif !important;
         }
 
         .vertically-center {
@@ -51,7 +52,7 @@ include_once("inc/tracking.php");
             margin-bottom: .5rem !important;
             margin-right: 1rem !important;
             margin-left: 1rem !important;
-            margin-top: 1rem !important;
+	    margin-top: 1rem !important;
             box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
             text-align: center !important;
         }
@@ -77,7 +78,7 @@ include_once("inc/tracking.php");
 <div class="container-fluid vertically-center">
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
-            <div class="jumbotron text-center mb-3 py-5">
+	    <div class="jumbotron text-center mb-3 py-5">
                 <h1>Choose tutorial</h1>
             </div>
 

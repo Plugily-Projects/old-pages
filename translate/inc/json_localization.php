@@ -7,7 +7,7 @@ function localize($phrase) {
     /* Static keyword is used to ensure the file is loaded only once */
     static $translations = NULL;
     if (is_null($translations)) {
-        $locale = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0];
+        $locale = fixLocaleName(explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0]);
 
         $server_output = getCachedContent('https://api.plajer.xyz/locale/fetch.php', 'pass=localeservice&type=Pages&locale=' . $locale,
             'locale_' . $locale);
@@ -24,4 +24,12 @@ function localize($phrase) {
         $translations = json_decode($server_output, true);
     }
     return $translations[$phrase];
+}
+
+function fixLocaleName($locale) {
+    $locale = str_replace("_", "-", $locale);
+    if(strlen($locale) == 2) {
+	return $locale . "-" . strtoupper($locale);
+    }
+    return $locale;
 }

@@ -1,6 +1,7 @@
 <?php
 include_once('../../inc/json_localization.php');
 include_once("../../inc/tracking.php");
+include_once("../../inc/event_banners.php");
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +28,8 @@ include_once("../../inc/tracking.php");
         .fixed-nav-index {
             z-index: 9;
         }
+
+	<?php echo applyHolidayStyles(); ?>
 
         .corner-ribbon {
             width: 260px;
@@ -60,6 +63,7 @@ include_once("../../inc/tracking.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <?php
+	    echo applyHolidayBanner("Build Battle");
             if (localize("Wiki.Global.Language-Name") != "English") {
                 echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/buildbattle/index.php'>Click here to use English one!</a></div>";

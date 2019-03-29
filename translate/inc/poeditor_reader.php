@@ -25,7 +25,7 @@ function readLanguages($projectId) {
             $cache = array();
         }
         $apiKey = file_get_contents(__DIR__ . '/POEditorAPIKey.txt');
-
+        
         $response = getCachedContent('https://api.poeditor.com/v2/languages/list', 'api_token=' . $apiKey . '&id=' . $projectId,
             'poeditor_proj' . $projectId);
         $cache[$projectId] = $response;
