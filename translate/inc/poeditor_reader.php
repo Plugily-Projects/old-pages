@@ -19,44 +19,48 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 include_once('cache.php');
 
 function readLanguages($projectId) {
-    static $cache = NULL;
-    if (is_null($cache) || !array_key_exists($projectId, $cache)) {
-        if(is_null($cache)) {
-            $cache = array();
-        }
-        $apiKey = file_get_contents(__DIR__ . '/POEditorAPIKey.txt');
-        
-        $response = getCachedContent('https://api.poeditor.com/v2/languages/list', 'api_token=' . $apiKey . '&id=' . $projectId,
-            'poeditor_proj' . $projectId);
-        $cache[$projectId] = $response;
+  static $cache = null;
+  if (is_null($cache) || !array_key_exists($projectId, $cache)) {
+    if (is_null($cache)) {
+      $cache = array();
     }
-    return json_decode($cache[$projectId]);
+    $apiKey = file_get_contents(__DIR__ . '/POEditorAPIKey.txt');
+
+    $response = getCachedContent('https://api.poeditor.com/v2/languages/list', 'api_token=' . $apiKey . '&id=' . $projectId, 'poeditor_proj' . $projectId);
+    $cache[$projectId] = $response;
+  }
+  return json_decode($cache[$projectId]);
 }
 
 function fixFlag($languageID, $flag) {
-    switch ($languageID) {
-        case 'Czech':
-            $flag = 'cz';
-            break;
-        case 'Vietnamese':
-            $flag = 'vn';
-            break;
-        case 'Chinese (simplified)':
-            $flag = 'cn';
-            break;
-        case 'Chinese (traditional)':
-            $flag = 'hk';
-            break;
-        case 'Estonian':
-            $flag = 'ee';
-            break;
-        case 'Norwegian Bokmål':
-            $flag = 'no';
-            break;
-        case 'Portuguese (BR)':
-            $flag = 'pt';
-            break;
-    }
-    return $flag;
+  switch ($languageID) {
+    case 'Czech':
+      $flag = 'cz';
+      break;
+    case 'Vietnamese':
+      $flag = 'vn';
+      break;
+    case 'Chinese (simplified)':
+    case 'Chinese':
+      $flag = 'cn';
+      break;
+    case 'Chinese (traditional)':
+    case 'Chinese (TW)':
+      $flag = 'hk';
+      break;
+    case 'Estonian':
+      $flag = 'ee';
+      break;
+    case 'Norwegian Bokmål':
+      $flag = 'no';
+      break;
+    case 'Hebrew':
+      $flag = 'il';
+      break;
+    case 'Portuguese (BR)':
+      $flag = 'pt';
+      break;
+  }
+  return $flag;
 }
 

@@ -58,14 +58,14 @@ include_once("../../inc/json_localization.php");
 
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
-            <?php
-            if (localize("Wiki.Global.Language-Name") != "English") {
-                echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
+          <?php
+          if (localize("Wiki.Global.Language-Name") != "English") {
+            echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
                 <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/murdermystery/index.php'>Click here to use English one!</a></div>";
-            }
-            ?>
+          }
+          ?>
             <br/>
-            <p><img src="https://i.imgur.com/mDZCCJ3.png" alt="" height="208" width="600"></p>
+            <p><img src="https://i.imgur.com/HFC7ysT.png" alt="" height="208" width="600"></p>
             <h2 id="murder-official-wiki-">Murder Mystery official wiki!</h2>
             <table>
                 <thead>
@@ -98,7 +98,7 @@ include_once("../../inc/json_localization.php");
                         <i class="fa fa-check"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Tip"); ?></strong>
-                        <?php echo localize("Wiki.Alerts.Tip.Description"); ?>
+                      <?php echo localize("Wiki.Alerts.Tip.Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-info alert-white rounded">
@@ -106,7 +106,7 @@ include_once("../../inc/json_localization.php");
                         <i class="fa fa-info-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
-                        <?php echo localize("Wiki.Alerts.Info.Description"); ?>
+                      <?php echo localize("Wiki.Alerts.Info.Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-warning alert-white rounded">
@@ -114,7 +114,7 @@ include_once("../../inc/json_localization.php");
                         <i class="fa fa-warning"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
-                        <?php echo localize("Wiki.Alerts.Warn.Description"); ?>
+                      <?php echo localize("Wiki.Alerts.Warn.Description"); ?>
                     </div>
                 </div>
                 <div class="alert alert-danger alert-white rounded">
@@ -122,7 +122,7 @@ include_once("../../inc/json_localization.php");
                         <i class="fa fa-times-circle"></i>
                     </div>
                     <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
-                        <?php echo localize("Wiki.Alerts.Danger.Description"); ?>
+                      <?php echo localize("Wiki.Alerts.Danger.Description"); ?>
                     </div>
                 </div>
             </ul>
