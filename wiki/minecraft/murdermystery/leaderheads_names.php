@@ -42,27 +42,28 @@ include_once("../../inc/json_localization.php");
                 </thead>
                 <tbody>
                 <tr>
-                    <td>murdermystery-kills</td>
+                    <td>mmpl-kills</td>
                     <td>Shows the players with the most kills (total innocents, murderer and detective kills)</td>
                 </tr>
                 <tr>
-                    <td>murdermystery-deaths</td>
+                    <td>mmpl-deaths</td>
                     <td>Shows the players with the most deaths</td>
                 </tr>
                 <tr>
-                    <td>murdermystery-played</td>
+                    <td>mmpl-played</td>
                     <td>Shows the players with the most games played</td>
                 </tr>
                 <tr>
-                    <td>murdermystery-score</td>
+                    
+                    <td>mmpl-score</td>
                     <td>Shows the players with the highest score reached</td>
                 </tr>
                 <tr>
-                    <td>murdermystery-wins</td>
+                    <td>mmpl-wins</td>
                     <td>Shows the players with the most games won (playing as any role)</td>
                 </tr>
                 <tr>
-                    <td>murdermystery-loses</td>
+                    <td>mmpl-loses</td>
                     <td>Shows the players with the most game loses (playing as any role)</td>
                 </tr>
                 </tbody>
