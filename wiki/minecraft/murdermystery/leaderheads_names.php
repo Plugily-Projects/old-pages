@@ -54,7 +54,6 @@ include_once("../../inc/json_localization.php");
                     <td>Shows the players with the most games played</td>
                 </tr>
                 <tr>
-                    
                     <td>mmpl-score</td>
                     <td>Shows the players with the highest score reached</td>
                 </tr>
