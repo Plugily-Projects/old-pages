@@ -49,6 +49,7 @@ include_once("../../inc/event_banners.php");
             -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
         }
+
     </style>
 </head>
 <body>
@@ -70,7 +71,7 @@ include_once("../../inc/event_banners.php");
           }
           ?>
             <br/>
-            <p><img src="https://i.imgur.com/tWZdaW3.png" alt="" height="208" width="600"></p>
+            <img src="https://i.imgur.com/tWZdaW3.png" alt="" class="img-fluid">
             <h2 id="build-battle-3-official-wiki-"><?php echo str_replace("%name%", "Build Battle", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>

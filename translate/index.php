@@ -85,7 +85,10 @@ include_once("inc/tracking.php");
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-nav-index">
     <a class="navbar-brand text-truncate" href="#">
-        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt=""> Plajer's Lair Translation Project</a>
+        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span class="d-none d-sm-inline-block">Plajer's Lair Translation Project</span>
+        <span class="d-sm-none">Translation Project</span>
+    </a>
     <button class="navbar-toggler px-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -93,7 +96,7 @@ include_once("inc/tracking.php");
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active ml-2">
+            <li class="nav-item active">
                 <a class="nav-link" href="https://plajer.xyz"><i class="fa fa-home mr-1"></i> Command Center</a>
             </li>
         </ul>
@@ -101,7 +104,7 @@ include_once("inc/tracking.php");
 </nav>
 
 <div class="container-fluid vertically-center">
-    <a target="_blank" href="https://beta.plajer.xyz" class="corner-ribbon right" style="text-decoration: none; color:white">Join beta program</a>
+    <a target="_blank" href="https://beta.plajer.xyz" class="corner-ribbon right d-none d-sm-block" style="text-decoration: none; color:white">Join beta program</a>
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
             <h2 class="jumbotron text-center mb-3"><?php echo localize("Translation.Select-Project"); ?></h2>
@@ -115,23 +118,23 @@ include_once("inc/tracking.php");
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                        <?php
-                        $i = 1;
-                        $json = readLanguages(190635);
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                continue;
-                            } else {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                            }
-                            $i++;
+                      <?php
+                      $i = 1;
+                      $json = readLanguages(190635);
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          continue;
+                        } else {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                        }
+                        $i++;
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -140,22 +143,22 @@ include_once("inc/tracking.php");
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
-                        <?php
-                        $i = 0;
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                            } else {
-                                continue;
-                            }
-                            $i++;
+                      <?php
+                      $i = 0;
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                        } else {
+                          continue;
+                        }
+                        $i++;
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -171,23 +174,23 @@ include_once("inc/tracking.php");
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                        <?php
-                        $i = 1;
-                        $json = readLanguages(196919);
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                continue;
-                            } else {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                                $i++;
-                            }
+                      <?php
+                      $i = 1;
+                      $json = readLanguages(196919);
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          continue;
+                        } else {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                          $i++;
+                        }
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -196,22 +199,22 @@ include_once("inc/tracking.php");
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
-                        <?php
-                        $i = 0;
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                            } else {
-                                continue;
-                            }
-                            $i++;
+                      <?php
+                      $i = 0;
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                        } else {
+                          continue;
+                        }
+                        $i++;
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -226,23 +229,23 @@ include_once("inc/tracking.php");
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
                         <br/>
                         <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                        <?php
-                        $i = 1;
-                        $json = readLanguages(202329);
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                continue;
-                            } else {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                                $i++;
-                            }
+                      <?php
+                      $i = 1;
+                      $json = readLanguages(202329);
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          continue;
+                        } else {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                          $i++;
+                        }
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -251,22 +254,22 @@ include_once("inc/tracking.php");
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
-                        <?php
-                        $i = 0;
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 80.0) {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                            } else {
-                                continue;
-                            }
-                            $i++;
+                      <?php
+                      $i = 0;
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 80.0) {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                        } else {
+                          continue;
+                        }
+                        $i++;
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
@@ -281,23 +284,23 @@ include_once("inc/tracking.php");
                         <br/>
                         <div class="px-5">
                             <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                            <?php
-                            $i = 1;
-                            $json = readLanguages(206301);
-                            foreach ($json->result->languages as $value) {
-                                if ($value->name == "English") {
-                                    continue;
-                                }
-                                $flag = $value->code;
-                                $flag = fixFlag($value->name, $flag);
-                                if ($value->percentage < 65.0) {
-                                    continue;
-                                } else {
-                                    echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                                    $i++;
-                                }
+                          <?php
+                          $i = 1;
+                          $json = readLanguages(206301);
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
                             }
-                            ?>
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 65.0) {
+                              continue;
+                            } else {
+                              echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                              $i++;
+                            }
+                          }
+                          ?>
                             <br/>
                             <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                         </div>
@@ -307,22 +310,22 @@ include_once("inc/tracking.php");
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
                         <br/>
-                        <?php
-                        $i = 0;
-                        foreach ($json->result->languages as $value) {
-                            if ($value->name == "English") {
-                                continue;
-                            }
-                            $flag = $value->code;
-                            $flag = fixFlag($value->name, $flag);
-                            if ($value->percentage < 65.0) {
-                                echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                            } else {
-                                continue;
-                            }
-                            $i++;
+                      <?php
+                      $i = 0;
+                      foreach ($json->result->languages as $value) {
+                        if ($value->name == "English") {
+                          continue;
                         }
-                        ?>
+                        $flag = $value->code;
+                        $flag = fixFlag($value->name, $flag);
+                        if ($value->percentage < 65.0) {
+                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                        } else {
+                          continue;
+                        }
+                        $i++;
+                      }
+                      ?>
                         <br/>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>

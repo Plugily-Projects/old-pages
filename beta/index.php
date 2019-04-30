@@ -24,7 +24,7 @@ include_once("inc/tracking.php");
     <style>
         body {
             background: url("https://i.imgur.com/kOzGO9k.png");
-	    font-family: 'Roboto', sans-serif !important;
+            font-family: 'Roboto', sans-serif !important;
         }
 
         .vertically-center {
@@ -79,7 +79,10 @@ include_once("inc/tracking.php");
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-nav-index">
     <a class="navbar-brand text-truncate" href="#">
-        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt=""> Plajer's Lair Beta Program</a>
+        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span class="d-none d-sm-inline-block">Plajer's Lair Beta Program</span>
+        <span class="d-sm-none">Beta Program</span>
+    </a>
     <button class="navbar-toggler px-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -87,14 +90,14 @@ include_once("inc/tracking.php");
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active ml-2">
+            <li class="nav-item active">
                 <a class="nav-link" href="https://plajer.xyz"><i class="fa fa-home mr-1"></i> Command Center</a>
             </li>
         </ul>
     </div>
 </nav>
 <div class="container-fluid vertically-center">
-    <a target="_blank" href="https://translate.plajer.xyz" class="corner-ribbon right" style="text-decoration: none; color:white">Translate our projects</a>
+    <a target="_blank" href="https://translate.plajer.xyz" class="corner-ribbon right d-none d-sm-block" style="text-decoration: none; color:white">Translate our projects</a>
     <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-10 col-12">
             <div class="jumbotron text-center mb-3 py-5">

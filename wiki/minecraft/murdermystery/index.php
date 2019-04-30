@@ -65,7 +65,7 @@ include_once("../../inc/json_localization.php");
           }
           ?>
             <br/>
-            <p><img src="https://i.imgur.com/HFC7ysT.png" alt="" height="208" width="600"></p>
+           <img src="https://i.imgur.com/HFC7ysT.png" alt="">
             <h2 id="murder-official-wiki-">Murder Mystery official wiki!</h2>
             <table>
                 <thead>

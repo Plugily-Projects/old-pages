@@ -41,7 +41,7 @@ include_once("../../inc/json_localization.php");
             </ul>
             <h2 id="bungee-signs-not-official">Bungee Signs (not official)</h2>
             <p>To provide game signs support like this example:</p>
-            <p><img src="https://i.imgur.com/fY8sySX.png" alt=""></p>
+            <p><img src="https://i.imgur.com/HxuIZ8J.png" alt=""></p>
             <p>You need to use an external plugin. Bungee Signs offer this support.
                 Just put it on lobby server and configure it!</p>
             <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">https://www.spigotmc.org/resources/bungeesigns.6563/</a>
@@ -56,7 +56,7 @@ include_once("../../inc/json_localization.php");
                 </div>
             </div>
             <h2 id="enhancements-addon">Enhancements addon</h2>
-            <p><img src="https://i.imgur.com/cfEvh40.png" alt=""></p>
+            <p><img src="https://i.imgur.com/HxuIZ8J.png" alt=""></p>
             <p>This addon extends Village Defense features allowing you to implement your own custom kits and
                 achievements.</p>
             <div class="alert alert-warning alert-white rounded">

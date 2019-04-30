@@ -40,7 +40,7 @@ include_once("../../inc/json_localization.php");
             </ul>
             <h2 id="bungee-signs-not-official-">Bungee Signs (not official)</h2>
             <p>To provide game signs support like this example:</p>
-            <p><img src="https://i.imgur.com/4pOEcZH.png" alt=""></p>
+            <p><img src="https://i.imgur.com/HxuIZ8J.png" alt=""></p>
             <p>You need to use an external plugin. Bungee Signs offer this support.
                 Just put it on lobby server and configure it!</p>
             <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/bungeesigns.6563/">https://www.spigotmc.org/resources/bungeesigns.6563/</a></p>
