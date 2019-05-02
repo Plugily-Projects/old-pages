@@ -348,12 +348,7 @@ include_once("../../inc/json_localization.php");
             </div>
         </div>
 
-        <footer class="col-12 page-footer font-small elegant-color-dark p-0">
-            <div class="footer-copyright text-center py-3">© 2019 <a target="_blank" href="https://www.spigotmc.org/resources/44703/">Build Battle</a> |
-                Created by <a target="_blank" href="https://github.com/Plajer-Lair">Plajer's Lair</a> and maintained by <a target="_blank" href="https://www.spigotmc.org/members/plajer.423193/">Plajer</a>
-                and <a target="_blank" href="https://www.spigotmc.org/members/tigerkatze.414545/">Tigerpanzer</a>
-            </div>
-        </footer>
+      <?php include('resources/footer.php'); ?>
     </div>
 </div>
 </body>
