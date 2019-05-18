@@ -68,7 +68,7 @@ include_once("../../inc/event_banners.php");
           }
           ?>
             <br/>
-            <p><img src="https://i.imgur.com/21vDd8d.png" alt=""></p>
+            <p><img src="https://i.imgur.com/rfGY9Js.png" alt=""></p>
             <h2><?php echo str_replace("%name%", "Village Defense", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>
