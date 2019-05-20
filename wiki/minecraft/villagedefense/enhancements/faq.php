@@ -23,12 +23,7 @@ include_once("../../../inc/json_localization.php");
     <link rel="shortcut icon" type="image/x-icon" href="https://plajer.xyz/images/favicon.php?type=favicon">
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
-    <a class="navbar-brand" href="#">
-        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
-        Plajer's Lair wiki
-    </a>
-</nav>
+<?php include('../resources/navbar.php'); ?>
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">

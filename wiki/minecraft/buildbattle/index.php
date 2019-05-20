@@ -53,22 +53,13 @@ include_once("../../inc/event_banners.php");
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
-    <a class="navbar-brand" href="#">
-        <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
-        Plajer's Lair wiki
-    </a>
-</nav>
+<?php include('resources/navbar.php'); ?>
 <div class="container-fluid">
     <a target="_blank" href="https://github.com/Plajer-Lair/pages" class="corner-ribbon right d-none d-sm-block" style="text-decoration: none; color:white">We're Open Source too!</a>
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
           <?php
           echo applyHolidayBanner("Build Battle");
-          if (localize("Wiki.Global.Language-Name") != "English") {
-            echo "<div class='alert alert-warning' role='alert'>" . localize("Wiki.Global.Language-Name") . " is not your language?
-                <a href='https://plajer.xyz/wiki/reset.php?redirect=https://wiki.plajer.xyz/minecraft/buildbattle/index.php'>Click here to use English one!</a></div>";
-          }
           ?>
             <br/>
             <img src="https://i.imgur.com/tWZdaW3.png" alt="" class="img-fluid">
@@ -183,7 +174,7 @@ include_once("../../inc/event_banners.php");
             </div>
         </div>
 
-        <<?php include('resources/footer.php'); ?>
+        <?php include('resources/footer.php'); ?>
     </div>
 </body>
 </html>
