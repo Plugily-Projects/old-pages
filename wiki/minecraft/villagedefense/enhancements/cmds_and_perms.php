@@ -31,10 +31,8 @@ include_once("../../../inc/json_localization.php");
             <h1 id="enhancements-commands-and-permissions">Enhancements Commands and Permissions</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
-                <li>
-                    <a href="#commands-and-permissions-custom-kits-module">Commands and Permissions - Custom kits</a></li>
-                <li>
-                    <a href="#commands-and-permissions-achievements-module">Commands and Permissions - Achievements</a></li>
+                <li><a href="#commands-and-permissions-custom-kits-module">Commands and Permissions - Custom kits</a></li>
+                <li><a href="#commands-and-permissions-achievements-module">Commands and Permissions - Achievements</a></li>
             </ul>
 
             <div class="alert alert-info alert-white rounded">
@@ -129,6 +127,26 @@ include_once("../../../inc/json_localization.php");
                     <td>/vd achievements reload</td>
                     <td>villagedefense.achievements.command.reload</td>
                     <td>Reloads achievements configuration</td>
+                </tr>
+                <tr>
+                    <td>/vda achievements create [name]</td>
+                    <td>villagedefense.achievements.command.create</td>
+                    <td>Creates new achievement</td>
+                </tr>
+                <tr>
+                    <td>/vda achievements delete [name]</td>
+                    <td>villagedefense.achievements.command.delete</td>
+                    <td>Deletes existing achievement</td>
+                </tr>
+                <tr>
+                    <td>/vda achievements edit [name]</td>
+                    <td>villagedefense.achievements.command.edit</td>
+                    <td>Edits existing achievement</td>
+                </tr>
+                <tr>
+                    <td>/vda achievements commandgen [player/console] [command]</td>
+                    <td>villagedefense.achievements.command.commandgen</td>
+                    <td>Create reward command for achievements <strong>(%player% placeholder supported)</strong></td>
                 </tr>
                 </tbody>
             </table>

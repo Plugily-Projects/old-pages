@@ -39,7 +39,7 @@ include_once("../../inc/tracking.php");
             </ul>
             <hr>
             <h3 id="supported-versions-of-murder-mystery">Supported versions of Murder Mystery</h3>
-            <p>Supported versions are currently 1.11.x, 1.12.x, 1.13, 1.13.1 and 1.13.2.
+            <p>Supported versions are currently 1.11-1.14.1.
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this message:</p>
             <pre><code>  _   _           _                                                    _                _
  |<span class="hljs-string"> \ </span>|<span class="hljs-string"> </span>|<span class="hljs-string">   ___   </span>|<span class="hljs-string"> </span>|<span class="hljs-string">_     ___   _   _   _ __    _ __     ___    _ __  </span>|<span
@@ -67,6 +67,14 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <p>This is a very common problem in every minigame plugin.</p>
             <p>It&#39;s <strong>caused by spawn protection</strong> feature in vanilla Minecraft.</p>
             <p>To disable this go to <strong>server.properties</strong> and change <strong>spawn-protection</strong> value <strong>to 0</strong>.</p>
+            <div class="alert alert-info alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
+                    You can no longer create signs in radius of spawn protection since <strong>Murder Mystery 1.1.2</strong>, you'll be warned instead.
+                </div>
+            </div>
             <hr>
             <h3 id="scoreboard-variables">Scoreboard variables</h3>
             <table>

@@ -41,7 +41,6 @@ include_once("../../inc/json_localization.php");
                 <li>
                     <a href="#players-can-t-join-through-signs"><?php echo localize("Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs"); ?></a></li>
                 <li>
-                    <a href="#language-yml-file-is-empty">language.yml file is empty!</a></li>
                 <li><a href="#how-power-ups-work-">How do power-ups work?</a></li>
                 <li><a href="#special-shop-items">Are there any special shop items?</a></li>
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
@@ -93,21 +92,8 @@ include_once("../../inc/json_localization.php");
             <p><strong>First heart:</strong> 50 rotten flesh needed</p>
             <p><strong>Next hearts:</strong> bonus hearts * in-game players size + 10</p>
             <hr>
-            <h3 id="language-yml-file-is-empty">language.yml file is empty</h3>
-            <p>This problem is caused mainly when you try to delete this file before you restart the server.</p>
-            <div class="alert alert-danger alert-white rounded">
-                <div class="icon">
-                    <i class="fa fa-times-circle"></i>
-                </div>
-                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Danger"); ?></strong>
-                    Always delete Village Defense files when the server is stopped. It&#39;s recommended too to edit them manually
-                    when the
-                    server is stopped.
-                </div>
-            </div>
-            <hr>
             <h3 id="supported-versions-of-village-defense">Supported versions of Village Defense</h3>
-            <p>Supported versions are currently 1.11-1.13.2
+            <p>Supported versions are currently 1.11-1.14.1
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this
                 message:</p>
             <pre><code>  _   _           _                                                    _                _

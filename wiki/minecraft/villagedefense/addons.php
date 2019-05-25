@@ -28,7 +28,7 @@ include_once("../../inc/json_localization.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
-            <h1 id="village-defense-3-addons">Village Defense 3 Addons</h1>
+            <h1 id="village-defense-addons">Village Defense Addons</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#bungee-signs-not-official">Bungee signs addon</a></li>

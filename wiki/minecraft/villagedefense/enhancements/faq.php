@@ -37,6 +37,7 @@ include_once("../../../inc/json_localization.php");
             <h2 id="my-kits-aren-t-updated-in-village-defense-game-">My kits aren&#39;t updated in Village Defense
                 game!</h2>
             <p>Make sure you&#39;ve reloaded custom kits to register updated values.</p>
+            <p>Since <strong>Enhancements 4.0.0</strong> you no longer need to reload kits to apply changes, they are applied instantly</p>
             <h2 id="how-can-i-translate-messages-">How can I translate messages?</h2>
             <p>Sadly, you can&#39;t. This addon is meant to be used once for create custom kits and then have fun with
                 extended
