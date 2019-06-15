@@ -31,6 +31,7 @@ include_once("../../inc/json_localization.php");
             <h1 id="village-defense-custom-maps">Village Defense custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
             <p>Every map contains Secret well, simple shop, lobby room and configured arena.</p>
+            <p>Link to all maps of our minigames <a href="https://drive.google.com/open?id=1Be3maNAEa4W37PZaDmvpNepOv1kGLAnb" target="_blank">at GDrive</a></p>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#quarry">Quarry</a></li>
@@ -38,14 +39,14 @@ include_once("../../inc/json_localization.php");
             </ul>
             <h2 id="quarry">Quarry</h2>
             <p><strong>Quarry map from original Village Defense map pack</strong></p>
-            <p><strong>Download link:</strong> <a target="_blank" href="http://www.mediafire.com/file/pea5p4qf3lovk8p/Quarry_-_configs_and_map.zip/file">http://www.mediafire.com/file/pea5p4qf3lovk8p/Quarry_-_configs_and_map.zip/file</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="https://drive.google.com/open?id=1oACneo7Y1eoAWYnlqPoAiJzi7q0c704f">GDrive</a>
             </p>
             <p><strong>Coordinates:</strong> 0, 80, 0</p>
             <p><strong>Screenshots:</strong></p>
             <p><img src="https://i.imgur.com/N8EHEZP.jpg" alt=""></p>
             <h2 id="hollow">Hollow</h2>
             <p><strong>Hollow map from original Village Defense map pack</strong></p>
-            <p><strong>Download link:</strong> <a target="_blank" href="http://www.mediafire.com/file/v8fyvf29cuq3x59/Hollow+-+configs+and+map.zip">http://www.mediafire.com/file/v8fyvf29cuq3x59/Hollow+-+configs+and+map.zip</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="https://drive.google.com/open?id=1MinAzjmcd7EaD75aESAU8-oz7-wjRQhL">GDrive</a>
             </p>
             <p><strong>Coordinates:</strong> -50, 72, 50</p>
             <p><strong>Screenshots:</strong></p>

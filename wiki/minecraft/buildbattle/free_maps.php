@@ -45,6 +45,7 @@ include_once("../../inc/tracking.php");
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="build-battle-custom-maps">Build Battle custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
+            <p>Link to all maps of our minigames <a href="https://drive.google.com/open?id=1Be3maNAEa4W37PZaDmvpNepOv1kGLAnb" target="_blank">at GDrive</a></p>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
                 <li><a href="#abstract">Abstract</a></li>
@@ -52,14 +53,14 @@ include_once("../../inc/tracking.php");
             </ul>
             <h2 id="abstract">Abstract</h2>
             <p><strong>Abstract map from original Build Battle map pack</strong></p>
-            <p><strong>Download link:</strong> <a href="http://www.mediafire.com/file/566p5uv6xv6831p/Abstract_-_configs_and_map.zip/file">http://www.mediafire.com/file/566p5uv6xv6831p/Abstract_-_configs_and_map.zip/file</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="https://drive.google.com/open?id=1cBn-QtPHcjcieCUQ4yLQEqk6t55qRzQc">GDrive</a>
             </p>
             <p><strong>Coordinates:</strong> 0, 100, 0</p>
             <p><strong>Screenshots:</strong></p>
             <p><img src="https://i.imgur.com/Ok742W4.jpg" alt=""></p>
             <h2 id="candyland">Candyland</h2>
             <p><strong>Candyland map from original Build Battle map pack</strong></p>
-            <p><strong>Download link:</strong> <a href="http://www.mediafire.com/file/xdil72mwi9k29ih/Candyland_-_config_and_map.zip/file">http://www.mediafire.com/file/xdil72mwi9k29ih/Candyland_-_config_and_map.zip/file</a>
+            <p><strong>Download link:</strong> <a target="_blank" href="https://drive.google.com/open?id=1NlljHNprryQWbqFvFa0g4bLC6ztYTE6J">GDrive</a>
             </p>
             <p><strong>Coordinates:</strong> 0, 100, 0</p>
             <p><strong>Screenshots:</strong></p>
