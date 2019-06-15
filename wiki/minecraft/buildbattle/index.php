@@ -62,7 +62,7 @@ include_once("../../inc/event_banners.php");
           echo applyHolidayBanner("Build Battle");
           ?>
             <br/>
-            <img src="https://i.imgur.com/tWZdaW3.png" alt="" class="img-fluid">
+            <img src="https://plajer.xyz/images/banner_display.php?id=BuildBattle&cut=true" alt="" class="img-fluid">
             <h2 id="build-battle-3-official-wiki-"><?php echo str_replace("%name%", "Build Battle", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>

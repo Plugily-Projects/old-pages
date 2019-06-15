@@ -54,7 +54,7 @@ include_once("../../inc/json_localization.php");
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <br/>
-           <img src="https://i.imgur.com/N3y1drp.png" alt="">
+           <img src="https://plajer.xyz/images/banner_display.php?id=MurderMystery&cut=true" alt="">
             <h2 id="murder-official-wiki-"><?php echo str_replace("%name%", "Murder Mystery", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>

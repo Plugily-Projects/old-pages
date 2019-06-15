@@ -59,7 +59,7 @@ include_once("../../inc/event_banners.php");
           echo applyHolidayBanner("Village Defense");
           ?>
             <br/>
-            <p><img src="https://i.imgur.com/rfGY9Js.png" alt=""></p>
+            <p><img src="https://plajer.xyz/images/banner_display.php?id=VillageDefense&cut=true" alt=""></p>
             <h2><?php echo str_replace("%name%", "Village Defense", localize("Wiki.Global.Welcome")); ?></h2>
             <table>
                 <thead>
