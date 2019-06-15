@@ -36,10 +36,11 @@ include_once("../../inc/tracking.php");
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
                 <li><a href="#corpse-last-words">What are corpses last words and their permissions?</a></li>
                 <li><a href="#bow-trails">What are bow trails permissions?</a></li>
+                <li><a href="#role-permission-chances">Can I increase chance of being Detective/Murderer?</a></li>
             </ul>
             <hr>
             <h3 id="supported-versions-of-murder-mystery">Supported versions of Murder Mystery</h3>
-            <p>Supported versions are currently 1.11-1.14.1.
+            <p>Supported versions are currently 1.11-1.14.2.
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this message:</p>
             <pre><code>  _   _           _                                                    _                _
  |<span class="hljs-string"> \ </span>|<span class="hljs-string"> </span>|<span class="hljs-string">   ___   </span>|<span class="hljs-string"> </span>|<span class="hljs-string">_     ___   _   _   _ __    _ __     ___    _ __  </span>|<span
@@ -237,6 +238,19 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
                 </tr>
                 </tbody>
             </table>
+            <hr>
+            <h3 id="role-permission-chances">Can I increase chance of being Detective/Murderer?</h3>
+            <p>You can check special permission nodes:</p>
+            <pre>murdermystery.role.murderer/detective.<1/100></pre>
+            <p>Setting up for example <strong>murdermystery.role.detective.15</strong> will give you 15 more points for being a detective</p>
+            <div class="alert alert-info alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
+                    Please avoid giving very high percentage values because other normal users will likely never be able to play as one of these roles
+                </div>
+            </div>
         </div>
 
         <div class="col-auto mb-3">

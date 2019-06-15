@@ -40,7 +40,6 @@ include_once("../../inc/json_localization.php");
                     <a href="#supported-versions-of-village-defense">What versions do support Village Defense?</a></li>
                 <li>
                     <a href="#players-can-t-join-through-signs"><?php echo localize("Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs"); ?></a></li>
-                <li>
                 <li><a href="#how-power-ups-work-">How do power-ups work?</a></li>
                 <li><a href="#special-shop-items">Are there any special shop items?</a></li>
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
@@ -93,7 +92,7 @@ include_once("../../inc/json_localization.php");
             <p><strong>Next hearts:</strong> bonus hearts * in-game players size + 10</p>
             <hr>
             <h3 id="supported-versions-of-village-defense">Supported versions of Village Defense</h3>
-            <p>Supported versions are currently 1.11-1.14.1
+            <p>Supported versions are currently 1.11-1.14.2
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this
                 message:</p>
             <pre><code>  _   _           _                                                    _                _
@@ -142,6 +141,9 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <p>To disable this go to <strong>server.properties</strong> and change <strong>spawn-protection</strong>
                 value
                 <strong>to 0</strong>.</p>
+            <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
+                You can no longer create signs in radius of spawn protection since <strong>Village Defense 4.2.1</strong>, you'll be warned instead.
+            </div>
             <hr>
             <h3 id="how-power-ups-work-">How power-ups work?</h3>
             <p>Power-ups added in Village Defense <strong>3.3.0</strong> enhances your game a bit.</p>

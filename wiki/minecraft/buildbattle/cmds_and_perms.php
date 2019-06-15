@@ -180,15 +180,9 @@ include_once("../../inc/json_localization.php");
                     <td><?php echo localize("Wiki.Global.Player") ?></td>
                 </tr>
                 <tr>
-                    <td>/bba addvotes [player] [amount]</td>
-                    <td>buildbattle.admin.supervotes.add</td>
-                    <td>Add super votes to target player <br/>Use <code>- (minus)</code> to remove votes</td>
-                    <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
-                </tr>
-                <tr>
-                    <td>/bba setvotes [player] [amount]</td>
-                    <td>buildbattle.admin.supervotes.set</td>
-                    <td>Set super votes of target player</td>
+                    <td>/bba votes [add/set] [amount] (player)</td>
+                    <td>buildbattle.admin.supervotes.manage</td>
+                    <td>Add or set super votes to target player or yourself <br/>Use <code>- (minus)</code> to remove votes</td>
                     <td><?php echo localize("Wiki.Global.Player") ?>/<?php echo localize("Wiki.Global.Console") ?></td>
                 </tr>
                 <tr>
