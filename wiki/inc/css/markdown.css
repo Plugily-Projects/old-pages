@@ -28,7 +28,6 @@
 }
 
 .container-fluid {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     -ms-text-size-adjust: 100%;

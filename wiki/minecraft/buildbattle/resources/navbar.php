@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark fixed-nav-index">
-  <a class="navbar-brand text-truncate" href="#">
+  <a class="navbar-brand text-truncate" href="index.php">
     <img src="https://plajer.xyz/images/favicon.php?type=navbar" width="30" height="30" class="d-inline-block align-top" alt="">
     <span class="d-none d-sm-inline-block">Plajer's Lair Wiki</span>
     <span class="d-sm-none">Wiki</span>
