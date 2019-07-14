@@ -60,6 +60,9 @@ function fixFlag($languageID, $flag) {
     case 'Portuguese (BR)':
       $flag = 'pt';
       break;
+    case "Danish":
+      $flag = 'dk';
+      break;
   }
   return $flag;
 }

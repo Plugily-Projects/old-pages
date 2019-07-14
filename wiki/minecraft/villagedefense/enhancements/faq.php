@@ -93,7 +93,8 @@ include_once("../../../inc/json_localization.php");
                             <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
+                    <h3 id="enhancements-addon" style="margin-bottom: 5px"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
+                    <a href="https://download.plajer.xyz/preview/minecraft.php" target="_blank"><div class="badge badge-warning mb-2">Free for Patrons - Become Patron</div></a>
                     <ul style="list-style-type: disc;">
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>

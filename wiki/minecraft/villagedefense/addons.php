@@ -51,7 +51,7 @@ include_once("../../inc/json_localization.php");
                 </div>
             </div>
             <h2 id="enhancements-addon">Enhancements addon</h2>
-            <p><img src="https://i.imgur.com/HxuIZ8J.png" alt=""></p>
+            <p><img src="https://i.imgur.com/yTIT3zo.png" alt=""></p>
             <p>This addon extends Village Defense features allowing you to implement your own custom kits and
                 achievements.</p>
             <div class="alert alert-warning alert-white rounded">
@@ -59,10 +59,10 @@ include_once("../../inc/json_localization.php");
                     <i class="fa fa-warning"></i>
                 </div>
                 <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Warn"); ?></strong>
-                    This addon is premium!
+                    This addon is Patreon exclusive!
                 </div>
             </div>
-            <p><strong>Download:</strong> <a href="https://www.spigotmc.org/resources/55010/">https://www.spigotmc.org/resources/55010/</a>
+            <p><strong>Download:</strong> <a href="https://download.plajer.xyz/preview/minecraft.php">Become patron and get access (click)</a>
             </p>
         </div>
 
@@ -113,7 +113,8 @@ include_once("../../inc/json_localization.php");
                             <a href="https://jd.plajer.xyz/minecraft/villagedefense/"><?php echo localize("Wiki.Sidebar.Development-Space.Java-Docs"); ?></a>
                         </li>
                     </ul>
-                    <h3 id="enhancements-addon"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
+                    <h3 id="enhancements-addon" style="margin-bottom: 5px"><?php echo localize("Wiki.Sidebar.Enhancements.Name"); ?></h3>
+                    <a href="https://download.plajer.xyz/preview/minecraft.php" target="_blank"><div class="badge badge-warning mb-2">Free for Patrons - Become Patron</div></a>
                     <ul style="list-style-type: disc;">
                         <li>
                             <a href="https://wiki.plajer.xyz/minecraft/villagedefense/enhancements/cmds_and_perms.php"><?php echo localize("Wiki.Sidebar.General.Commands-And-Permissions"); ?></a>
