@@ -103,7 +103,7 @@ include_once("inc/tracking.php");
 
             <div class="card-deck justify-content-center align-items-center">
                 <div class="card fixed-card">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=t48N9A3ls3g" class="card-body">
+                    <a target="_blank" href="https://youtu.be/4u6PkQT7Fcg" class="card-body">
                         <img src="https://i.imgur.com/56Tl4Ep.png" width="90" height="90" class="d-inline-block align-top" alt="">
                     </a>
                     <div class="card-footer px-1">
@@ -121,7 +121,7 @@ include_once("inc/tracking.php");
                 </div>
 
                 <div class="card fixed-card">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=M0dZ1yePpzc" class="card-body">
+                    <a target="_blank" href="https://youtu.be/hLE9bx-A5HM" class="card-body">
                         <img src="https://i.imgur.com/du1KLwx.png" width="90" height="90" class="d-inline-block align-top" alt="">
                     </a>
                     <div class="card-footer">
