@@ -31,7 +31,7 @@ include_once("../../inc/json_localization.php");
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
-                <li><strong><a href="#-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> Limitation of liability disclaimer</a></strong></li>
+                <li><strong><a href="#limitation-of-liability-disclaimer"><i class="fa fa-warning"></i> Limitation of liability disclaimer</a></strong></li>
                 <li>
                     <a href="#how-to-set-up-the-shop-">How to setup the shop?</a></li>
                 <li>
@@ -49,9 +49,9 @@ include_once("../../inc/json_localization.php");
                     <a href="#how-can-i-donate-you-">Can I donate you?</a></li>
             </ul>
             <hr>
-            <h3 id="-limitation-of-liability-disclaimer-"><i class="fa fa-warning"></i> <strong>Limitation of liability
+            <h3 id="limitation-of-liability-disclaimer"><i class="fa fa-warning"></i> <strong>Limitation of liability
                     disclaimer</strong></h3>
-            <p><strong>Village Defense </strong> plugin <strong>SHOULD BE RUN</strong> on a separate map when using it
+            <p><strong>Village Defense </strong> plugin <strong>SHOULD BE RUN</strong> on a separate world when using it
                 on
                 multi-mode servers like Factions, Survival, SkyBlock etc.</p>
             <p><strong>What Village Defense modifies in the world:</strong></p>
@@ -59,6 +59,7 @@ include_once("../../inc/json_localization.php");
                 <li>Blocks mob spawning other than Village Defense ones</li>
                 <li>Cleans hoppers inventories</li>
                 <li>Manipulates Villager entities</li>
+                <li><i class="fa fa-warning"></i> <strong>Might not be compatible with other minigames (zombies/villagers will be invisible)</strong></li>
             </ul>
             <div class="alert alert-danger alert-white rounded">
                 <div class="icon">
@@ -92,7 +93,7 @@ include_once("../../inc/json_localization.php");
             <p><strong>Next hearts:</strong> bonus hearts * in-game players size + 10</p>
             <hr>
             <h3 id="supported-versions-of-village-defense">Supported versions of Village Defense</h3>
-            <p>Supported versions are currently 1.11-1.14.2
+            <p>Supported versions are currently 1.11-1.14.4
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this
                 message:</p>
             <pre><code>  _   _           _                                                    _                _
@@ -141,8 +142,13 @@ Sadly, we must shut off. Maybe you consider changing your server version?</span>
             <p>To disable this go to <strong>server.properties</strong> and change <strong>spawn-protection</strong>
                 value
                 <strong>to 0</strong>.</p>
-            <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
-                You can no longer create signs in radius of spawn protection since <strong>Village Defense 4.2.1</strong>, you'll be warned instead.
+            <div class="alert alert-info alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong><?php echo localize("Wiki.Alerts.Info"); ?></strong>
+                    You can no longer create signs in radius of spawn protection since <strong>Village Defense 4.2.1</strong>, you'll be warned instead.
+                </div>
             </div>
             <hr>
             <h3 id="how-power-ups-work-">How power-ups work?</h3>

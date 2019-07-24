@@ -31,6 +31,7 @@ include_once("../../inc/tracking.php");
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
+                <li><strong><a href="#limitation-of-liability-disclaimer"><i class="fa fa-warning"></i> Limitation of liability disclaimer</a></strong></li>
                 <li><a href="#supported-versions-of-murder-mystery">What versions do support Murder Mystery?</a></li>
                 <li><a href="#players-can-t-join-through-signs"><?php echo localize("Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs"); ?></a></li>
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
@@ -39,8 +40,28 @@ include_once("../../inc/tracking.php");
                 <li><a href="#role-permission-chances">Can I increase chance of being Detective/Murderer?</a></li>
             </ul>
             <hr>
+            <h3 id="limitation-of-liability-disclaimer"><i class="fa fa-warning"></i> <strong>Limitation of liability
+                    disclaimer</strong></h3>
+            <p><strong>Murder Mystery </strong> plugin <strong>SHOULD BE RUN</strong> on a separate world when using it
+                on
+                multi-mode servers like Factions, Survival, SkyBlock etc.</p>
+            <p><strong>What Murder Mystery modifies in the world:</strong></p>
+            <ul>
+                <li>Visibility of players in the world</li>
+                <li><i class="fa fa-warning"></i> <strong>Might not be compatible with other minigames (game behavior may broke)</strong></li>
+            </ul>
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong>Using Murder Mystery you accept GPLv3 license and limitations
+                        of liability that Murder Mystery can
+                        cause, please become acquainted with following warnings before using Murder Mystery on a production
+                        server.</strong></div>
+            </div>
+            <hr>
             <h3 id="supported-versions-of-murder-mystery">Supported versions of Murder Mystery</h3>
-            <p>Supported versions are currently 1.11-1.14.2.
+            <p>Supported versions are currently 1.11-1.14.4.
                 If your plugin doesn&#39;t startup and you don&#39;t have this version you&#39;re receiving this message:</p>
             <pre><code>  _   _           _                                                    _                _
  |<span class="hljs-string"> \ </span>|<span class="hljs-string"> </span>|<span class="hljs-string">   ___   </span>|<span class="hljs-string"> </span>|<span class="hljs-string">_     ___   _   _   _ __    _ __     ___    _ __  </span>|<span

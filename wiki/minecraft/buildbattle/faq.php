@@ -31,10 +31,30 @@ include_once("../../inc/tracking.php");
             <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
             <ul>
-                <li><a href="#supported-versions-of-build-battle">What versions do support Build Battle 3?</a></li>
+                <li><a href="#supported-versions-of-build-battle">What versions do support Build Battle?</a></li>
                 <li><a href="#players-can-t-join-through-signs"><?php echo localize("Wiki.Global.FAQ.Question.Players-Cant-Join-Through-Signs"); ?></a></li>
                 <li><a href="#scoreboard-variables">What are scoreboard variables?</a></li>
             </ul>
+            <hr>
+            <h3 id="limitation-of-liability-disclaimer"><i class="fa fa-warning"></i> <strong>Limitation of liability
+                    disclaimer</strong></h3>
+            <p><strong>Build Battle </strong> plugin <strong>SHOULD BE RUN</strong> on a separate world when using it
+                on
+                multi-mode servers like Factions, Survival, SkyBlock etc.</p>
+            <p><strong>What Murder Mystery modifies in the world:</strong></p>
+            <ul>
+                <li>Modifies entities spawning</li>
+                <li><i class="fa fa-warning"></i> <strong>Might not be compatible with other minigames (game behavior may broke)</strong></li>
+            </ul>
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong>Using Build Battle you accept GPLv3 license and limitations
+                        of liability that Build Battle can
+                        cause, please become acquainted with following warnings before using Build Battle on a production
+                        server.</strong></div>
+            </div>
             <hr>
             <h3 id="supported-versions-of-build-battle">Supported versions of Build Battle</h3>
             <p>Supported versions are currently 1.11.x-1.14.2.
