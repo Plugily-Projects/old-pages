@@ -3,7 +3,7 @@
 function getCachedContent($url, $postFields, $cachedFileName, $cacheTime = 1440){
 
   // Generate the cache version if it doesn't exist or it's too old!
-  if(!file_exists(__DIR__ . '/cache/' . $cachedFileName . '.cache') OR (filemtime(__DIR__ . '/cache/' . $cachedFileName. 'cache') < (time() - $cacheTime))) {
+  if(!file_exists(__DIR__ . '/cache/' . $cachedFileName . '.cache') OR (filemtime(__DIR__ . '/cache/' . $cachedFileName. '.cache') < (time() - $cacheTime))) {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
     if(!is_null($postFields)) {
