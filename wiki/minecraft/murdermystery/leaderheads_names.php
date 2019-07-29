@@ -11,6 +11,7 @@ include_once("../../inc/json_localization.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
+    <link rel="stylesheet" href="../../inc/css/alerts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -92,7 +93,7 @@ include_once("../../inc/json_localization.php");
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                         <li style="list-style-image: url('../../inc/img/you-are-here.png');">
-                            <a href="https://wiki.plajer.xyz/minecraft/murdermystery/leaderheads_names.php">Leaderheads Statistics</a>
+                            <a href="https://wiki.plajer.xyz/minecraft/murdermystery/leaderheads_names.php"><s>Leaderheads Statistics</s> <strong>deprecated</strong></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>

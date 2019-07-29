@@ -188,7 +188,7 @@ include_once("../../inc/json_localization.php");
                             <a href="https://wiki.plajer.xyz/minecraft/murdermystery/papi_placeholders.php"><?php echo localize("Wiki.Sidebar.General.PAPI-Placeholders"); ?></a>
                         </li>
                         <li>
-                            <a href="https://wiki.plajer.xyz/minecraft/murdermystery/leaderheads_names.php">Leaderheads Statistics</a>
+                            <a href="https://wiki.plajer.xyz/minecraft/murdermystery/leaderheads_names.php"><s>Leaderheads Statistics</s> <strong>deprecated</strong></a>
                         </li>
                     </ul>
                     <h3 id="-support-"><strong><?php echo localize("Wiki.Sidebar.Support"); ?></strong></h3>
