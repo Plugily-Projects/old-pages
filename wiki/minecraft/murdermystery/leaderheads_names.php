@@ -27,6 +27,15 @@ include_once("../../inc/json_localization.php");
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
+            <div class="alert alert-danger alert-white rounded">
+                <div class="icon">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+                <div style="margin-left: 45px;"><strong>Deprecated</strong>
+                  LeaderHeads statistics support is no longer provided as LeaderHeads supports PlaceholderAPI placeholders now.
+                    Please check out <a href="https://wiki.plajer.xyz/minecraft/murdermystery/papi_placeholders.php">this page</a> instead.
+                </div>
+            </div>
             <h1 id="list-of-leaderheads-statistics">List of LeaderHeads statistics</h1>
             <table>
                 <thead>
