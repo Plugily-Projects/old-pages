@@ -12,6 +12,7 @@ include_once("../../inc/json_localization.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
     <link rel="stylesheet" href="../../inc/css/alerts.css">
+    <link rel="stylesheet" href="https://static.plajer.xyz/css/flags_min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,8 +26,8 @@ include_once("../../inc/json_localization.php");
 </head>
 <body>
 <?php include('resources/navbar.php'); ?>
-<div class="container-fluid">
-    <div class="row justify-content-center">
+<div class="container-fluid pb-5">
+    <div class="row justify-content-center pb-5">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="build-battle-3-addons">Murder Mystery Addons</h1>
             <h2 id="table-of-contents"><?php echo localize("Wiki.Global.Table-Of-Contents"); ?></h2>
@@ -97,9 +98,8 @@ include_once("../../inc/json_localization.php");
                 </div>
             </div>
         </div>
-
-      <?php include('resources/footer.php'); ?>
     </div>
 </div>
+<?php include('resources/footer.php'); ?>
 </body>
 </html>

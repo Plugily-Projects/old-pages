@@ -18,6 +18,7 @@ include_once("inc/tracking.php");
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="inc/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="https://static.plajer.xyz/css/flags_min.css">
 
     <link rel="icon" sizes="192x192" href="https://plajer.xyz/images/favicon.php?type=favicon-mobile">
     <link rel="shortcut icon" type="image/x-icon" href="https://plajer.xyz/images/favicon.php?type=favicon">
@@ -61,7 +62,7 @@ include_once("inc/tracking.php");
             padding-left: 4.5rem !important;
         }
 
-        .corner-ribbon{
+        .corner-ribbon {
             width: 200px;
             background: #2f2f2f;
             color: #fff;
@@ -72,12 +73,16 @@ include_once("inc/tracking.php");
             z-index: 100;
         }
 
-        .corner-ribbon.right{
+        .corner-ribbon.right {
             right: -45px;
             left: auto;
             -ms-transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+        }
+
+        .flag-container {
+            line-height: 30px;
         }
     </style>
 
@@ -101,19 +106,19 @@ include_once("inc/tracking.php");
                     <img src="<?php echo getLocaleFlag(); ?>"> <?php echo localize("Wiki.Global.Language-Name"); ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" onclick="setLocale('en-GB')"><img src="https://plajer.xyz/shared/flags/gb.png"> English</a>
-                    <a class="dropdown-item" onclick="setLocale('cs-CZ')"><img src="https://plajer.xyz/shared/flags/cs.png"> Čeština</a>
-                    <a class="dropdown-item" onclick="setLocale('de-DE')"><img src="https://plajer.xyz/shared/flags/de.png"> Deutsch</a>
-                    <a class="dropdown-item" onclick="setLocale('es-ES')"><img src="https://plajer.xyz/shared/flags/es.png"> Español</a>
-                    <a class="dropdown-item" onclick="setLocale('fr-FR')"><img src="https://plajer.xyz/shared/flags/fr.png"> Français</a>
-                    <a class="dropdown-item" onclick="setLocale('hu-HU')"><img src="https://plajer.xyz/shared/flags/hu.png"> Magyar</a>
-                    <a class="dropdown-item" onclick="setLocale('nl-NL')"><img src="https://plajer.xyz/shared/flags/nl.png"> Nederlands</a>
-                    <a class="dropdown-item" onclick="setLocale('pl-PL')"><img src="https://plajer.xyz/shared/flags/pl.png"> Polski</a>
-                    <a class="dropdown-item" onclick="setLocale('ro-RO')"><img src="https://plajer.xyz/shared/flags/ro.png"> Română</a>
-                    <a class="dropdown-item" onclick="setLocale('ru-RU')"><img src="https://plajer.xyz/shared/flags/ru.png"> Pусский</a>
-                    <a class="dropdown-item" onclick="setLocale('th-TH')"><img src="https://plajer.xyz/shared/flags/th.png"> ภาษาไทย</a>
-                    <a class="dropdown-item" onclick="setLocale('zh-CN')"><img src="https://plajer.xyz/shared/flags/cn.png"> 简体中文</a>
-                    <a class="dropdown-item" onclick="setLocale('zh-TW')"><img src="https://plajer.xyz/shared/flags/tw.png"> 繁體中文</a>
+                    <a class="dropdown-item" onclick="setLocale('en-GB')"><img class="flag-gb mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> English</a>
+                    <a class="dropdown-item" onclick="setLocale('cs-CZ')"><img class="flag-cs mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Čeština</a>
+                    <a class="dropdown-item" onclick="setLocale('de-DE')"><img class="flag-de mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Deutsch</a>
+                    <a class="dropdown-item" onclick="setLocale('es-ES')"><img class="flag-es mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Español</a>
+                    <a class="dropdown-item" onclick="setLocale('fr-FR')"><img class="flag-fr mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Français</a>
+                    <a class="dropdown-item" onclick="setLocale('hu-HU')"><img class="flag-hu mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Magyar</a>
+                    <a class="dropdown-item" onclick="setLocale('nl-NL')"><img class="flag-nl mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Nederlands</a>
+                    <a class="dropdown-item" onclick="setLocale('pl-PL')"><img class="flag-pl mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Polski</a>
+                    <a class="dropdown-item" onclick="setLocale('ro-RO')"><img class="flag-ro mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Română</a>
+                    <a class="dropdown-item" onclick="setLocale('ru-RU')"><img class="flag-ru mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Pусский</a>
+                    <a class="dropdown-item" onclick="setLocale('th-TH')"><img class="flag-th mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> ภาษาไทย</a>
+                    <a class="dropdown-item" onclick="setLocale('zh-CN')"><img class="flag-cn mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> 简体中文</a>
+                    <a class="dropdown-item" onclick="setLocale('zh-TW')"><img class="flag-tw mr-1" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> 繁體中文</a>
                 </div>
             </li>
             <li class="nav-item active">
@@ -136,50 +141,50 @@ include_once("inc/tracking.php");
                     </a>
                     <div class="card-footer px-5">
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
-                        <br/>
-                        <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                      <?php
-                      $i = 1;
-                      $json = readLanguages(190635);
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          continue;
-                        } else {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                        }
-                        $i++;
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mb-1">
+                            <img class="flag-gb" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png" alt="">
+                          <?php
+                          $i = 1;
+                          $json = readLanguages(190635);
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              continue;
+                            } else {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                            }
+                            $i++;
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
-                        <br/>
-                      <?php
-                      $i = 0;
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                        } else {
-                          continue;
-                        }
-                        $i++;
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mt-2 mb-1">
+                          <?php
+                          $i = 0;
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                            } else {
+                              continue;
+                            }
+                            $i++;
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
@@ -192,50 +197,50 @@ include_once("inc/tracking.php");
                     </a>
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
-                        <br/>
-                        <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                      <?php
-                      $i = 1;
-                      $json = readLanguages(196919);
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          continue;
-                        } else {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                          $i++;
-                        }
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mb-1">
+                            <img class="flag-gb" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png" alt="">
+                          <?php
+                          $i = 1;
+                          $json = readLanguages(196919);
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              continue;
+                            } else {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                              $i++;
+                            }
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
-                        <br/>
-                      <?php
-                      $i = 0;
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                        } else {
-                          continue;
-                        }
-                        $i++;
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mt-2 mb-1">
+                          <?php
+                          $i = 0;
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                            } else {
+                              continue;
+                            }
+                            $i++;
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
@@ -247,63 +252,63 @@ include_once("inc/tracking.php");
                     </a>
                     <div class="card-footer px-5">
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
-                        <br/>
-                        <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
-                      <?php
-                      $i = 1;
-                      $json = readLanguages(202329);
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          continue;
-                        } else {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                          $i++;
-                        }
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mb-1">
+                            <img class="flag-gb" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png" alt="">
+                          <?php
+                          $i = 1;
+                          $json = readLanguages(202329);
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              continue;
+                            } else {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                              $i++;
+                            }
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
-                        <br/>
-                      <?php
-                      $i = 0;
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 80.0) {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                        } else {
-                          continue;
-                        }
-                        $i++;
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mt-2 mb-1">
+                          <?php
+                          $i = 0;
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 80.0) {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                            } else {
+                              continue;
+                            }
+                            $i++;
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>
+
                 <div class="card fixed-card">
                     <a target="_blank" href="https://poeditor.com/join/project/SyQ3OElBb1" class="card-body">
                         <img src="https://i.imgur.com/kxmqOL7.png" width="30%" class="my-3 img-fluid">
                         <h5 class="card-title">Plajer's Lair Pages</h5>
                     </a>
-                    <div class="card-footer">
+                    <div class="card-footer px-5">
                         <strong><?php echo localize("Translation.Current-Languages"); ?></strong>
-                        <br/>
-                        <div class="px-5">
-                            <img src="https://www.plajer.xyz/shared/flags/gb.png" alt="">
+                        <div class="flag-container mb-1">
+                            <img class="flag-gb" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png" alt="">
                           <?php
                           $i = 1;
                           $json = readLanguages(206301);
@@ -316,37 +321,36 @@ include_once("inc/tracking.php");
                             if ($value->percentage < 65.0) {
                               continue;
                             } else {
-                              echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
                               $i++;
                             }
                           }
                           ?>
-                            <br/>
-                            <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                         </div>
+                        <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                     <div class="card-footer">
                         <strong><?php echo localize("Translation.Pending-Languages"); ?></strong>
                         <br/>
                         <small class="text-muted"><?php echo localize("Translation.Pending-Languages.Description"); ?></small>
-                        <br/>
-                      <?php
-                      $i = 0;
-                      foreach ($json->result->languages as $value) {
-                        if ($value->name == "English") {
-                          continue;
-                        }
-                        $flag = $value->code;
-                        $flag = fixFlag($value->name, $flag);
-                        if ($value->percentage < 65.0) {
-                          echo "<img src='https://www.plajer.xyz/shared/flags/$flag.png' alt='$value->code'> ";
-                        } else {
-                          continue;
-                        }
-                        $i++;
-                      }
-                      ?>
-                        <br/>
+                        <div class="flag-container mt-2 mb-1">
+                          <?php
+                          $i = 0;
+                          foreach ($json->result->languages as $value) {
+                            if ($value->name == "English") {
+                              continue;
+                            }
+                            $flag = $value->code;
+                            $flag = fixFlag($value->name, $flag);
+                            if ($value->percentage < 65.0) {
+                              echo "<img class='flag-" . $flag . " mr-1' src='https://static.plajer.xyz/img/flag_placeholder_invisible.png'>";
+                            } else {
+                              continue;
+                            }
+                            $i++;
+                          }
+                          ?>
+                        </div>
                         <small class='text-muted'><?php echo str_replace('%num%', $i, localize('Translation.Languages-In-Total')); ?></small>
                     </div>
                 </div>

@@ -10,20 +10,20 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="<?php echo getLocaleFlag(); ?>"> <?php echo localize("Wiki.Global.Language-Name"); ?>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" onclick="setLocale('en-GB')"><img src="https://plajer.xyz/shared/flags/gb.png"> English</a>
-                    <a class="dropdown-item" onclick="setLocale('cs-CZ')"><img src="https://plajer.xyz/shared/flags/cs.png"> Čeština</a>
-                    <a class="dropdown-item" onclick="setLocale('de-DE')"><img src="https://plajer.xyz/shared/flags/de.png"> Deutsch</a>
-                    <a class="dropdown-item" onclick="setLocale('es-ES')"><img src="https://plajer.xyz/shared/flags/es.png"> Español</a>
-                    <a class="dropdown-item" onclick="setLocale('fr-FR')"><img src="https://plajer.xyz/shared/flags/fr.png"> Français</a>
-                    <a class="dropdown-item" onclick="setLocale('hu-HU')"><img src="https://plajer.xyz/shared/flags/hu.png"> Magyar</a>
-                    <a class="dropdown-item" onclick="setLocale('nl-NL')"><img src="https://plajer.xyz/shared/flags/nl.png"> Nederlands</a>
-                    <a class="dropdown-item" onclick="setLocale('pl-PL')"><img src="https://plajer.xyz/shared/flags/pl.png"> Polski</a>
-                    <a class="dropdown-item" onclick="setLocale('ro-RO')"><img src="https://plajer.xyz/shared/flags/ro.png"> Română</a>
-                    <a class="dropdown-item" onclick="setLocale('ru-RU')"><img src="https://plajer.xyz/shared/flags/ru.png"> Pусский</a>
-                    <a class="dropdown-item" onclick="setLocale('th-TH')"><img src="https://plajer.xyz/shared/flags/th.png"> ภาษาไทย</a>
-                    <a class="dropdown-item" onclick="setLocale('zh-CN')"><img src="https://plajer.xyz/shared/flags/cn.png"> 简体中文</a>
-                    <a class="dropdown-item" onclick="setLocale('zh-TW')"><img src="https://plajer.xyz/shared/flags/tw.png"> 繁體中文</a>
+                <div class="dropdown-menu dropdown-menu-right p-1" style="min-width: 7.5rem" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item p-1" onclick="setLocale('en-GB')"><img class="flag-gb" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> English</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('cs-CZ')"><img class="flag-cs" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Čeština</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('de-DE')"><img class="flag-de" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Deutsch</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('es-ES')"><img class="flag-es" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Español</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('fr-FR')"><img class="flag-fr" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Français</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('hu-HU')"><img class="flag-hu" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Magyar</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('nl-NL')"><img class="flag-nl" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Nederlands</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('pl-PL')"><img class="flag-pl" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Polski</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('ro-RO')"><img class="flag-ro" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Română</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('ru-RU')"><img class="flag-ru" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> Pусский</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('th-TH')"><img class="flag-th" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> ภาษาไทย</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('zh-CN')"><img class="flag-cn" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> 简体中文</a>
+                    <a class="dropdown-item p-1" onclick="setLocale('zh-TW')"><img class="flag-tw" src="https://static.plajer.xyz/img/flag_placeholder_invisible.png"> 繁體中文</a>
                 </div>
             </li>
         </ul>

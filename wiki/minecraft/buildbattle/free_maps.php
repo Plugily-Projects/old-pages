@@ -27,6 +27,7 @@ include_once("../../inc/tracking.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
+    <link rel="stylesheet" href="https://static.plajer.xyz/css/flags_min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,8 +41,8 @@ include_once("../../inc/tracking.php");
 </head>
 <body>
 <?php include('resources/navbar.php'); ?>
-<div class="container-fluid">
-    <div class="row justify-content-center">
+<div class="container-fluid pb-5">
+    <div class="row justify-content-center pb-5">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
             <h1 id="build-battle-custom-maps">Build Battle custom maps</h1>
             <p>In this section, you can download some additional maps for your server.</p>
@@ -115,10 +116,9 @@ include_once("../../inc/tracking.php");
                 </div>
             </div>
         </div>
-
-      <?php include('resources/footer.php'); ?>
     </div>
 </div>
+<?php include('resources/footer.php'); ?>
 </body>
 </html>
 

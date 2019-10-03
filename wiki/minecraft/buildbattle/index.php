@@ -13,6 +13,7 @@ include_once("../../inc/event_banners.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="stylesheet" href="../../inc/css/markdown.css">
     <link rel="stylesheet" href="../../inc/css/alerts.css">
+    <link rel="stylesheet" href="https://static.plajer.xyz/css/flags_min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,9 +55,9 @@ include_once("../../inc/event_banners.php");
 </head>
 <body>
 <?php include('resources/navbar.php'); ?>
-<div class="container-fluid">
+<div class="container-fluid pb-5">
     <a target="_blank" href="https://github.com/Plajer-Lair/pages" class="corner-ribbon right d-none d-sm-block" style="text-decoration: none; color:white">We're Open Source too!</a>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pb-5">
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-11 col-xs-12 px-sm-0 px-2">
           <?php
           echo applyHolidayBanner("Build Battle");
@@ -81,7 +82,7 @@ include_once("../../inc/event_banners.php");
                     <td><img src="https://i.imgur.com/RDZGbgs.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td>BB 3 commands and permissions</td>
+                    <td>BuildBattle commands and permissions</td>
                     <td>How to create arena tutorial</td>
                     <td>Download free game maps</td>
                     <td>Some stuff for developers</td>
@@ -173,8 +174,7 @@ include_once("../../inc/event_banners.php");
                 </div>
             </div>
         </div>
-
-        <?php include('resources/footer.php'); ?>
+      <?php include('resources/footer.php'); ?>
     </div>
 </body>
 </html>
